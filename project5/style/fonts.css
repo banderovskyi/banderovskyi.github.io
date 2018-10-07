@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSansCyrl 100 Italic.otf");
+	font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSansCyrl 100.otf");
+	font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSansCyrl 300 Italic.otf");
+	font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSansCyrl 300.otf");
+	font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSansCyrl 900 Italic.otf");
+	font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+	font-family: "MuseoSans";
+	src: url("../fonts/MuseoSansCyrl 900.otf");
+	font-weight: 900;
+    font-style: normal;
+}

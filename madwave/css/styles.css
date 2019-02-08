@@ -1,0 +1,1222 @@
+body{
+    font-family: "Roboto Consended",sans-serif;
+}
+#calc-form{
+    width: 100%;
+    /*margin: 50px auto;*/
+    
+}
+.calc-form-wrap{
+    background: #F4F4F4 ;
+}
+#calc-form .form-main{
+    padding: 70px 0;
+}
+#calc-form .tab-wrap{
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 25px;
+}
+#calc-form .tab-step{
+    text-transform: uppercase;
+    opacity: 0.3;
+    font-weight: 600;
+}
+#calc-form .form-dropdown{
+    margin: 0;
+    padding: 0;
+}
+#calc-form .tabs{
+   /* margin: 0 -7px 30px -7px;*/
+   padding: 30px 0 ;
+   position: relative;
+}
+#calc-form  .container-for-size{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#calc-form .tabs:before{
+   /* content: "";
+    display: block;
+    height: 100%;
+    width: 9999px;
+    position: absolute;
+    left: -5000px;
+    top: 0;
+    z-index: 0;
+    background-color: #fff;*/
+}
+#calc-form button{
+    border:none;
+}
+#calc-form button:active,
+#calc-form button:focus{
+    outline: none;
+}
+#calc-form .tabs a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #3a3a3a;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.64px;
+    padding: 0 0 0 10px;
+    margin: 0 7px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    transition: all 1s;
+}
+#calc-form .tabs a .circle-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: -5px;
+}
+
+
+#calc-form .tabs a.done{
+
+}
+#calc-form .tabs a.done .circle-number{
+
+}
+#calc-form .tabs a.active{
+    
+}
+#calc-form .tabs a.active:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: -3px;
+    height: 3px;
+    width: 100%;
+    background: #67B0CD;
+}
+#calc-form .tabs a.active .circle-number{
+    border: 1px solid #67B0CD;
+    background: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.81138 1.135L3.32489 5.805C3.07509 6.065 2.6754 6.065 2.4256 5.805L0.187353 3.455C-0.0624511 3.195 -0.0624511 2.775 0.187353 2.515C0.437157 2.255 0.836844 2.255 1.08665 2.515L2.88524 4.395L6.92207 0.195C7.17188 -0.065 7.57157 -0.065 7.82137 0.195C8.06118 0.455 8.06118 0.875 7.81138 1.135Z' fill='%2367B0CD'/%3E%3C/svg%3E%0A") no-repeat center center;
+}
+
+#calc-form .main-block{
+  
+}
+#calc-form .main-block .elements,
+#calc-form .main-block .calculation{
+    width: 100%;
+}
+#calc-form .main-block .elements{
+   /* overflow-y: auto;
+    max-height: 409px;*/
+}
+#calc-form .main-block .elements > div{
+    display: none;
+}
+#calc-form .main-block .elements > div:first-child{
+    display: block;
+}
+
+
+#calc-form .main-block .elements input[type="text"]:disabled{
+    background-color: #d1d5d8;
+}
+
+/*Блок для TAB-1*/
+#calc-form .main-block .elements .tab-1 {
+
+}
+#calc-form .main-block .elements .tab-1  input[type="radio"]{
+    display: none;
+}
+#calc-form .main-block .elements .tab-1 .container-for-type{
+    background-color: #ffffff;
+    margin-bottom: 13px;
+    position: relative;
+}
+#calc-form .main-block .elements .tab-1 .container-for-type.active{
+   
+}
+#calc-form .main-block .elements .tab-1 .container-for-type .container-for-size{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    background-color: #ececec;
+    width: 142px;
+    height: 37px;
+    z-index: 12;
+}
+#calc-form .main-block .elements .tab-1 .container-for-type .container-for-size label[for="size-head-start-M"]{
+    border-right: 1px solid #cdcdcd;
+    height: 100%;
+    margin-bottom: 0;
+    padding-left: 22px;
+    padding-right: 12px;
+}
+#calc-form .main-block .elements .tab-1 .container-for-type .container-for-size label[for="size-head-start-L"]{
+    border-left: 1px solid #ffffff;
+    height: 100%;
+    margin-bottom: 0;
+    padding-left: 22px;
+    padding-right: 11px;
+}
+#calc-form .main-block .elements .tab-1 .container-for-type label .container-check{
+    background-color: white;
+}
+#calc-form .main-block .elements .tab-1 .container-for-type .label{
+    color: #3a3a3a;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    /* Text style for "Стартовые" */
+    letter-spacing: 0.64px;
+   /* padding: 12px 180px 9px 17px;*/
+
+}
+#calc-form .main-block .elements .tab-1 .container-for-type:first-child .label{
+   /* padding: 29px 180px 29px 17px;*/
+    margin: 0;
+
+}
+/*Конец блока для TAB-1*/
+
+
+/*Начало блока для TAB-2*/
+
+#calc-form .main-block .elements .tab-2 .container-radio{
+    margin-bottom: 30px;
+}
+#calc-form .main-block .elements .tab-2 .container-radio input{
+    display: none;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 10px 0;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;*/
+    position: relative;
+    padding: 5px;
+    background-clip: content-box;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label .check{
+   /* display: none;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 28px;
+    height: 28px;
+    */
+}
+#calc-form .main-block .elements .tab-2 .container-radio input[type="radio"]:checked + label {
+    display: block;
+    border: 1px solid #000000;
+}
+
+#calc-form .main-block .elements .tab-2 .container-radio #color-head-white:checked + label .check,
+#calc-form .main-block .elements .tab-2 .container-radio #color-head-yellow:checked + label .check,
+#calc-form .main-block .elements .tab-2 .container-radio #color-head-green:checked + label .check,
+#calc-form .main-block .elements .tab-2 .container-radio #color-head-light-blue:checked + label .check
+{
+    /*display: block;
+    border: 1px solid #000000;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;*/
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-black"]{
+    background-color: black;
+    color: #ffffff;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-white"]{
+    background-color:white ;
+    color: black;
+    border: 1px solid #ababab;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-light-grey"]{
+    background-color: #929292;
+    color: #ffffff;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-yellow"]{
+    background-color: #fffe02;
+    color: black;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-orange"]{
+    background-color: #fb9e00;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-pink"]{
+    background-color: #fe008e;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-red"]{
+    background-color: #e30301;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-bright-red"]{
+    background-color: #fe0133;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-green"]{
+    background-color: #47e75d;
+    color: #000000;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-green-leaf"]{
+    background-color: #00bb63;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-nautical"]{
+    background-color: #00172d;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-pearl-fleet"]{
+    background-color: #211147;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-dark-blue"]{
+    background-color: #0102fe;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-lighter-blue"]{
+    background-color: #006ddb;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-blue"]{
+    background-color: #07b5e4;
+    color: white;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-light-blue"]{
+    background-color: #b0d5f3;
+    color: black;
+}
+#calc-form .main-block .elements .tab-2 .container-radio .no-active{
+    opacity:0.05;
+}
+
+
+#calc-form .main-block .elements .container-quantity{
+    background-color: #ececec;
+    margin-bottom: 60px;
+    margin-right: 80px;
+
+
+}
+#calc-form .main-block .elements .quantity-desc{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    padding: 0 4px 0 10px;
+    width: 244px;
+}
+#calc-form .main-block .elements .counter{
+    padding: 30px 151px 30px 0;
+}
+#calc-form .main-block .elements .counter.logo-no{
+    padding: 0 151px 30px 0;
+}
+#calc-form .main-block .elements .counter-btn{
+    width: 28px;
+    height: 37px;
+    background-color: #00b0cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+}
+#calc-form .main-block .elements .counter-input{
+    width: 45px;
+    height: 37px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border:none;
+    text-align: center;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+}
+
+#calc-form .main-block .elements .container-quantity .counter{
+    padding: 30px 100px 30px 0;
+}
+/*Конец блока для TAB-2**/
+
+
+/*Начало блока для TAB-3*/
+#calc-form .main-block .elements .desc-logo-no{
+    width: 200px;
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    margin-bottom: 17px;
+    margin-right: 10px;
+}
+
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]{
+    display: none;
+}
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn label{
+   color: #3a3a3a;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    background-color: #ececec;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]:checked +label{
+    background-color: #00b0cc;
+    color: black;
+}
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn .container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #ececec;
+    position: absolute;
+    bottom: -7px;
+}
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn .container-icon .icon{
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+    display: block;
+}
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]:checked +label .container-icon{
+    background-color: #00b0cc;
+}
+
+#calc-form .main-block .elements .tab-3 .subtab{
+    margin-top: 24px;
+}
+#calc-form .main-block .elements .tab-3 .logo input[type="file"],
+#calc-form .main-block .elements .tab-3 .logo input[type="file"]{
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+
+#calc-form .main-block .elements .tab-3 .logo label{
+    color: #ffffff;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.64px;
+    background-color: #00b0cc;
+    width: 158px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 31px;
+    margin-right: 57px;
+    margin-left: 18px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+#calc-form .main-block .elements .tab-3 .logo label.selected{
+    background-color: #01cc6d;
+}
+#calc-form .main-block .elements .remove-btn{
+    width: 27px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    margin-right: -13px;
+    text-align: center;
+    padding-left: 9px;
+    line-height: 1px;
+
+}
+#calc-form .main-block .elements .remove-btn:hover{
+    background-color: #fd3a3a;
+}
+
+
+
+#calc-form .main-block .elements .tab-3 .subtab-title{
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 24px;
+}
+#calc-form .main-block .elements .tab-3 .subtab-title-down{
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 24px;
+}
+#calc-form .main-block .elements .tab-3 .logo{
+    background-color: #ececec;
+    margin-right: 82px;
+    position: relative;
+    margin-bottom: 24px;
+}
+#calc-form .main-block .elements .tab-3 .logo .logo-desc{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    margin-left: 18px;
+}
+#calc-form .main-block .elements .tab-3 .logo .logo-prompt-1{
+    width: 164px;
+    height: 31px;
+    color: #666666;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    position: absolute;
+    top: 66px;
+    margin-left: 18px;
+}
+#calc-form .main-block .elements .tab-3 .logo .logo-prompt-2{
+    width: 185px;
+    height: 31px;
+    color: #666666;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    position: absolute;
+    top: 66px;
+    left: 233px;
+
+}
+#calc-form .main-block .elements .add-logo-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #242424;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    width: 189px;
+    height: 38px;
+    border: 1px solid #979797;
+    text-decoration: none;
+    margin-bottom: 36px;
+    background-color: white;
+
+}
+#calc-form .main-block .elements #order-logo{
+    display: none;
+}
+#calc-form .main-block .elements label.checkbox-btn{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    margin-bottom: 16px;
+    margin-right: 15px;
+}
+#calc-form .main-block .elements .tab-4 label.checkbox-btn{
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+}
+#calc-form .main-block .elements .container-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#calc-form .main-block .elements .container-check .check-icon{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+#calc-form .main-block .elements input[type="checkbox"]:checked+label .container-check,
+#calc-form .main-block .elements .tab-6 input[type="checkbox"]:checked+ .container-check{
+/*    background-color: #00b0cc;
+    border-color: #00b0cc;*/
+}
+#calc-form .main-block .elements .container-for-size input[type="radio"]:checked+label .container-check{
+/*    background-color: #00b0cc;
+    border-color: #00b0cc;*/
+}
+#calc-form .main-block .elements .container-for-size input[type="radio"]:checked+label  .check-icon{
+    background-color: #000000;
+}
+#calc-form .main-block .elements .container-for-size input[type="radio"]:checked:disabled+label .container-check{
+    background-color: #979797;
+    border-color: #979797;
+}
+
+#calc-form .main-block .elements .note{
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    margin-bottom: 17px;
+    margin-right: 10px;
+}
+#calc-form .main-block .elements .tab-3 textarea{
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#calc-form .main-block .elements .tab-3 input[type="checkbox"]{
+    display: none;
+}
+#calc-form .main-block .elements .tab-3 hr{
+    height: 2px;
+    background-color: black;
+    margin-bottom: 40px;
+
+}
+#calc-form .main-block .elements .tab-3 .counter .counter-input:disabled{
+    background-color: #d1d5d8;
+}
+/*Конец блока для TAB-3*/
+
+/*Начало блока для TAB-4*/
+#calc-form .main-block .elements .tab-4 input[type="checkbox"]{
+    display: none;
+}
+#calc-form .main-block .elements .tab-4 .container-for-ascending{
+    background-color: #ececec;
+    margin-right: 82px;
+    position: relative;
+}
+#calc-form .main-block .elements .tab-4 .container-for-ascending label{
+    margin: 10px 10px;
+}
+#calc-form .main-block .elements .tab-4 input[type="text"]:not(.counter-input){
+    width: 45px;
+    height: 38px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    border: none;
+    margin: 30px 0;
+}
+#calc-form .main-block .elements .tab-2 input[type="text"]:disabled,
+#calc-form .main-block .elements .tab-3 input[type="text"]:disabled,
+#calc-form .main-block .elements .tab-4 input[type="text"]:disabled,
+#calc-form .main-block .elements .tab-5 input[type="text"]:disabled,
+#calc-form .main-block .elements .tab-6 input[type="text"]:disabled,
+#calc-form .main-block .elements .tab-7 input[type="text"]:disabled{
+    background-color: #d1d5d8;
+    border: none !important;
+}
+
+
+#calc-form .main-block .elements .tab-4 .container-for-ascending span{
+    margin-left: 36px;
+    margin-right: 12px;
+}
+
+#calc-form .main-block .elements .error{
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+}
+#calc-form .main-block .elements input.error{
+    font-weight: 700;
+}
+
+#calc-form .main-block .elements input.error {
+    border: 1px solid #fd3a3a !important;
+}
+
+#calc-form .main-block .elements div.error {
+    padding: 12px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #fd3a3a;
+}
+#calc-form .main-block .elements .tab-3 .error-block{
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #fd3a3a;
+    margin-right: 82px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+
+
+#calc-form .main-block .elements .tab-4 .num-different-piece{
+    background-color: #ececec;
+    margin-right: 82px;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    position: relative;
+    margin-bottom: 24px;
+}
+#calc-form .main-block .elements .tab-4 .num-different-piece .counter{
+    padding-right: 101px;
+}
+#calc-form .main-block .elements .tab-4 .num-different-piece .num-text{
+    margin-right: 13px;
+}
+#calc-form .main-block .elements  .remove-btn{
+    position: absolute;
+    right: 4px;
+    top: 32px;
+}
+#calc-form .main-block .elements .tab-4 .add-num-different-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border: 1px solid #979797;
+    color: #242424;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    padding: 12px 15px;
+    background-color: white;
+}
+
+#calc-form .main-block .elements .tab-4 .result-num-ascending span{
+    margin-left: 10px;
+}
+/*Конец блока для TAB-4*/
+
+/*Начало блока для TAB-5*/
+#calc-form .main-block .elements .tab-5{
+    padding-top: 30px;
+}
+#calc-form .main-block .elements .tab-5 .error-block{
+
+}
+
+#calc-form .main-block .elements .tab-5 .container-for-family{
+    margin-bottom: 30px;
+}
+#calc-form .main-block .elements .tab-5 .container-for-family .family{
+    background-color: #ececec;
+    margin-right: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+#calc-form .main-block .elements .tab-5 .container-for-family .family .family-desc{
+    position: absolute;
+    top:0;
+    left: 12px;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+}
+#calc-form .main-block .elements .tab-5 .container-for-family .family .input-family{
+    width: 156px;
+    height: 38px;
+    background-color: #ffffff;
+    border: none;
+    margin:36px 61px 31px -5px;
+    padding-left: 10px;
+}
+#calc-form .main-block .elements .tab-5 .container-for-family .family .input-family::placeholder{
+    padding-left: 9px;
+    color: #666666;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+
+}
+#calc-form .main-block .elements .tab-5 .remove-btn {
+    position: absolute;
+    right: 4px;
+    top: 32px;
+}
+#calc-form .main-block .elements .tab-5 .add-family-btn{
+    border: 1px solid #979797;
+    background-color: #ffffff;
+    color: #242424;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.64px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+
+/*Конец блока для TAB-5*/
+
+/*Начало блока для TAB-6*/
+
+
+#calc-form .main-block .elements .tab-6 input[type="checkbox"]{
+    display: none;
+}
+#calc-form .main-block .elements .tab-6 .position-logo,
+#calc-form .main-block .elements .tab-6 .position-num,
+#calc-form .main-block .elements .tab-6 .position-family
+{
+    margin-bottom: 6px;
+}
+#calc-form .main-block .elements .tab-6 .position-title div{
+    width: 136px;
+    height: 48px;
+    color: #3a3a3a;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#calc-form .main-block .elements .tab-6 .name-object{
+    width: 136px;
+    height: 48px;
+    background-color: #ececec;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    margin-right: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#calc-form .main-block .elements .tab-6 label.checkbox-btn{
+    background-color: #ececec;
+    padding: 15px 26px;
+    margin-bottom: 0px;
+
+}
+#calc-form .main-block .elements .tab-6 label.checkbox-btn .container-check{
+    background-color: white;
+}
+#calc-form .main-block .elements .tab-6  label.checkbox-btn.first{
+    border-right: 1px solid #cdcdcd;
+}
+#calc-form .main-block .elements .tab-6  label.checkbox-btn.last{
+    border-left: 1px solid #ffffff;
+}
+#calc-form .main-block .elements .tab-6 .note{
+    color: #3a3a3a;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    margin-top: 24px;
+    padding: 8px 45px 8px 17px;
+    background-color: #ececec;
+
+}
+
+/*Конец блока для TAB-6*/
+
+
+/*Начало блока для TAB-7*/
+#calc-form .main-block .elements .tab-7 .title-contacts{
+    color: #000000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts{
+    margin-top: 21px;
+    margin-bottom: 27px;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2{
+    margin-top: 42px;
+    margin-bottom: 27px;
+    position: relative;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 label{
+    position: absolute;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 label[for="contacts-city"],
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 label[for="contacts-address"]{
+    top:-20px;
+    left: 10px;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 label[for="face"]{
+    top:-20px;
+    left: 190px;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts input[type="text"],
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 input[type="text"]{
+    width: 156px;
+    height: 38px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    margin-right: 23px;
+    padding-left: 9px;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 select{
+    width: 156px;
+    height: 38px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    margin-right: 23px;
+    padding-left: 9px;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+}
+#calc-form .main-block .elements .tab-7 input[type="text"]::placeholder{
+    color: #8f8f8f;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+
+}
+#calc-form .main-block .elements .tab-7 .container-for-contacts-2 input[name="contacts-address"]{
+    width: 335px;
+    height: 38px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+}
+#calc-form .main-block .elements .tab-7 .add-load-requisites{
+    text-transform: uppercase;
+    border: 1px solid #979797;
+    color: #242424;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.64px;
+    padding: 12px 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#calc-form .main-block .elements .tab-7 input[type="file"],
+#calc-form .main-block .elements .tab-7 input[type="checkbox"]{
+    display: none;
+}
+#calc-form .main-block .elements textarea{
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*Конец блока для TAB-7*/
+
+    /*Блок расчетов и управления*/
+#calc-form .main-block .calculation{
+    
+
+}
+#calc-form .main-block .calculation .control{
+    background-color: #ffffff;
+    padding: 0 25px 25px 25px;
+}
+#calc-form .main-block .calculation .control button{
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.64px;
+    text-decoration: none;
+    flex-basis: 47%;
+    border-radius: 2px;
+    padding: 20px 0;
+}
+#calc-form .main-block .calculation .control button.btn-skip{
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+}
+#calc-form .main-block .calculation .control button.btn-continue{
+  background-color: #000000;
+  color: #ffffff;
+}
+#calc-form .main-block .calculation .control button.btn-continue[type="submit"]{
+    background-color: #fd3a3a;
+    margin: 9px 0 auto auto;
+    padding: 10px 21px;
+    margin: 76px 8px 9px;
+    margin-right: 0;
+}
+#calc-form .main-block .calculation .calculation-info{
+    margin-top: 30px;
+    
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.56px;
+/*    padding: 14px 10px 14px 10px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#calc-form .main-block .calculation .calculation-info .info-detail:before{
+    content: "Промежуточный итог";
+    display: block;
+    text-transform: uppercase;
+    opacity: 0.3;
+    font-weight: 600;
+    margin-bottom: 7px;
+    padding: 25px 0px 0 0px;
+}
+#calc-form .main-block .calculation .calculation-info .info-detail, .calc-price-full-one{
+    font-weight: 300;
+    padding: 0 25px;
+}
+#calc-form .main-block .calculation .calculation-info .info-result .calc-full{
+    margin-top: 18px;
+    font-weight: 700;
+    padding: 0 25px 25px 25px;
+}
+/*конец блока расчетов и управления*/
+
+
+
+#calc-form .photo-block{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: start;
+}
+#calc-form h3, .tab-title{
+    color: #000000;
+    font-family: "Bebas Neue", "Roboto Condensed",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 12px 0 16px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#calc-form .photo-block{
+   
+}
+#calc-form .photo-block .big-photo{
+    position: relative;
+}
+#calc-form .photo-block .big-photo img{
+    width: 80%;
+    height: 80%;
+}
+#calc-form .photo-block .small-photos-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+#calc-form .photo-block .small-photos-container .small-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 16px;
+}
+#calc-form .photo-block .small-photos-container .small-photo.active{
+    border: 2px solid #67B0CD;
+}
+#calc-form .photo-block .small-photos-container .small-photo img{
+    width: 56px;
+    height: 64px;
+}
+#calc-form .main-block .elements input[type="text"]:disabled{
+    background-color: #d1d5d8;
+}
+.small-photo-360{
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 76px;
+    text-align: center;
+    line-height: 76px;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.small-photo-360_small{
+    font-weight: 400;
+}
+/*начало -> Для блока калькуляции*/
+.info-result,
+.info-detail,
+.calc-price-num-one,
+.calc-price-fam-one,
+.calc-price-pressform-family,
+.calc-price-pressform-logo,
+.calc-price-create-or-paint-logo,
+.calc-price-logo-one-side,
+.calc-price-delivery {
+    display: none;
+}
+
+/*Конец  -> Для блока калькуляции*/
+/*Начало -> Для визуализации*/
+.print{
+    position: absolute;
+    z-index: 10;
+}
+
+
+/*Конец -> Для визуализации*/

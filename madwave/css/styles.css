@@ -132,7 +132,7 @@ border: 1px solid #67B0CD;
     width: 100%;
 }
 #calc-form .main-block .elements{
-    background: #ffff;
+    background: #ffffff;
     min-height: 350px;
 }
 #calc-form .main-block .elements > div{
@@ -1302,9 +1302,9 @@ border: 1px solid #67B0CD;
     .small-photo-360{
         width: 76px;
     }
-
 }
 @media screen and (max-width: 768px){
+
     #calc-form .main-block{
         flex-wrap: wrap;
     }

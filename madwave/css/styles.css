@@ -1278,6 +1278,9 @@ border: 1px solid #67B0CD;
 
 
 @media screen and (max-width: 960px){
+    #calc-form .main-block .elements{
+        min-height: auto;
+    }
     #calc-form .tabs{
         min-width: 1130px;
     }

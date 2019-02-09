@@ -2,6 +2,7 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mad_Wave</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -15,47 +16,49 @@
         <div class="container">
             <form id="calc-form"  enctype="multipart/form-data" action="send.php" method="post">
 
-                <div class="tabs row no-gutters justify-content-between">
-                    <div class="col">
-                        <a class="active" href="#tab-1" data-title="Укажите тип шапочки">Выберите тип шапочки
-                            <div class="circle-number"></div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class=" next-active" href="#tab-2" data-title="Укажите параметры">Укажите параметры
-                            <div class="circle-number"></div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class=" " href="#tab-3" data-title="Загрузите логотип">Загрузите логотип
-                            <div class="circle-number"></div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="" href="#tab-4" data-title="Выберите нумерацию">Выберите нумерацию
-                            <div class="circle-number" ></div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="" href="#tab-5" data-title="Нанесение фамилий">Нанесение фамилий
-                            <div class="circle-number"></div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="" href="#tab-6" data-title="Укажите размещение">Укажите размещение
-                            <div class="circle-number"></div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a class="" href="#tab-7" data-title="Контакты и доставка">Контакты и доставка
-                            <div class="circle-number"></div>
-                        </a>
+                <div class="tabs-wrap">
+                    <div class="tabs row no-gutters justify-content-between">
+                        <div class="col">
+                            <a class="active" href="#tab-1" data-title="Укажите тип шапочки">Выберите тип шапочки
+                                <div class="circle-number"></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class=" next-active" href="#tab-2" data-title="Укажите параметры">Укажите параметры
+                                <div class="circle-number"></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class=" " href="#tab-3" data-title="Загрузите логотип">Загрузите логотип
+                                <div class="circle-number"></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="" href="#tab-4" data-title="Выберите нумерацию">Выберите нумерацию
+                                <div class="circle-number" ></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="" href="#tab-5" data-title="Нанесение фамилий">Нанесение фамилий
+                                <div class="circle-number"></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="" href="#tab-6" data-title="Укажите размещение">Укажите размещение
+                                <div class="circle-number"></div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="" href="#tab-7" data-title="Контакты и доставка">Контакты и доставка
+                                <div class="circle-number"></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row no-gutters form-main">
 
                     <div class="w-100"></div>
-                    <div class="col-6 photo-block">
+                    <div class="col-12 col-lg-6 photo-block">
                         <div class="big-photo d-flex justify-content-around">
                             <img class="picture" src="img/photo/start-color-head-black_front.jpg" alt="print">
                             <img class="print d-none" src="img/print/madwave_left.png" alt="print">
@@ -206,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="offset-1 col-5 main-block d-flex flex-column">
+                    <div class="col-12 offset-lg-1 col-lg-5 main-block d-flex flex-column">
                         <div class="elements">
                             <div id="tab-1" class="tab-1 tab-wrap">
                                 <div class="tab-step">
@@ -300,7 +303,7 @@
                                         <input type="radio" id="color-head-light-blue" name="color-head" value="Светло-голубой">
                                         <label for="color-head-light-blue" class="order-0"><span class="check"></span></label>
                                     </div>
-                                    <div class="container-quantity d-flex d-flex align-items-center item flex-wrap">
+                                    <div class="container-quantity d-flex flex-column">
                                         <div class="tab-title">Укажите количество</div>
                                         <div class="counter d-flex">
                                             <button type="button"  class="counter-btn counter-minus">-</button>
@@ -311,6 +314,10 @@
                                     </div>
                             </div>
                             <div id="tab-3" class="tab-3 tab-wrap">
+                                <div class="tab-step">
+                                    Шаг 03
+                                </div>       
+                                <div class="tab-title">Загрузите логотип</div>
                                 <div class="container-subtabs-btn d-flex">
                                     <input type="radio" id="logo-yes" name="logo" value="Есть логотип" checked>
                                     <label class="flex-grow-1" for="logo-yes">У меня есть логотип<span class="container-icon"><span class="icon"></span></span></label>
@@ -319,22 +326,22 @@
                                 </div>
 
                                 <div class="subtab d-block">
-                                    <h2 class="subtab-title">Загрузите ваши логотипы</h2>
-                                    <div class="d-none logo-template align-items-center item flex-wrap">
+                                    <div class="d-none logo-template flex-column">
                                         <div class="logo-desc">Загрузить логотип №</div>
-                                        <label><input type="file" name="logo-file[]"><span>Загрузите файл</span></label>
-                                        <div class="counter d-flex">
+                                        <div class="logo-prompt-1">Перетащите ваш логотип в формате .EPS или</div>
+                                        <label><input type="file" name="logo-file[]"><span>Загрузить</span></label>
+                                        <!-- <div class="counter d-flex">
                                             <button class="counter-btn counter-minus" type="button">-</button>
                                             <input type = "text" class="counter-input" name="logo-color-quantity[]" value="1">
                                             <button class="counter-btn counter-plus" type="button">+</button>
-                                        </div>
+                                        </div> -->
+
                                         <button type="button" class="remove-btn" >&times;</button>
-                                        <div class="logo-prompt-1">Загрузите ваш логотип в формате CDR, PDF, Ai, EPS</div>
-                                        <div class="logo-prompt-2">Укажите количество цветов в логотипе по вашему мнению</div>
+                                        <!-- <div class="logo-prompt-2">Укажите количество цветов в логотипе по вашему мнению</div> -->
                                     </div>
                                     <div class="container-for-logos"></div>
                                     <div class="error-block"></div>
-                                    <button type="button" class="add-logo-btn">+ добавить логотип</button>
+                                    <button type="button" class="add-logo-btn">+ Добавить</button>
                                     <div class="d-none no-bar">
                                         <input type="checkbox" id="order-logo-paint" name="order-logo-paint" value="Заказать отрисовку логотипа" >
                                         <label class="checkbox-btn" for="order-logo-paint"><span class="container-check"><span class="check-icon"></span></span>Заказать отрисовку логотипа (150$)</label>
@@ -362,18 +369,22 @@
                                 </div>
                             </div>
                             <div id="tab-4" class="tab-4 tab-wrap">
+                                <div class="tab-step">
+                                    Шаг 04
+                                </div>       
+                                <div class="tab-title">Выберите нумерацию</div>
                                 <input type="checkbox" id="num-ascending" name="num-ascending" value="По возрастанию">
                                 <label class="checkbox-btn" for="num-ascending"><span class="container-check"><span class="check-icon"></span></span>По возрастанию</label>
                                 <div class="container-for-ascending d-flex align-items-center item flex-wrap">
-                                    <label for="num-ascending-begin">с</label>
+                                    <label for="num-ascending-begin">C</label>
                                     <input type="text" id="num-ascending-begin" name="num_ascending_begin" value="0" disabled>
-                                    <label for="num-ascending-end">до</label>
+                                    <label for="num-ascending-end">До</label>
                                     <input type="text" id="num-ascending-end" name="num_ascending_end" value="1" disabled>
                                 </div>
                                 <input type="checkbox" id="num-different" name="num-different" value="Индивидуальная">
                                 <label class="checkbox-btn" for="num-different"><span class="container-check"><span class="check-icon"></span></span>Индивидуальная</label>
                                 <div class="d-none num-different-piece-template align-items-center item flex-wrap">
-                                    <div class="counter d-flex">
+                                    <div class="counter d-flex align-items-center">
                                         <button type="button" class="counter-btn counter-minus">-</button>
                                         <input class="counter-input" type="text" name="num-different-quan[]" value="1" disabled>
                                         <button type="button" class="counter-btn counter-plus">+</button>
@@ -384,11 +395,14 @@
                                 </div>
                                 <div class="container-for-different"></div>
                                 <button type="button" class="add-num-different-btn">добавить</button>
-                                <div class="result-num-ascending">Количество шапочек c нумирацией: <span class="result-num-ascending-quantity"></span></div>
+                                <!-- <div class="result-num-ascending">Количество шапочек c нумирацией: <span class="result-num-ascending-quantity"></span></div> -->
                             </div>
                             <div id="tab-5" class="tab-5 tab-wrap">
+                                <div class="tab-step">
+                                    Шаг 05
+                                </div>       
+                                <div class="tab-title">Укажите фамилию</div>
                                 <div class="d-none family-template flex-wrap item flex-wrap">
-                                        <div class="family-desc">Укажите фамилию</div>
                                         <input type="text" class="input-family"  name="family[]" placeholder="Фамилия">
                                         <div class="counter d-flex">
                                             <button type="button" class="counter-btn counter-minus">-</button>
@@ -399,64 +413,116 @@
 
                                 </div>
                                 <div class="container-for-family"></div>
-                                <button type="button"  class="add-family-btn">+ добавить фамилию</button>
+                                <button type="button"  class="add-family-btn">Добавить</button>
                                 <div class="note">Стоимость печати фамилий расчитывается из суммы стоимости трафаретов 18$ и стоимости нанесения фамилии на каждую сторону шапочки 0,25$. В один трафарет помещается три фамилии, таким образом, рекомендуем заказывать количество фамилий кратное трем.</div>
                             </div>
                             <div id="tab-6" class="tab-6 tab-wrap">
-                                <div class="position-title d-flex">
-                                    <div>Объект</div>
-                                    <div>Зоны размещения</div>
-                                </div>
+                                <div class="tab-step">
+                                    Шаг 06
+                                </div>       
+                                <div class="tab-title">Укажите размещение</div>
+                                
                                 <div class="position-logo-template d-none item flex-wrap">
+                                    <div class="position-title d-flex flex-column">
+                                        <div class="position-title__item">Объект</div>
+                                    </div>
                                     <div class="name-object">Логотип №</div>
-
+                                    <div class="position-title d-flex flex-column">
+                                        <div class="position-title__item">Зоны размещения</div>
+                                    </div>
                                     <label class="checkbox-btn first" ><input type="checkbox"  name="logo-position-left[]" value="Слева"><span class="container-check"><span class="check-icon"></span></span>слева</label>
                                     <label class="checkbox-btn last" ><input type="checkbox"  name="logo-position-right[]" value="Справа"checked><span class="container-check"><span class="check-icon"></span></span>справа</label>
                                 </div>
                                 <div class="container-for-position"></div>
                                 <div class="position-num d-none item flex-wrap">
+                                    <div class="position-title d-flex flex-column">
+                                        <div class="position-title__item">Объект</div>
+                                    </div>
                                     <div class="name-object">Нумерация</div>
-                                    <input type="checkbox" id="num-position-left" name="num-position-left" value="Слева">
-                                    <label class="checkbox-btn first" for="num-position-left"><span class="container-check"><span class="check-icon"></span></span>слева</label>
-                                    <input type="checkbox" id="num-position-right" name="num-position-right" value="Справа" checked>
-                                    <label class="checkbox-btn last" for="num-position-right"><span class="container-check"><span class="check-icon"></span></span>справа</label>
+                                    <div class="position-title d-flex flex-column">
+                                        <div class="position-title__item">Зоны размещения</div>
+                                    </div>
+                                    
+                                    <label class="checkbox-btn first" for="num-position-left">
+                                        <input type="checkbox" id="num-position-left" name="num-position-left" value="Слева">
+                                        <span class="container-check">
+                                            <span class="check-icon">
+                                            </span>
+                                        </span>слева
+                                    </label>
+                                    <label class="checkbox-btn last" for="num-position-right">
+                                        <input type="checkbox" id="num-position-right" name="num-position-right" value="Справа" checked>
+                                        <span class="container-check"><span class="check-icon"></span></span>справа</label>
                                 </div>
                                 <div class="position-family d-none item flex-wrap">
+                                    <div class="position-title d-flex flex-column">
+                                        <div class="position-title__item">Объект</div>
+                                    </div>
                                     <div class="name-object">Фамилии</div>
-                                    <input type="checkbox" id="family-position-left" name="family-position-left" value="Слева" >
-                                    <label class="checkbox-btn first" for="family-position-left"><span class="container-check"><span class="check-icon"></span></span>слева</label>
-                                    <input type="checkbox" id="family-position-right" name="family-position-right" value="Справа" checked>
-                                    <label class="checkbox-btn last" for="family-position-right"><span class="container-check"><span class="check-icon"></span></span>справа</label>
+                                    <div class="position-title d-flex flex-column">
+                                        <div class="position-title__item">Зоны размещения</div>
+                                    </div>
+                                    <label class="checkbox-btn first" for="family-position-left"><input type="checkbox" id="family-position-left" name="family-position-left" value="Слева" ><span class="container-check"><span class="check-icon"></span></span>слева</label>
+                                    
+                                    <label class="checkbox-btn last" for="family-position-right"><input type="checkbox" id="family-position-right" name="family-position-right" value="Справа" checked><span class="container-check"><span class="check-icon"></span></span>справа</label>
                                 </div>
                                 <div class="note"><strong>Примечание:</strong> Обращаем внимание, взимается госпошлина и НДС 20%</div>
                             </div>
                             <div id="tab-7" class="tab-7 tab-wrap">
-                                <div class="title-contacts">Укажите контактные данные</div>
-                                <div class="container-for-contacts d-flex">
-                                    <input type="text" id="contacts-name" name="contacts-name" placeholder="Имя" required>
-                                    <input type="text" id="contacts-family" name="contacts-family" placeholder="Фамилия" required>
+                                <div class="tab-step">
+                                    Шаг 07
+                                </div>       
+                                <div class="tab-title">Контактные данные</div>
+                                <div class="container-for-contacts d-flex flex-wrap justify-content-between">
+                                    <div class="contacts-item">
+                                        <div class="contacts-title">
+                                            Имя
+                                        </div>
+                                        <input type="text" id="contacts-name" name="contacts-name" placeholder="Имя" required>
+                                    </div>
+                                    <div class="contacts-item">
+                                        <div class="contacts-title">
+                                            Фамилия
+                                        </div>
+                                        <input type="text" id="contacts-family" name="contacts-family" placeholder="Фамилия" required>
+                                    </div>
                                 </div>
-                                <div class="container-for-contacts d-flex">
-                                    <input type="text" id="contacts-email" name="contacts-email" placeholder="E-mail" required>
-                                    <input type="text" id="contacts-phone" name="contacts-phone" placeholder="Телефон" required >
+                                <div class="container-for-contacts d-flex flex-wrap justify-content-between">
+                                    <div class="contacts-item">
+                                        <div class="contacts-title">
+                                            Электронная почта
+                                        </div>
+                                        <input type="text" id="contacts-email" name="contacts-email" placeholder="E-mail" required>
+                                    </div>
+                                    <div class="contacts-item">
+                                        <div class="contacts-title">
+                                            Контактный телефон
+                                        </div>
+                                        <input type="text" id="contacts-phone" name="contacts-phone" placeholder="Телефон" required >
+                                    </div>
                                 </div>
-                                <div class="title-contacts">Укажите адрес доставки</div>
-                                <div class="container-for-contacts-2 d-flex">
-                                    <label for="contacts-city">Город</label>
-                                    <input type="text" id="contacts-city" name="contacts-city" placeholder="Укажите город" required >
-                                    <label for="face">Выберите</label>
-                                    <select name="face" id="face">
-                                        <option value="Физическое лицо">Частное лицо</option>
-                                        <option value="Юридическое лицо">Юридическое лицо</option>
-                                    </select>
+                                <div class="tab-title">Адрес доставки</div>
+                                <div class="container-for-contacts-2 d-flex flex-wrap justify-content-between">
+                                    <div class="contacts-item">
+                                        <label for="contacts-city " class="contacts-title">Город</label>
+                                        <input type="text" id="contacts-city" name="contacts-city" placeholder="Укажите город" required >
+                                    </div>
+                                    <div class="contacts-item" >
+                                        <label for="face" class="contacts-title">Выберите</label>
+                                        <select name="face" id="face">
+                                            <option value="Физическое лицо">Частное лицо</option>
+                                            <option value="Юридическое лицо">Юридическое лицо</option>
+                                        </select>
+                                    </div>
+                                    
                                 </div>
-                                <div class="container-for-contacts-2 d-flex">
-                                    <label for="contacts-address">Адрес</label>
+                                <div class="container-for-contacts-2 d-flex flex-wrap justify-content-between">
+                                    <label for="contacts-address" class="contacts-title">Адрес</label>
                                     <input type="text" id="contacts-address" name="contacts-address" placeholder="Укажите адресс" required>
                                 </div>
-                                <label for="file-reqiisites"  class="add-load-requisites">Загрузить реквизиты</label>
-                                <input type="file" id="file-reqiisites" name="file-reqiisites">
-                                <div class="title-contacts">Комментарий к заказу</div>
+                                <!-- <label for="file-reqiisites"  class="add-load-requisites">Загрузить реквизиты</label>
+                                <input type="file" id="file-reqiisites" name="file-reqiisites"> -->
+                                <div class="title-contacts contacts-title">Комментарий к заказу</div>
                                 <textarea name="comments" id="comments" cols="60" rows="3"></textarea>
                             </div>
                         </div>
@@ -464,10 +530,11 @@
                             <div class="control d-flex justify-content-between align-items-center">
                                 <button type="button" class="btn-skip">Пропустить ></button>
                                 <button type="button" class ="btn-continue">Далее ></button>
-                                <button type="submit" class ="btn-continue d-none">Отправить ></button>
+                                <button type="submit" class ="btn-continue d-none">Оформить заказ</button>
 
                             </div>
                             <div class="calculation-info">
+                                <div class="tab-title">Cтоимость</div>
                                 <div class="info-detail">
                                     <div class="calc-price-head">- Ориентировочная стоимость шапочки: <span class="price-head-one">0.68</span>$  * <span class="price-head-quantity">100</span> = <span class="price-head-full">68</span>$<br></div>
                                     <div class="calc-price-logo-one-side"><span class="price-logo-position-desc">- Стоимость печати лого на одной стороне: </span><span class="price-logo-one-side">0.5</span>$ * <span class="price-logo-quantity">100</span> = <span class="price-logo-full">50</span>$<br></div>

@@ -26,8 +26,22 @@ body{
     margin: 0;
     padding: 0;
 }
+#calc-form .tabs-wrap{
+    overflow: overlay;
+}
+#calc-form .tabs-wrap > ::-webkit-scrollbar {
+    background: #67B0CD;
+}
+#calc-form .tabs-wrap > ::-webkit-scrollbar-track {
+     background: #67B0CD;
+}
+#calc-form .tabs-wrap > ::-webkit-scrollbar-thumb {
+    background: #67B0CD;
+}
 #calc-form .tabs{
    /* margin: 0 -7px 30px -7px;*/
+   min-width: 930px;
+
    padding: 30px 0 ;
    position: relative;
 }
@@ -90,10 +104,11 @@ body{
 
 
 #calc-form .tabs a.done{
-
+    
 }
 #calc-form .tabs a.done .circle-number{
-
+border: 1px solid #67B0CD;
+    background: #67B0CD url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.81138 1.135L3.32489 5.805C3.07509 6.065 2.6754 6.065 2.4256 5.805L0.187353 3.455C-0.0624511 3.195 -0.0624511 2.775 0.187353 2.515C0.437157 2.255 0.836844 2.255 1.08665 2.515L2.88524 4.395L6.92207 0.195C7.17188 -0.065 7.57157 -0.065 7.82137 0.195C8.06118 0.455 8.06118 0.875 7.81138 1.135Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center center;
 }
 #calc-form .tabs a.active{
     
@@ -112,7 +127,6 @@ body{
     border: 1px solid #67B0CD;
     background: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.81138 1.135L3.32489 5.805C3.07509 6.065 2.6754 6.065 2.4256 5.805L0.187353 3.455C-0.0624511 3.195 -0.0624511 2.775 0.187353 2.515C0.437157 2.255 0.836844 2.255 1.08665 2.515L2.88524 4.395L6.92207 0.195C7.17188 -0.065 7.57157 -0.065 7.82137 0.195C8.06118 0.455 8.06118 0.875 7.81138 1.135Z' fill='%2367B0CD'/%3E%3C/svg%3E%0A") no-repeat center center;
 }
-
 #calc-form .main-block{
   
 }
@@ -208,11 +222,11 @@ body{
     display: none;
 }
 #calc-form .main-block .elements .tab-2 .container-radio label{
-    width: 24px;
-    height: 24px;
-    margin: 0 10px 10px 0;
-    /*display: flex;
-    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 8px 16px 8px;
+    display: flex;
+/*    justify-content: center;
     align-items: center;
     text-align: center;
     font-family: "Roboto Condensed",sans-serif;
@@ -221,24 +235,27 @@ body{
     line-height: 18px;
     letter-spacing: 0.56px;*/
     position: relative;
-    padding: 5px;
     background-clip: content-box;
     position: relative;
     cursor: pointer;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border: 1px solid;
+}
+#calc-form .main-block .elements .tab-2 .container-radio label:first-cild{
+    margin-right: 0;
 }
 #calc-form .main-block .elements .tab-2 .container-radio label .check{
-   /* display: none;
+    display: none;
     position: absolute;
-    left: -2px;
-    top: -2px;
-    width: 28px;
-    height: 28px;
-    */
+    left: -6px;
+    top: -6px;
+    width: 35px;
+    height: 35px;
+    
 }
-#calc-form .main-block .elements .tab-2 .container-radio input[type="radio"]:checked + label {
+#calc-form .main-block .elements .tab-2 .container-radio input[type="radio"]:checked + label .check{
     display: block;
     border: 1px solid #000000;
 }
@@ -261,6 +278,8 @@ body{
     background-color:white ;
     color: black;
     border: 1px solid #ababab;
+    width: 24px;
+    height: 24px;
 }
 #calc-form .main-block .elements .tab-2 .container-radio label[for="color-head-light-grey"]{
     background-color: #929292;
@@ -324,11 +343,7 @@ body{
 
 
 #calc-form .main-block .elements .container-quantity{
-    background-color: #ececec;
-    margin-bottom: 60px;
-    margin-right: 80px;
-
-
+    
 }
 #calc-form .main-block .elements .quantity-desc{
     display: flex;
@@ -343,7 +358,7 @@ body{
     width: 244px;
 }
 #calc-form .main-block .elements .counter{
-    padding: 30px 151px 30px 0;
+ /*   padding: 30px 151px 30px 0;*/
 }
 #calc-form .main-block .elements .counter.logo-no{
     padding: 0 151px 30px 0;
@@ -351,17 +366,18 @@ body{
 #calc-form .main-block .elements .counter-btn{
     width: 28px;
     height: 37px;
-    background-color: #00b0cc;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #000000;
     text-align: center;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 18px;
     letter-spacing: 0.64px;
+    cursor: pointer;
 }
 #calc-form .main-block .elements .counter-input{
     width: 45px;
@@ -378,10 +394,11 @@ body{
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0.64px;
+    border: 1px solid #E3E3E3;
 }
 
 #calc-form .main-block .elements .container-quantity .counter{
-    padding: 30px 100px 30px 0;
+  /*  padding: 30px 100px 30px 0;*/
 }
 /*Конец блока для TAB-2**/
 
@@ -403,13 +420,12 @@ body{
     display: none;
 }
 #calc-form .main-block .elements .tab-3 .container-subtabs-btn label{
-   color: #3a3a3a;
+   color: #282828;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.64px;
-    background-color: #ececec;
     padding-top: 12px;
     padding-bottom: 14px;
     display: flex;
@@ -417,32 +433,32 @@ body{
     justify-content: center;
     position: relative;
     cursor: pointer;
+    opacity: 0.5;
 }
 #calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]:checked +label{
-    background-color: #00b0cc;
-    color: black;
+    opacity: 1;
 }
 #calc-form .main-block .elements .tab-3 .container-subtabs-btn .container-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E8E8E8;
     border-radius: 50%;
-    background-color: #ececec;
+    margin-right: 10px;
     position: absolute;
-    bottom: -7px;
+    left: 0px;
+    top: 50%;
+    margin-top: -10px;
 }
 #calc-form .main-block .elements .tab-3 .container-subtabs-btn .container-icon .icon{
-    width: 10px;
-    height: 10px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    transform: rotate(-45deg);
-    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }
-#calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]:checked +label .container-icon{
-    background-color: #00b0cc;
+#calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]:checked +label .container-icon .icon{
+    background-color: #000000;
 }
 
 #calc-form .main-block .elements .tab-3 .subtab{
@@ -456,36 +472,37 @@ body{
 }
 
 #calc-form .main-block .elements .tab-3 .logo label{
-    color: #ffffff;
+    color: #b7b7b7;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0.64px;
-    background-color: #00b0cc;
-    width: 158px;
+    background-color: #ffffff;
+    border: 1px solid #b7b7b7;
+    border-radius: 2px;
+    width: 120px;
     height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 31px;
-    margin-right: 57px;
-    margin-left: 18px;
-    margin-top: 32px;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: width 0.5s;
 }
 #calc-form .main-block .elements .tab-3 .logo label.selected{
-    background-color: #01cc6d;
+    background-color: #ffffff;
+    width: 140px;
 }
 #calc-form .main-block .elements .remove-btn{
     width: 27px;
-    height: 38px;
+    height: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    color: #cccccc;
+    background-color: #ffffff;
     font-size: 36px;
     margin-right: -13px;
     text-align: center;
@@ -494,7 +511,7 @@ body{
 
 }
 #calc-form .main-block .elements .remove-btn:hover{
-    background-color: #fd3a3a;
+
 }
 
 
@@ -516,35 +533,48 @@ body{
     margin-bottom: 24px;
 }
 #calc-form .main-block .elements .tab-3 .logo{
-    background-color: #ececec;
-    margin-right: 82px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #ffffff;
     position: relative;
-    margin-bottom: 24px;
+    min-height: 190px;
+    border: 1px dashed #cccccc;
+    border-radius: 4px;
 }
 #calc-form .main-block .elements .tab-3 .logo .logo-desc{
-    position: absolute;
-    top: 2px;
-    left: 0px;
     color: #000000;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.64px;
-    margin-left: 18px;
+    text-align: center;
 }
 #calc-form .main-block .elements .tab-3 .logo .logo-prompt-1{
-    width: 164px;
-    height: 31px;
+    width: 280px;
     color: #666666;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
     letter-spacing: 0.56px;
-    position: absolute;
-    top: 66px;
-    margin-left: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+#calc-form .main-block .elements .tab-3 .logo .logo-prompt-1:before{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 37px;
+    margin: 0 auto 10px auto;
+    background: url("data:image/svg+xml,%3Csvg width='27' height='34' viewBox='0 0 27 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.15' d='M24 0H3C1.343 0 0 1.32354 0 2.95652V31.0435C0 32.6755 1.343 34 3 34H24C25.657 34 27 32.6755 27 31.0435V2.95652C27 1.32354 25.657 0 24 0ZM18.796 25.0289L13.5 22.2863L8.204 25.0289L9.217 19.2184L4.933 15.1019L10.853 14.2544L13.5 8.97107L16.148 14.2554L22.066 15.1029L17.783 19.2194L18.796 25.0289ZM25.28 7.79043H22.092C21.152 7.79043 20.029 7.3578 20.029 5.29612V1.78574H21.529V5.2971C21.529 6.31316 21.778 6.31316 22.092 6.31316H25.28V7.79043Z' fill='black'/%3E%3C/svg%3E%0A") no-repeat center center;
 }
 #calc-form .main-block .elements .tab-3 .logo .logo-prompt-2{
     width: 185px;
@@ -571,11 +601,12 @@ body{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.64px;
-    width: 189px;
+    width: 130px;
     height: 38px;
-    border: 1px solid #979797;
+    border: 1px solid #b7b7b7;
+    border-radius: 2px;
     text-decoration: none;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
     background-color: white;
 
 }
@@ -616,15 +647,30 @@ body{
     border-radius: 50%;
     margin-right: 10px;
 }
+#calc-form .main-block .elements .tab-4 .container-check, #calc-form .main-block .elements .tab-6 .container-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 2px;
+    margin-right: 10px;
+    border: 1px solid #E3E3E3;
+}
 #calc-form .main-block .elements .container-check .check-icon{
     width: 8px;
     height: 8px;
     border-radius: 50%;
 }
-#calc-form .main-block .elements input[type="checkbox"]:checked+label .container-check,
+#calc-form .main-block .elements .tab-4 .container-check .check-icon{
+    width: 18px;
+    height: 18px;
+}
+#calc-form .main-block .elements .tab-4 input[type="checkbox"]:checked+label .container-check,
 #calc-form .main-block .elements .tab-6 input[type="checkbox"]:checked+ .container-check{
-/*    background-color: #00b0cc;
-    border-color: #00b0cc;*/
+    background: #67B0CD url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.81138 1.135L3.32489 5.805C3.07509 6.065 2.6754 6.065 2.4256 5.805L0.187353 3.455C-0.0624511 3.195 -0.0624511 2.775 0.187353 2.515C0.437157 2.255 0.836844 2.255 1.08665 2.515L2.88524 4.395L6.92207 0.195C7.17188 -0.065 7.57157 -0.065 7.82137 0.195C8.06118 0.455 8.06118 0.875 7.81138 1.135Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center center;
+    border: none;
 }
 #calc-form .main-block .elements .container-for-size input[type="radio"]:checked+label .container-check{
 /*    background-color: #00b0cc;
@@ -641,12 +687,11 @@ body{
 #calc-form .main-block .elements .note{
     color: #000000;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 18px;
     letter-spacing: 0.56px;
-    margin-bottom: 17px;
-    margin-right: 10px;
+    opacity: 0.5;
 }
 #calc-form .main-block .elements .tab-3 textarea{
     color: #000000;
@@ -677,16 +722,15 @@ body{
     display: none;
 }
 #calc-form .main-block .elements .tab-4 .container-for-ascending{
-    background-color: #ececec;
-    margin-right: 82px;
     position: relative;
 }
 #calc-form .main-block .elements .tab-4 .container-for-ascending label{
     margin: 10px 10px;
+    font-weight: 500;
 }
 #calc-form .main-block .elements .tab-4 input[type="text"]:not(.counter-input){
-    width: 45px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -698,8 +742,7 @@ body{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.64px;
-    border: none;
-    margin: 30px 0;
+    border: 1px solid #E3E3E3;
 }
 #calc-form .main-block .elements .tab-2 input[type="text"]:disabled,
 #calc-form .main-block .elements .tab-3 input[type="text"]:disabled,
@@ -737,6 +780,7 @@ body{
     width: 100%;
     color: #ffffff;
     background-color: #fd3a3a;
+    margin-top: 20px;
 }
 #calc-form .main-block .elements .tab-3 .error-block{
     font-family: "Roboto Condensed",sans-serif;
@@ -755,8 +799,8 @@ body{
 
 
 #calc-form .main-block .elements .tab-4 .num-different-piece{
-    background-color: #ececec;
-    margin-right: 82px;
+    background: #F4F4F4;
+    border-radius: 4px;
     color: #000000;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
@@ -765,32 +809,47 @@ body{
     letter-spacing: 0.64px;
     position: relative;
     margin-bottom: 24px;
+    padding: 12px 10px;
+}
+#calc-form .main-block .elements .tab-4 .counter-btn, #calc-form .main-block .elements .tab-5 .counter-btn{
+    background-color: unset;
+}
+#calc-form .main-block .elements .tab-4 .counter-input{
+    width: 48px;
+    height: 48px;
+}
+#calc-form .main-block .elements .tab-4 .remove-btn{
+    color: #282828;
+    background-color: unset;
+    right: 24px;
+    top: 22px;
 }
 #calc-form .main-block .elements .tab-4 .num-different-piece .counter{
-    padding-right: 101px;
+    padding-right: 30px;
 }
 #calc-form .main-block .elements .tab-4 .num-different-piece .num-text{
     margin-right: 13px;
 }
 #calc-form .main-block .elements  .remove-btn{
     position: absolute;
-    right: 4px;
-    top: 32px;
+    right: 18px;
+    top: 3px;
 }
-#calc-form .main-block .elements .tab-4 .add-num-different-btn{
+#calc-form .main-block .elements .tab-4 .add-num-different-btn, #calc-form .main-block .elements .tab-5 .add-family-btn{
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    border: 1px solid #979797;
+    border: 1px solid #cccccc;
     color: #242424;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.64px;
-    padding: 12px 15px;
+    padding: 7px 15px;
     background-color: white;
+    color: #cccccc;
 }
 
 #calc-form .main-block .elements .tab-4 .result-num-ascending span{
@@ -805,37 +864,28 @@ body{
 #calc-form .main-block .elements .tab-5 .error-block{
 
 }
-
+#calc-form .main-block .elements .tab-5 .counter{
+    margin-left: 25px;
+}
 #calc-form .main-block .elements .tab-5 .container-for-family{
     margin-bottom: 30px;
 }
 #calc-form .main-block .elements .tab-5 .container-for-family .family{
     background-color: #ececec;
-    margin-right: 82px;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+    padding: 12px;
 }
-#calc-form .main-block .elements .tab-5 .container-for-family .family .family-desc{
-    position: absolute;
-    top:0;
-    left: 12px;
-    color: #000000;
-    font-family: "Roboto Condensed",sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.64px;
-}
+
 #calc-form .main-block .elements .tab-5 .container-for-family .family .input-family{
     width: 156px;
     height: 38px;
     background-color: #ffffff;
     border: none;
-    margin:36px 61px 31px -5px;
     padding-left: 10px;
+    border: 1px solid #E3E3E3;
 }
 #calc-form .main-block .elements .tab-5 .container-for-family .family .input-family::placeholder{
     padding-left: 9px;
@@ -848,12 +898,13 @@ body{
 
 }
 #calc-form .main-block .elements .tab-5 .remove-btn {
-    position: absolute;
-    right: 4px;
-    top: 32px;
+    color: #282828;
+    background-color: unset;
+    right: 24px;
+    top: 18px;
 }
 #calc-form .main-block .elements .tab-5 .add-family-btn{
-    border: 1px solid #979797;
+/*    border: 1px solid #979797;
     background-color: #ffffff;
     color: #242424;
     font-family: "Roboto Condensed",sans-serif;
@@ -866,7 +917,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: 27px;*/
+    margin-bottom: 20px;
 }
 
 
@@ -884,60 +936,39 @@ body{
 {
     margin-bottom: 6px;
 }
-#calc-form .main-block .elements .tab-6 .position-title div{
-    width: 136px;
-    height: 48px;
-    color: #3a3a3a;
+#calc-form .main-block .elements .tab-6 .position-title{
+    flex-basis: 100%;
+    color: #282828;
     font-family: "Roboto Condensed",sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.64px;
     display: flex;
     justify-content: start;
-    align-items: center;
+    margin-bottom: 5px;
 }
 #calc-form .main-block .elements .tab-6 .name-object{
-    width: 136px;
-    height: 48px;
-    background-color: #ececec;
     color: #000000;
     font-family: "Roboto Condensed",sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.64px;
     margin-right: 5px;
+    margin-bottom: 10px;
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
-#calc-form .main-block .elements .tab-6 label.checkbox-btn{
-    background-color: #ececec;
-    padding: 15px 26px;
-    margin-bottom: 0px;
+/*#calc-form .main-block .elements .tab-6 label.checkbox-btn{
+    background-color: #ffffff;
+    margin-bottom: 10px;
 
 }
 #calc-form .main-block .elements .tab-6 label.checkbox-btn .container-check{
     background-color: white;
-}
-#calc-form .main-block .elements .tab-6  label.checkbox-btn.first{
-    border-right: 1px solid #cdcdcd;
-}
-#calc-form .main-block .elements .tab-6  label.checkbox-btn.last{
-    border-left: 1px solid #ffffff;
-}
+}*/
+
 #calc-form .main-block .elements .tab-6 .note{
-    color: #3a3a3a;
-    font-family: "Roboto Condensed",sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18px;
-    letter-spacing: 0.64px;
-    margin-top: 24px;
-    padding: 8px 45px 8px 17px;
-    background-color: #ececec;
 
 }
 
@@ -954,22 +985,16 @@ body{
     letter-spacing: 0.64px;
 }
 #calc-form .main-block .elements .tab-7 .container-for-contacts{
-    margin-top: 21px;
-    margin-bottom: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2{
-    margin-top: 42px;
-    margin-bottom: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
 }
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2 label{
-    position: absolute;
-    color: #000000;
-    font-family: "Roboto Condensed",sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    letter-spacing: 0.56px;
+
 }
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2 label[for="contacts-city"],
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2 label[for="contacts-address"]{
@@ -982,11 +1007,10 @@ body{
 }
 #calc-form .main-block .elements .tab-7 .container-for-contacts input[type="text"],
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2 input[type="text"]{
-    width: 156px;
     height: 38px;
+    width: 100%;
     border: 1px solid #dedede;
     background-color: #ffffff;
-    margin-right: 23px;
     padding-left: 9px;
     color: #000000;
     font-family: "Roboto Condensed",sans-serif;
@@ -995,8 +1019,19 @@ body{
     line-height: 18px;
     letter-spacing: 0.56px;
 }
+#calc-form .main-block .elements .tab-7 .contacts-item{
+    flex-basis: 47%;
+}
+#calc-form .main-block .elements .tab-7 .contacts-title{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+#calc-form .main-block .elements .tab-7 .tab-title{
+    margin: 25px 0;
+}
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2 select{
-    width: 156px;
+    width: 100%;
     height: 38px;
     border: 1px solid #dedede;
     background-color: #ffffff;
@@ -1019,7 +1054,7 @@ body{
 
 }
 #calc-form .main-block .elements .tab-7 .container-for-contacts-2 input[name="contacts-address"]{
-    width: 335px;
+    width: 100%;
     height: 38px;
     border: 1px solid #dedede;
     background-color: #ffffff;
@@ -1048,8 +1083,10 @@ body{
     font-weight: 300;
     line-height: 18px;
     letter-spacing: 0.56px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    border: 1px solid #dedede;
+    width: 100%;
+    margin-top: 5px;
+    height: 93px;
 }
 /*Конец блока для TAB-7*/
 
@@ -1085,11 +1122,11 @@ body{
   color: #ffffff;
 }
 #calc-form .main-block .calculation .control button.btn-continue[type="submit"]{
-    background-color: #fd3a3a;
-    margin: 9px 0 auto auto;
-    padding: 10px 21px;
-    margin: 76px 8px 9px;
-    margin-right: 0;
+    background: #67B0CD;
+    margin-top: 20px;
+    padding: 15px 0;
+    display: block;
+    flex-basis: 100%;
 }
 #calc-form .main-block .calculation .calculation-info{
     margin-top: 30px;
@@ -1124,6 +1161,7 @@ body{
     font-weight: 700;
     padding: 0 25px 25px 25px;
 }
+
 /*конец блока расчетов и управления*/
 
 
@@ -1197,6 +1235,26 @@ body{
 }
 .small-photo-360_small{
     font-weight: 400;
+}
+
+#calc-form .main-block .end-calculation .calculation-info .info-detail:before{
+    display: none;
+}
+#calc-form .main-block .calculation-info .tab-title{
+    display: none;
+}
+#calc-form .main-block .end-calculation .calculation-info .tab-title{
+    display: block;
+    padding: 25px 25px 0 25px;
+}
+#calc-form .main-block .end-calculation .calculation-info .info-result .calc-full{
+    display: none;
+}
+#calc-form .main-block .end-calculation .calculation-info .info-result .calc-full-customs-nds{
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 33px;
 }
 /*начало -> Для блока калькуляции*/
 .info-result,

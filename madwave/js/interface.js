@@ -457,7 +457,7 @@ $(function() {
                 $('#calc-form .main-block').addClass('col-lg-5 offset-lg-1 flex-column');
                 $('#calc-form .main-block .elements').removeClass('col-12 col-lg-7');
                 $('#calc-form .main-block .calculation').removeClass('col-12 col-lg-5  justify-content-end');
-                $('#calc-form .main-block .calculation .calculation-info').removerClass('mt-0')
+                $('#calc-form .main-block .calculation .calculation-info').removeClass('mt-0')
 
                 $('.btn-skip, .btn-continue').removeClass('d-none');
                 $('.btn-continue[type="submit"]').addClass('d-none');

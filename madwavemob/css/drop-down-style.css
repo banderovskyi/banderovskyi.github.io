@@ -1,0 +1,75 @@
+div#selectBox {
+	width: 100%;
+	position: relative;
+	height: 50px;
+	border-radius: 2px;
+	border: 1px solid #E3E3E3;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	overflow: hidden;
+	transition: .3s;
+	margin-bottom: 30px;
+}
+div#selectBox p.valueTag {
+	padding: 12px 15px 15px 15px;
+	cursor: pointer;
+	transition: .2s;
+	height: 40px;
+}
+
+div#selectBox > img.arrow {
+	position: absolute;
+	right: 0;
+	width: 10px;
+	height: 20px;
+	margin-top: 15px;
+	right: 7px;
+	/*width: 50px;
+	padding: 15px;*/
+}
+
+/*
+        для пользователей Safari, Chrome и Opera приятный бонус — стилизованный скролл-бар. 
+*/
+div#selectBox > ::-webkit-scrollbar {
+	background: transparent;
+	width: 0.5em;
+	position: absolute;
+}
+div#selectBox > ::-webkit-scrollbar-track {
+	background: transparent;
+	position: absolute;
+	z-index: -2;
+}
+div#selectBox > ::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+	background: #888;
+}
+
+ul#selectMenuBox {
+ background: #fff;
+ transition: .3s;
+ width: 100%;
+ height: 200px;
+/* overflow-y: auto;
+ overflow-x: hidden !important;*/
+ position: absolute;
+ margin-top: 00px;
+ display: block;
+padding: 0;
+}
+ul#selectMenuBox > li {
+	display: block;
+	padding: 10px;
+	border-radius: 00px;
+	cursor: pointer;
+}
+ul#selectMenuBox > li.option {
+	color: gray;
+	padding: 10px;
+
+}
+ul#selectMenuBox > li.option:hover {
+
+}

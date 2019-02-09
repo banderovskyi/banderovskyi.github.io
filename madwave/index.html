@@ -386,11 +386,20 @@
                                 <div class="d-none num-different-piece-template align-items-center item flex-wrap">
                                     <div class="counter d-flex align-items-center">
                                         <button type="button" class="counter-btn counter-minus">-</button>
+                                        <div class="counter-mobile-title d-block d-md-none">
+                                            Количество
+                                        </div>
                                         <input class="counter-input" type="text" name="num-different-quan[]" value="1" disabled>
                                         <button type="button" class="counter-btn counter-plus">+</button>
                                     </div>
                                     <span class="num-text">с номером</span>
-                                    <input type="text" name="num-different-numder[]" disabled>
+                                    <div class="d-lg-block d-flex flex-column">
+                                        <div class="counter-mobile-title d-block d-md-none">
+                                            Номер
+                                        </div>
+                                        <input type="text" name="num-different-numder[]" disabled>
+                                    </div>
+                                    <!-- <input type="text" name="num-different-numder[]" disabled> -->
                                     <button type="button" class="remove-btn">&times;</button>
                                 </div>
                                 <div class="container-for-different"></div>
@@ -403,10 +412,21 @@
                                 </div>       
                                 <div class="tab-title">Укажите фамилию</div>
                                 <div class="d-none family-template flex-wrap item flex-wrap">
-                                        <input type="text" class="input-family"  name="family[]" placeholder="Фамилия">
+                                        <div class="d-lg-block d-flex flex-column family-item">
+                                            <div class="counter-mobile-title d-block d-md-none">
+                                                Фамилия
+                                            </div>
+                                            <input type="text" class="input-family"  name="family[]" placeholder="Фамилия">
+                                        </div>
                                         <div class="counter d-flex">
                                             <button type="button" class="counter-btn counter-minus">-</button>
-                                            <input class="counter-input" type="text"  name="family_quan[]" value="1">
+                                            <div class="d-lg-block d-flex flex-column">
+                                                <div class="counter-mobile-title d-block d-md-none">
+                                                    Кол-во
+                                                </div>
+                                                <input class="counter-input" type="text"  name="family_quan[]" value="1">
+                                            </div>
+                                            <!-- <input class="counter-input" type="text"  name="family_quan[]" value="1"> -->
                                             <button type="button" class="counter-btn counter-plus">+</button>
                                         </div>
                                         <button type="button" class="remove-btn">&times;</button>

@@ -39,10 +39,7 @@ body{
     background: #67B0CD;
 }
 #calc-form .tabs{
-   /* margin: 0 -7px 30px -7px;*/
-   min-width: 930px;
-
-   padding: 30px 0 ;
+    padding: 30px 0 ;
    position: relative;
 }
 #calc-form  .container-for-size{
@@ -135,8 +132,8 @@ border: 1px solid #67B0CD;
     width: 100%;
 }
 #calc-form .main-block .elements{
-   /* overflow-y: auto;
-    max-height: 409px;*/
+    background: #ffff;
+    min-height: 350px;
 }
 #calc-form .main-block .elements > div{
     display: none;
@@ -1278,3 +1275,118 @@ border: 1px solid #67B0CD;
 
 
 /*Конец -> Для визуализации*/
+
+
+@media screen and (max-width: 960px){
+    #calc-form .tabs{
+        min-width: 1130px;
+    }
+    #calc-form h3, .tab-title{
+        line-height: 28px;
+    }
+    #calc-form .form-main{
+        padding: 20px 0;
+    }
+    #calc-form .photo-block{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #calc-form .photo-block .small-photos-container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #calc-form .photo-block .big-photo{
+        margin-bottom: 10px;
+    }
+    .small-photo-360{
+        width: 76px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    #calc-form .main-block{
+        flex-wrap: wrap;
+    }
+    #calc-form .main-block .elements .counter-input{
+        width: 100%;
+    }
+    #calc-form .main-block .elements .tab-3 .logo .logo-prompt-1{
+        display: none;
+    }
+    #calc-form .main-block .elements .tab-3 .logo{
+        min-height: 100px;
+    }
+    #calc-form .main-block .elements .tab-3 .container-subtabs-btn .container-icon{
+        left: -10px;
+    }
+    #calc-form .main-block .elements .tab-3 .logo .logo-desc{
+        margin-bottom: 5px;
+    }
+    #calc-form .main-block .elements .counter-btn{
+        display: none;
+    }
+    #calc-form .main-block .elements .tab-4 .num-different-piece .num-text{
+        display: none;
+    }  
+    #calc-form .main-block .counter-mobile-title{
+        font-size: 14px;
+        opacity: 0.3;
+        margin-bottom: 4px;
+    } 
+    #calc-form .main-block .elements .tab-4 .num-different-piece .counter{
+        flex-direction: column;
+    }
+    #calc-form .main-block .elements .tab-4 .remove-btn{
+        top: 36px;
+    }
+    #calc-form .main-block .elements .tab-5 .counter{
+        margin-left: 15px;
+    }
+    #calc-form .main-block .elements .tab-5 .container-for-family .family .input-family{
+        width: 100%;
+    }
+    #calc-form .main-block .elements .tab-5 .container-for-family .family .family-item{
+        width: 60%;
+    }
+    #calc-form .main-block .elements .tab-5  .counter{
+        width: 24%;
+        padding: 0;
+    }
+     #calc-form .main-block .elements .tab-5 .remove-btn{
+        top: 31px;
+    }
+    #calc-form .main-block .elements .tab-7 .contacts-item{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    #calc-form .main-block .end-calculation .calculation-info .tab-title{
+        padding-top: 0;
+    }
+    #calc-form .main-block .calculation .control button{
+        padding-bottom: 18px;
+    }
+}
+@media screen and (max-width: 380px){
+    #calc-form .photo-block .small-photos-container .small-photo img{
+        width: 46px;
+        height: 56px;
+    }
+    .small-photo-360{
+        width: 68px;
+        height: 70px;
+        line-height: 70px;
+    }
+    #calc-form .main-block .calculation .control button{
+        font-size: 14px;
+    }
+    #calc-form .main-block .elements .tab-3 .container-subtabs-btn input[type="radio"]:checked +label{
+        flex-basis: 50%;
+    }
+    #calc-form .main-block .elements .tab-5 .counter{
+        margin-left: 8px;
+    }
+    #calc-form .main-block .elements .tab-5 .container-for-family .family .family-item{
+        width: 55%;
+    }
+}

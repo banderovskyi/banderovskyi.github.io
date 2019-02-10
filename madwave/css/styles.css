@@ -487,6 +487,7 @@ border: 1px solid #67B0CD;
     text-transform: uppercase;
     cursor: pointer;
     transition: width 0.5s;
+    margin-bottom: 20px;
 }
 #calc-form .main-block .elements .tab-3 .logo label.selected{
     background-color: #ffffff;
@@ -544,6 +545,7 @@ border: 1px solid #67B0CD;
     min-height: 190px;
     border: 1px dashed #cccccc;
     border-radius: 4px;
+    padding-top: 20px;
 }
 #calc-form .main-block .elements .tab-3 .logo .logo-desc{
     color: #000000;
@@ -778,6 +780,9 @@ border: 1px solid #67B0CD;
     color: #ffffff;
     background-color: #fd3a3a;
     margin-top: 20px;
+}
+#calc-form .main-block .elements .tab-3  div.error {
+    order: 3;
 }
 #calc-form .main-block .elements .tab-3 .error-block{
     font-family: "Roboto Condensed",sans-serif;
@@ -1220,19 +1225,6 @@ border: 1px solid #67B0CD;
 #calc-form .main-block .elements input[type="text"]:disabled{
     background-color: #d1d5d8;
 }
-.small-photo-360{
-    background-color: #ffffff;
-    border-radius: 50%;
-    height: 76px;
-    text-align: center;
-    line-height: 76px;
-    font-weight: 700;
-    font-size: 21px;
-    font-family: "Roboto Condensed",sans-serif;
-}
-.small-photo-360_small{
-    font-weight: 400;
-}
 
 #calc-form .main-block .end-calculation .calculation-info .info-detail:before{
     display: none;
@@ -1301,9 +1293,6 @@ border: 1px solid #67B0CD;
     }
     #calc-form .photo-block .big-photo{
         margin-bottom: 10px;
-    }
-    .small-photo-360{
-        width: 76px;
     }
 }
 @media screen and (max-width: 768px){
@@ -1374,11 +1363,6 @@ border: 1px solid #67B0CD;
     #calc-form .photo-block .small-photos-container .small-photo img{
         width: 46px;
         height: 56px;
-    }
-    .small-photo-360{
-        width: 68px;
-        height: 70px;
-        line-height: 70px;
     }
     #calc-form .main-block .calculation .control button{
         font-size: 14px;

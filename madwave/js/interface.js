@@ -11,7 +11,7 @@ $(function() {
              .removeClass('active');
         $(this).addClass('active');
         $(this).find('input[name="type-head"]').prop('checked', true);
-            if($(this).find('.container-for-size').length){
+            if($(this).find('.container-for-size').length()){
             $('.container-for-size input').prop('disabled', false);
         }
         else{

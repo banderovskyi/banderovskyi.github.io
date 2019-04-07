@@ -23,6 +23,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Для фиксированого хедера добавляем клас header-top_fixed -->
                 <div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -61,10 +62,13 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-8 col-md-4 col-lg-9 col-xl-8">
+                            <div class="col-9 col-md-7 col-lg-9 col-xl-8 menu-right_pos">
                                 <div class="header-top__info">
                                     <div class="header-top__phone">
-                                        <img src="img/ico-phone.png" alt="Телефоны" class="header-top__phone-ico">
+                                        <div class="header-top__phone_open">
+                                            <img src="img/ico-phone.png" alt="Телефоны" class="header-top__phone-ico">
+                                            <img src="img/ico-arrow-down.png" class="header-top__phone-ico_down" alt="Open">
+                                        </div>
                                         <ul class="header-top__phone-list">
                                             <li class="header-top__phone-item">
                                                 (097) 785-15-52
@@ -77,6 +81,11 @@
                                             </li>
                                             <li class="header-top__phone-item">
                                                 (048) 788-10-06 
+                                            </li>
+                                            <li class="header-top__phone-mob-btn">
+                                                <a href="#" class="btn-call">
+                                                    Перезвоните мне
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -112,6 +121,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <nav class="header-nav">
+                                    <div class="mob-menu__close">
+                                        <img src="img/ico-close.png" alt="Close">
+                                    </div>
                                     <ul class="header-nav__list">
                                         <li class="header-nav__list-item">
                                             <a href="#">Авто в Украине</a>
@@ -139,6 +151,11 @@
                                         </li>
                                         <li class="header-nav__list-item">
                                             <a href="#">Контакты</a>
+                                        </li>
+                                        <li class="header-nav__list-item header-nav__list-item_mob-btn">
+                                            <a href="#" class="btn-call">
+                                                Отследить авто
+                                            </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -240,7 +257,7 @@
                 </div>
             </section>
 
-            <section class="popular section_padding d-none">
+            <section class="popular section_padding">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -859,7 +876,7 @@
                 </div>
             </section>
 
-            <section class="stages section_padding d-none">
+            <section class="stages section_padding">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -998,7 +1015,7 @@
                 </div>
             </section>
 
-            <section class="reviews d-none">
+            <section class="reviews">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -1074,7 +1091,7 @@
                 </div>
             </section>
 
-            <section class="adv d-none">
+            <section class="adv">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">

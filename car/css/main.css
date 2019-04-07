@@ -849,7 +849,7 @@ a.btn-call, .btn-call {
   top: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
-  z-index: 200; }
+  z-index: 200!important; }
 
 @media screen and (max-width: 1200px) {
   .header-banner__right-text {

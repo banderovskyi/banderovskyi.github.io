@@ -1,4 +1,5 @@
 @font-face {
+    font-display: swap;
     font-family: 'Roboto Condensed';
     src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
         url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
@@ -8,6 +9,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Georgia';
     src: url('../fonts/Georgia-Bold.woff2') format('woff2'),
         url('../fonts/Georgia-Bold.woff') format('woff'),
@@ -17,6 +19,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Georgia';
     src: url('../fonts/Georgia.woff2') format('woff2'),
         url('../fonts/Georgia.woff') format('woff'),
@@ -26,6 +29,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Roboto Condensed';
     src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
         url('../fonts/RobotoCondensed-Light.woff') format('woff'),
@@ -35,6 +39,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Roboto Condensed';
     src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
         url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
@@ -44,6 +49,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Myriad Pro';
     src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
         url('../fonts/MyriadPro-Bold.woff') format('woff'),

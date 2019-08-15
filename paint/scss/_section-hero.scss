@@ -1,0 +1,1036 @@
+.logo {
+    position: fixed;
+    width: 191px;
+    height: 35px;
+    top: 42px;
+    left: 52px;
+    z-index: 10;
+
+    @include tablets {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 150px;
+    }
+
+    @include phones {
+        width: 130px;
+    }
+
+    @include note {
+        top: 22px;
+    }
+}
+
+.call {
+    position: fixed;
+    top: 42px;
+    right: 52px;
+    padding-left: 25px;
+    z-index: 10;
+
+    @include tablets {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }   
+    
+    @include note {
+        top: 22px;
+    }
+}
+
+.call__link {
+    display: block;
+    text-decoration: none;
+    font-family: 'Helvetica Neue Cyr Roman';
+    font-size: 18px;
+    color: #4a4a4a;
+    position: relative;
+    margin-bottom: 10px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 17px;
+        height: 17px;
+        background: url(../img/phone.png) no-repeat center;
+        background-size: contain;
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @include tablets {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    @include phones {
+        font-size: 14px;
+    }
+}
+
+.call__order {
+    font-family: 'Helvetica Neue Cyr Roman';
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @include tablets {
+        font-size: 17px;
+    }
+
+    @include phones {
+        font-size: 14px;
+    }
+}
+
+
+
+.socials {
+    position: fixed;
+    left: 52px;
+    bottom: 60px;
+    z-index: 10;
+
+    @include tablets {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    @include phones {
+        display: none;
+    }
+
+    @include note {
+        bottom: 30px;
+    }
+}
+
+.socials-end {
+    display: none;
+    @include phones {
+        display: block;
+        bottom: 20px;
+        top: initial;
+    }
+}
+
+.socials-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: .3s;
+    background: transparent;
+
+    &:hover {
+        transform: translateY(-10px);
+
+    }
+
+    @include tablets {
+        margin-right: 0;
+
+        &:hover {
+            transform: initial;
+        }
+    }
+}
+
+.socials__icon {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.swiper-pagination.swiper-pagination-fraction {
+    width: initial;
+    bottom: 60px;
+    right: 52px;
+    text-align: right;
+    font-family: 'Helvetica Neue Cyr Light';
+    font-size: 35px;
+
+   
+}
+
+.hero__header {
+    font-family: 'Vogue Highline Serif';
+    font-size: 94px;
+    letter-spacing: initial;
+    line-height: 1.1;
+
+    @include desktop {
+        font-size: 74px;
+    }
+
+    @include laptop {
+        font-size: 54px;
+    }
+
+    @include tablets {
+        font-size: 50px;
+    }
+
+    @include phones {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+}
+
+.slider-text-hero {
+    left: 100px !important;
+    width: 70%;
+
+    @include laptop {
+        left: 50px !important;
+        margin-top: 0 !important;
+    }
+}
+
+.slider-text-paragraph {
+    font-family: 'Helvetica Neue Cyr Thin';
+    font-size: 37px;
+    font-weight: 100;
+    display: block;
+    margin-top: 30px;
+
+    
+
+    @include desktop {
+        font-size: 27px;
+    }
+
+    @include laptop {
+        font-size: 22px;
+    }
+
+    p {
+        @include phones {
+            line-height: 1.1;
+            font-size: 15px;
+        }
+    }
+
+}
+
+body.no-slider .slider-content {
+    @include phones {
+        padding: 55px 10px 0 !important;
+    }
+}
+
+.hero-link-list {
+    display: flex;
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.hero-link-item {
+    width: 240px;
+    margin-right: 30px;
+    position: relative;
+
+    @include phones {
+        margin-right: 10px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 15px;
+        position: absolute;
+        bottom: -5px;
+        transition: 0.2s;
+    }
+
+    &:first-child:after {
+        background-color: #53b6f1;
+    }
+
+    &:last-child:after {
+        background-color: #d44f68;
+    }
+
+    &:hover:after {
+        filter: contrast(1.3);
+    }
+}
+
+.hero-link__link {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Helvetica Neue Cyr Thin';
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        margin-left: 15px;
+        width: 16px;
+        height: 20px;
+        background: url(../img/arrow.png) no-repeat center;
+        background-size: contain;
+    }
+
+    @include phones {
+        font-size: 16px;
+    }
+
+}
+
+#slider-intro-book {
+    @include tablets {
+        margin-top: 25px;
+    }
+}
+#slider-intro-book img {
+    left: 0;
+    height: 65%;
+
+}
+
+#slider-intro-book .intro-book-img {
+    @include tablets {
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin-left: 0 !important;
+    }
+}
+
+.slider-content-change-step2 #slider-intro-book img {
+    @include tablets {
+        transform: translate(-50%, -50%) !important; 
+    }
+}
+
+.intro-book-img--small {
+    height: 85%;
+    width: 95%;
+    object-fit: cover;
+    position: relative;
+    top: 50px;
+
+    @include desktop {
+        height: 75%;
+    }
+
+    @include tablets {
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    @include note {
+        height: 100%;
+    }
+
+}
+
+.slider-video {
+    // top: 130px;
+    opacity: 1;
+}
+
+.slider-text-title {
+    font-family: 'Helvetica Neue Cyr Roman';
+    font-size: 56px;
+    display: inline-block;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: 0;
+
+    @include desktop {
+        font-size: 46px;
+    }
+
+    @include laptop {
+        font-size: 36px;
+    }
+
+    @include tablets {
+        margin-bottom: 10px;
+    }
+
+    @include phones {
+        font-size: 26px;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+
+    }
+
+    &--blue:after {
+        background-color: #53b6f1;
+    }
+
+    &--red:after {
+        background-color: #d44f68;
+    }
+}
+
+.slider-chapter-info {
+    padding: 0 !important;
+    font-family: 'Helvetica Neue Cyr Thin';
+    font-size: 24px;
+    color: #000;
+
+    &:before {
+        display: none;
+    }
+
+    @include phones {
+        font-size: 18px;
+    }
+
+}
+
+.slider-text-right {
+    text-align: right;
+}
+
+.slider-text.slider-text-right {
+    right: 0 !important;
+    width: 60% !important;
+
+    @include desktop {
+        right: 100px !important;
+        width: 50% !important;
+    }
+}
+
+.slider-text.slider-text-left {
+    left: 0 !important;
+    width: 60% !important;
+
+    @include desktop {
+        left: 50px !important;
+        width: 50% !important;
+    }
+
+    @include tablets {
+        width: 100% !important;
+    }
+}
+
+.slider-chapter-info__sign {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+.slider-video-left {
+    left: 0 !important;
+}
+
+.slider-video.slider-video-left {
+    .intro-book-img--small {
+        @include note {
+            top: 0;
+        }
+    }
+    @include desktop {
+        left: 50px !important;
+    }
+
+    @include note {
+        right: 60%;
+    }
+}
+
+.slider-video-right {
+    right: 0 !important;
+}
+
+.slider-video.slider-video-right {
+    @include desktop {
+        left: 40%;
+        right: 100px !important;
+    }
+}
+
+
+/// section 5
+#slider-content-chapter-4 {
+
+    .slider-video.slider-video-right {
+        @include note {
+            bottom: 60px;
+            top: 80px;
+            left: 50%;
+        }
+    }
+
+    .intro-book-img--small {
+        @include note {
+            top: 0;
+        }
+    }
+    h3 {
+        font-size: 91px;
+
+        @include desktop {
+            font-size: 71px;
+        }
+
+        @include laptop {
+            font-size: 51px;
+        }
+
+        @include phones {
+            font-size: 38px;
+        }
+    }
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+        @include desktop {
+            font-size: 20px;
+        }
+
+        @include phones {
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+    }
+
+    .chapter-4-list {
+        li {
+            padding-left: 60px;
+            position: relative;
+            margin-bottom: 25px;
+            font-size: 20px;
+
+            @include laptop {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+           
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+
+            }
+
+            @include tablets {
+                padding-left: 0;
+                &::before {
+                    display: none;
+                }
+            }
+
+            &:nth-child(1)::before {
+                background-image: url(../img/exib.png)
+            }
+
+            &:nth-child(2)::before {
+                background-image: url(../img/star.png)
+            }
+
+            &:nth-child(3)::before {
+                background-image: url(../img/mic.png)
+            }
+
+        }
+    }
+}
+
+/// section 6
+
+#slider-content-chapter-5 {
+    h3 {
+        font-size: 91px;
+        right: 190px;
+        position: relative;
+
+        @include desktop {
+            font-size: 71px;
+        }
+
+        @include laptop {
+            font-size: 51px;
+            right: 120px;
+        }
+
+        @include tablets {
+            right: initial;
+        }
+
+        @include phones {
+            font-size: 38px;
+        }
+    }
+
+    h4 {
+        font-size: 24px;
+        font-family: 'Helvetica Neue Cyr Roman';
+        margin-top: 35px;
+
+        @include desktop {
+            margin-top: 15px;
+        }
+
+        @include phones {
+            font-size: 22px;
+            margin-top: 5px;
+        }
+    }
+
+    .chapter-5-list {
+        width: 66%;
+        margin-left: auto;
+
+        @include desktop {
+            width: 82%;
+        }
+
+        @include tablets {
+            width: 100%;
+        }
+
+        li {
+            font-size: 20px;
+            padding-left: 45px;
+            margin-top: 35px;
+            position: relative;
+
+            @include laptop {
+                margin-top: 10px;
+                font-size: 17px;
+            }
+
+            @include phones {
+                font-size: 16px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+
+            }
+
+            &:nth-child(1)::before {
+                background-image: url(../img/mic.png)
+            }
+
+            &:nth-child(2)::before {
+                background-image: url(../img/ball.png)
+            }
+
+            &:nth-child(3)::before {
+                background-image: url(../img/cup.png)
+            }
+        }
+    }
+}
+
+/// section 7
+
+#slider-content-chapter-6 {
+
+    .slider-text {
+        top: 100px;
+        position: relative;
+        left: 0;
+        text-align: center;
+        width: 100%;
+
+        @include note {
+            top: 60px;
+        }
+    }
+
+    .news-list {
+        height: 495px;
+        margin-top: 40px;
+
+        @include desktop {
+            width: 80%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        @include laptop {
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        @include phones {
+            width: 100%;
+        }
+
+        @include note {
+            height: 350px;
+            margin-top: 20px;
+        }
+
+        // @include h700 {
+        //     height: 340px;
+        // }
+    }
+
+    .news-item {
+        margin: 0 15px;
+        position: relative;
+        z-index: 10;
+        height: 495px;
+
+        @include laptop {
+            height: 400px;
+        }
+
+        @include note {
+            height: 350px;
+        }
+
+        // @include h700 {
+        //     height: 340px;
+        // }
+
+        &:hover .news-text {
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .news-text {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba($color: #fff, $alpha: .9);
+        padding: 30px;
+        color: #000;
+        transition: 0.2s;
+
+        @include laptop {
+            padding: 10px;
+        }
+
+        .news-date {
+            display: inline-block;
+            text-align: center;
+            font-family: 'Helvetica Neue Cyr Light';
+            font-size: 18px;
+            margin: 20px 0;
+
+            @include laptop {
+                margin: 10px 0;
+            }
+        }
+
+        h4 {
+            text-align: center;
+            font-family: 'Helvetica Neue Cyr Roman';
+            font-size: 24px;
+        }
+
+        p {
+            font-family: 'Helvetica Neue Cyr Roman';
+            text-align: left;
+            font-size: 16px;
+            margin-top: 20px;
+
+            @include laptop {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .news-arrows {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .news-arrow {
+        width: 22px;
+        height: 15px;
+        background: url(../img/arrow-left.png) no-repeat center;
+        background-size: contain;
+        z-index: 10;
+        cursor: pointer;
+        margin: 20px;
+
+        &--next {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/// section 8
+
+#slider-content-chapter-7 {
+
+    .slider-text {
+        text-align: center;
+        margin-top: 0 !important;
+        width: 82%;
+
+        @include laptopL {
+            width: 72%;
+        }
+    }
+
+    .slider-text-title {
+        position: absolute;
+        top: 100px;
+        transform: translateX(-50%); 
+        white-space: nowrap;
+
+        @include tablets {
+            margin-bottom: 10px;
+            position: initial;
+            transform: initial;
+        }
+
+        @include note {
+            top: 50px;
+            font-size: 40px;
+        }
+
+        // @include h700 {
+        //     top: 80px;
+        // }
+    }
+
+    .chapter-7-slider {
+        height: 365px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 100%;
+
+        @include tablets {
+            transform:initial;
+            top: initial;
+            left: initial;
+        }
+       
+    }
+
+    .chapter-7-items {
+        height: 365px;
+    }
+
+    .chapter-7-items__link {
+        display: inline-block;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .arrows-2 {
+        position: absolute;
+        width: 100%;
+        height: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+}
+
+/// section end 
+
+#slider-content-end {
+
+    .intro-book-img--small {
+        @include desktop {
+            height: 87%;
+        }
+
+        @include note {
+            height: 150%;
+            top: 0;
+        }
+    }
+    .slider-content-change-step2 .slider-video {
+        @include note {
+            bottom: 60px;
+        }
+    }
+    .slider-video.slider-video-right {
+      @include note {
+          left: 50%;
+      }
+    }
+
+    @include tablets {
+        padding-bottom: 20px !important;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 60px;
+        width: 60%;
+
+        @include desktop {
+            font-size: 18px;
+        }
+
+        @include laptop {
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 70%;
+        }
+
+        @include tablets {
+            width: 100%;
+
+        }
+
+        @include note {
+            margin-bottom: 10px;
+        }
+    }
+
+    .slider-text {
+        bottom: initial;
+    }
+
+    .form-slide-end {
+        display: flex;
+
+        @include tablets {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        @include phones {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 215px;
+            height: 43px;
+        }
+
+        input[type="tel"] {
+            font-family: 'Helvetica Neue Cyr Light';
+            font-size: 18px;
+            color: #868686; 
+            padding-left: 15px;
+            border: 2px solid #d44f68;
+            margin-right: 20px;
+
+            @include phones {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            &::placeholder {
+                font-family: 'Helvetica Neue Cyr Light';
+                font-size: 18px;
+                color: #868686; 
+            }
+        }
+
+        input[type="submit"] {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue Cyr Light';
+            font-size: 18px;
+            margin: 0;
+            background-color: #53b6f1;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+#slider-content-home {
+    @include tablets {
+        padding-top: 80px !important;
+    }
+}
+
+body.no-slider #slider-content-home {
+    @include phones {
+        padding-bottom: 10px !important;
+    }
+}
+
+.slider-content-change-step2 .slider-video {
+    // @include h700 {
+    //     top: 100px;
+    //     bottom: 100px;
+    // }
+}
+
+.intro-book-img--small {
+    // @include h700 {
+    //     height: 95%;
+    // }
+}
+
+.slider-content-change-step2 .slider-video {
+    top: 100px;
+    bottom: 40px;
+
+    @include note {
+        bottom: 80px;
+    }
+}
+
+body#emersion.page-loading-step2 #nav-indication {
+    @include note {
+        bottom: 30px !important;
+    }
+}

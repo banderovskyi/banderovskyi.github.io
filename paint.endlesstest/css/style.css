@@ -1032,7 +1032,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 #slider-content-chapter-6 .news-arrow {

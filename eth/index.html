@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.popup.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <title>Eth</title>
 </head>
 
@@ -31,30 +31,28 @@
                                         </a>
                                     </div>
                                     <nav class="nav header__nav">
+                                        <div class="nav__close">
+                                            <img src="img/close.svg" alt="Close">
+                                        </div>
                                         <ul class="nav-list">
                                             <li class="nav-item">
-                                                <a href="#">
+                                                <a href="#invest">
                                                     Инвестиции
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#">
+                                                <a href="#check">
                                                     Проверка вклада
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#">
+                                                <a href="#protect">
                                                     Безопасность
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#">
+                                                <a href="#income">
                                                     Доход
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#">
-                                                    Проценты
                                                 </a>
                                             </li>
                                             <li class="nav-item">
@@ -63,22 +61,26 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#">
+                                                <a href="#budget">
                                                     Бюджет
                                                 </a>
                                             </li>
                                         </ul>
                                     </nav>
                                     <div class="lang header__lang">
-                                        <ul class="lang-list">
-                                            <li class="lang__item lang__item_active">
-                                                Русский
-                                            </li>
-                                            <li class="lang__item">
-                                                English
-                                            </li>
-                                        </ul>
-                                        <img src="img/down-arrow.svg" alt="Down" class="lang__open">
+                                        <form action="#">
+                                            <select name="lang-select" id="lang-list" class="lang-list">
+                                                <option value="rus">
+                                                    Русский
+                                                </option>
+                                                <option value="eng">
+                                                    English
+                                                </option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="hamburger">
+                                        <img src="img/menu.svg" alt="Menu">
                                     </div>
                                 </div>
                             </div>
@@ -88,12 +90,12 @@
                 <div class="header-main">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6 col-lg-6">
+                            <div class="col-12 col-md-6">
                                 <div class="header-img">
                                     <img src="img/header_img.svg" alt="Crypto">
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-6">
+                            <div class="col-12 col-md-6 header-main__right">
                                 <h1 class="h1 header-title">
                                     <span class="h1__main">
                                         Реальный заработок
@@ -107,14 +109,16 @@
                                     благодаря которой вы получаете ежедневный доход.
                                 </div>
                                 <div class="header-buttons">
-                                    <button class="btn btn__main">
+                                    <button class="btn btn__main open_popup" rel="popup-invest">
                                         <span>
                                             Инвестировать
                                         </span>
                                     </button>
-                                    <button class="btn btn__added">
-                                        CashETH
-                                    </button>
+                                    <a href="https://etherscan.io/address/0x5108E5Fa12C658E2DD662d898eA8281fF803a8b3" target="_blanc">
+                                        <button class="btn btn__added">
+                                            Smart-Contract
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +209,7 @@
             <section class="section_min check bg" id="check">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-md-4 col-lg-4">
                             <div class="check-info">
                                 <h2 class="h2 check__h2">
                                     Проверка
@@ -214,7 +218,7 @@
                                 <img src="img/correct.svg" alt="Img" class="check__img">
                             </div>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-md-8 col-lg-8">
                             <div class="check-input">
                                 <form action="#" class="check__form">
                                     <input type="text" class="input" placeholder="Адрес кошелька">
@@ -240,10 +244,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-5 protect-img">
+                        <div class="col-md-12 col-lg-5 protect-img">
                             <img src="img/Safe.svg" alt="Img">
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-md-12 col-lg-7">
                             <article class="article">
                                 <h3 class="h3">
                                     Ваш вклад под защитой
@@ -267,7 +271,7 @@
                                     </li>
                                 </ul>
                                 <div class="protect__btn center-btn">
-                                     <button class="btn btn__main">
+                                     <button class="btn btn__main open_popup" rel="popup-audits">
                                         Смотреть аудиты
                                      </button>
                                 </div>
@@ -302,7 +306,7 @@
                                 </article>
                                 <img src="img/income.png" alt="Img" class="income__img">
                                 <div class="income__btn center-btn">
-                                    <button class="btn btn__main">
+                                    <button class="btn btn__main open_popup" rel="popup-invest">
                                         Увеличить процент
                                     </button>
                                 </div>
@@ -315,7 +319,7 @@
             <section class="advantage section_min" id="advantage">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-12 col-md-4">
                             <div class="advantage__item">
                                 <h3 class="advantage__text">
                                     <span>За</span> <span class="advantage__text_big">100</span><br><span>дней в работе</span>
@@ -325,7 +329,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-12 col-md-4">
                             <div class="advantage__item">
                                 <h3 class="advantage__text">
                                     <span>Уже</span> <span class="advantage__text_big">87</span><br><span>инвесторов</span>
@@ -335,7 +339,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-12 col-md-4">
                             <div class="advantage__item">
                                 <h3 class="advantage__text">
                                     <span>Вложили</span> <span class="advantage__text_big">144.76</span><br><span>Eth в проект</span>
@@ -361,7 +365,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="offset-lg-2 col-lg-4">
+                        <div class="col-12 col-md-6 offset-lg-2 col-lg-4 ">
                             <div class="budget__item budget__item-income">
                                 <div class="budget__item-img">
                                     <img src="img/bank.svg" alt="Img" class="budget__item-img">
@@ -376,7 +380,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-12 col-md-6 col-lg-4 ">
                             <div class="budget__item budget__item-adv">
                                 <img src="img/ads.svg" alt="Img" class="budget__item-img">
                                 <div class="budget__item-text">
@@ -406,7 +410,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="faq-wrap faq-wrap_closed">
+                            <div class="faq-wrap">
                                 <div class="faq-item">
                                     <div class="faq-item-top">
                                         <div class="faq-item-top__title">
@@ -466,6 +470,8 @@
                                         ЕЖЕДНЕВНОЕ начисление процентов
                                     </div>
                                 </div>
+                            </div>
+                            <div class="faq-wrap-closed">
                                 <div class="faq-item">
                                     <div class="faq-item-top">
                                         <div class="faq-item-top__title">
@@ -602,9 +608,60 @@
                 </div>
             </div>
         </footer>
+
+        <div class="to-top bg" id="to-top">
+            <img src="img/down-arrow-top.svg" alt="To top">
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popup popup-invest bg" id="popup-invest">
+        <div class="popup__close close bg">
+            <img src="img/close.svg" alt="Close">
+        </div>
+        <div class="popup-wrap">
+            <div class="popup__text">
+                Переведя любую сумму на адрес этого кошелька вы сделаете первую инвестицию и начнете зарабатывать.
+            </div>
+            <form action="#" class="form popup__form">
+                <input type="text" class="form__enter popup__enter" value="0x366fb4e5b701e532d6661Eb0EFa5603DA3db6628">
+                <button class="btn btn__main popup__btn">
+                   Копировать
+                </button>
+            </form>
+            <div class="popup__text">
+                <p class="popup__par">
+                    Минимальный перевод - 0.01 ETH
+                    Рекомендуемое количество gas - 5%
+                </p>
+                <p class="popup__par ">
+                    Перечисления делайте с личного кошелька, перечисления с бирж не принимаются.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-audits bg" id="popup-audits">
+        <div class="popup__close close bg">
+            <img src="img/close.svg" alt="Close">
+        </div>
+        <div class="popup-wrap">
+            <div class="popup__title">
+                Ознакомьтесь с аудитами которые провели эксперты для нашего сервиса:
+            </div>
+            <ul class="popup__list">
+                <li class="popup__list-item">
+                    <a href="#" class="link">Издение Bitstat &#8594;</a>
+                </li>
+                <li class="popup__list-item">
+                    <a href="#" class="link">Блогер CryptoSenior &#8594;</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.popup.js"></script>
     <script src="js/main.js"></script>
 </body>
 

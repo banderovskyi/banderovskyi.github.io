@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/styleselect.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Some</title>
@@ -104,10 +105,10 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 offset-lg-1 col-lg-7">
-                                <div class="header-video">
+                                <!-- <div class="header-video">
                                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sAKkjD3nEv0" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -678,6 +679,32 @@
             </div>
         </footer>
     </div>
+
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-top">
+                <img src="img/pupup-top.png" alt="Bg" class="popup-top__bg">
+                <h2 class="h2">
+                    Ваш заказ
+                </h2>
+            </div>
+            <div class="popup-body">
+                <form action="#">
+                    <select>
+
+                        <option value="value1" selected disabled><b>Выбрать весы</b></option>
+                        <option value="value2">Комплект L Цифровая станция + Весы 5 шт </option>
+                        <option value="value2">Комплект M Цифровая станция + Весы 3 шт </option>
+                        <option value="value2">Комплект S Цифровая станция + Весы 1 шт </option>
+                    </select>
+                    
+                    <p class="result"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/styleselect.js"></script>
+    <script src="js/require.js" data-main="js/mainselect.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/main.js"></script>
 </body>

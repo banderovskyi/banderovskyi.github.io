@@ -1,1 +1,0 @@
-define(["styleselect"],function(e){console.log.bind(console);e("select");var l=document.querySelector("select"),t=new Ractive({el:document.querySelector("p.result"),template:"Value of real select box is currently {{ value }}",data:{value:l.value}});l.addEventListener("change",function(){t.set("value",l.value)})});

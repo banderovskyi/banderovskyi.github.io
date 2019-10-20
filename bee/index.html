@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
-    <link rel="stylesheet" href="css/styleselect.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Some</title>
@@ -61,7 +60,7 @@
                                     </div>
                                 </div>
                                 <div class="open-menu">
-                                    <img src="img/icons/menu-button.svg" alt="Open">
+                                    <img src="img/menu-button.png" alt="Open">
                                 </div>
                             </div>
                         </div>
@@ -118,9 +117,75 @@
                 </div>
             </header>
 
+            <!-- mob-menu_active для отображения меню -->
             <div class="mob-menu" id="mob-menu">
                 <div class="mob-menu__top">
-
+                    <div class="mob-menu__logo">
+                        rashidov.ru
+                    </div>
+                    <div class="lang-swich mob-menu__lang">
+                        <button class="mob-menu__lang-btn">
+                            ру
+                        </button>
+                    </div>
+                    <button class="mob-menu__back">
+                        <img src="img/chevron-arrow-down.png" alt="Back">
+                    </button>
+                </div>
+                <div class="mob-menu__body">
+                    <nav class="mob-menu__nav">
+                        <ul class="mob-menu__nav-list">
+                            <li class="mob-menu__nav-item">
+                                <a href="#">
+                                    Заказать весы
+                                </a>
+                            </li>
+                            <li class="mob-menu__nav-item">
+                                <a href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li class="mob-menu__nav-item">
+                                <a href="#">
+                                    Войти
+                                </a>
+                            </li>
+                            <li class="mob-menu__nav-item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mob-menu__footer">
+                        <div class="footer-wrap">
+                            <ul class="call-list">
+                                <li class="call-list__item call-list__item-phone">
+                                    <img src="img/phone-ico.png" alt="Ico">
+                                    <a href="#">
+                                        +7 (842) 250-55-04
+                                    </a>
+                                </li>
+                                <li class="call-list__item">
+                                    <img src="img/email-ico.png" alt="Ico">
+                                    <a href="#">
+                                        info@rashidov.su
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="footer__info">
+                                <a href="#" class="text-under footer__info-item">
+                                    Пользовательское соглашение
+                                </a>
+                                <div class="footer__info-item">
+                                    ИП: Рашидов Д.Р. ИНН: 31673250084163
+                                </div>
+                                <div class="copy footer__info-item">
+                                    Copyright 2019
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1268,8 +1333,6 @@
         </div>
     </div>
 
-    <script src="js/styleselect.js"></script>
-    <script src="js/require.js" data-main="js/mainselect.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/main.js"></script>
 </body>

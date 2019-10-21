@@ -54,3 +54,10 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Core Rhino 45 Italic';
+    src: url('../fonts/CoreRhino45Regular-Italic.woff2') format('woff2'),
+        url('../fonts/CoreRhino45Regular-Italic.woff2') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

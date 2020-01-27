@@ -1842,7 +1842,7 @@ b {
 .header-nav {
   -ms-flex-item-align: end;
   align-self: flex-end;
-  width: 52%;
+  width: 54%;
   margin-bottom: 10px; }
 
 .header-main-wrap {
@@ -1886,13 +1886,14 @@ b {
   -ms-flex-align: center;
   align-items: center; }
   .logo a img {
-    width: 132px; }
+    width: 112px; }
   .logo h2 {
     max-width: 250px;
     text-align: center;
     color: #50504e;
     margin-left: 10px;
-    font-size: 22px; }
+    font-size: 20px;
+    font-weight: 700; }
 
 .lang {
   font-size: 18px; }
@@ -1908,7 +1909,7 @@ b {
   justify-content: space-between; }
   .nav ul li a {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     position: relative; }
     .nav ul li a::after {
       content: "";
@@ -2079,7 +2080,8 @@ b {
 
 .section-banner .container {
   background: url("../img/goal-bg-1.png") no-repeat left top/cover;
-  position: relative; }
+  position: relative;
+  background-size: 102%; }
 
 .section-banner_left .header-banner {
   margin-right: 25px;
@@ -2195,13 +2197,17 @@ ul.list {
     margin: 10px auto 0 auto; }
 
 @media screen and (max-width: 1200px) {
+  .header-nav {
+    width: 49%; }
   .header .container {
-    background-position: -115px top; }
+    background-position: -15px top; }
   .header-boxes {
     max-width: 150px;
     min-width: 150px; }
   .header-banner {
     max-width: 800px; }
+  .logo h2 {
+    max-width: 225px; }
   .row-title__pre {
     width: 15%; }
   .about-container {
@@ -2221,7 +2227,12 @@ ul.list {
   .row-title_sp .row-title__pre {
     font-size: 26px; }
   .row-title_sp .row-title__text {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .team .team-container {
+    background-repeat: no-repeat;
+    background-size: 120%; }
+  .team .row-title .container {
+    background-position: 10px; } }
 
 @media screen and (max-width: 992px) {
   body {

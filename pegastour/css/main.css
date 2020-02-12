@@ -2254,22 +2254,20 @@ button {
   max-width: 1110px;
   left: 50%;
   transform: translateX(-50%); }
-
-.main-slider button.owl-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  opacity: 0.5;
-  border: 2px solid #FFFFFF;
-  margin-right: 10px;
-  transition: all 0.3s; }
-  .main-slider button.owl-dot:last-child {
-    margin-right: 0; }
-
-.main-slider button.active {
-  background-color: #FF761D;
-  border: 2px solid #FF761D;
-  opacity: 1; }
+  .main-slider .owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: 2px solid #FFFFFF;
+    margin-right: 10px;
+    transition: all 0.3s; }
+    .main-slider .owl-dots button.owl-dot:last-child {
+      margin-right: 0; }
+  .main-slider .owl-dots button.active {
+    background-color: #FF761D;
+    border: 2px solid #FF761D;
+    opacity: 1; }
 
 .search-row {
   position: relative;

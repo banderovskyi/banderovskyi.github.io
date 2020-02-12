@@ -64,7 +64,7 @@ $(function (){
         nav: true,
         stagePadding: 0,
         loop: true,
-        navText: ["<img src='/img/ico-slider-white.svg'>", "<img src='/img/ico-slider-white.svg'>"],
+        navText: ["<img src='img/ico-slider-white.svg'>", "<img src='img/ico-slider-white.svg'>"],
         responsive: {
             0: {
                 items: 1,

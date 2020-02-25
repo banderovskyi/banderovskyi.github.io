@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/pie-chart/css/style.css">
+    <title>Some</title>
+</head>
+<body>
+    <section class="chart-section">
+        <div class="container">
+            <div class="row chart__row-title">
+                <div class="col-12">
+                    <div class="chart__title">
+                        Движение денежных средств
+                    </div>
+                    <div class="chart__pre-title">
+                        Оплачено за ЖКУ собственниками помещений*
+                    </div>
+                </div>
+            </div>
+            <div class="row chart__row-main">
+                <div class="col-12 col-lg-7">
+                    <div class="values">
+                        <div class="values__row values__row-title">
+                            <div class="values__row-title-name">
+                                Статья расхода
+                            </div>
+                            <div class="values__row-title-number">
+                                Сумма
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_1">
+                                
+                            </div>
+                            <div class="values__row-name">
+                                Санитарное содержание
+                            </div>
+                            <div class="values__row-number">
+                                1 157 669,84
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_2">
+                                
+                            </div>
+                            <div class="values__row-name">
+                                Техническое обслуживание, содержание и текущий ремонт
+                            </div>
+                            <div class="values__row-number">
+                                1 986 204,05
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_3">
+                        
+                            </div>
+                            <div class="values__row-name">
+                                Коммунальные услуги*****
+                            </div>
+                            <div class="values__row-number">
+                                4 050 534,85
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_4">
+                        
+                            </div>
+                            <div class="values__row-name">
+                                Коммунальные ресурсы на содержание общего имущества
+                            </div>
+                            <div class="values__row-number">
+                                234 562,31
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_5">
+                        
+                            </div>
+                            <div class="values__row-name">
+                                Вывоз снега
+                            </div>
+                            <div class="values__row-number">
+                                236 042,17
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_6">
+                        
+                            </div>
+                            <div class="values__row-name">
+                                Охрана
+                            </div>
+                            <div class="values__row-number">
+                                454 373,38
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_7">
+                        
+                            </div>
+                            <div class="values__row-name">
+                                Домофон
+                            </div>
+                            <div class="values__row-number">
+                                106 361,28
+                            </div>
+                        </div>
+                        <div class="values__row">
+                            <div class="values__row-color values__row-color_8">
+                        
+                            </div>
+                            <div class="values__row-name">
+                                Видеонаблюдение
+                            </div>
+                            <div class="values__row-number">
+                                269 031,04
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div id="pie__elem" class="pie__elem">
+                        <div class="pie__text">
+                            <div class="pie__text-title">
+                                Всего оплачено
+                            </div>
+                            <div class="pie__text-sum">
+                                8 494 778,95 ₽
+                            </div>
+                            <div class="pie__text-number">
+                                88%
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pie-desc">
+                        С учётом задолженности за предыдущий период
+                    </div>
+                </div>
+            </div>
+            <div class="row chart__row-text">
+                <div class="col-12 col-lg-11">
+                    <p class="desc-text">
+                        *Без учёта по счетам-фактурам за декабрь 2018 г., произведенной в январе 2019 г.
+                    </p>
+                    <p class="desc-text">
+                        *****Задолженность по коммунальным услугам(в частности, по услугам: «Электроснабжение», «Холодное водоснабжение»,
+                        «Горячее водоснабжение», «Водоотведение»)
+                        может быть скорректирована в случае предоставления собственниками показаний индивидуальный приборов учёта, а также по
+                        результатам контрольного съёма показаний.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/pie-chart/js/jquery.jchart.min.js"></script>
+    <script src="libs/pie-chart/js/jchart.bundle.min.js"></script>
+    <script>
+        var jchart1;
+        $(function () {
+            jchart1 = $("#pie__elem").jChart({
+                data: [
+                    {
+                        value: 1157669,
+                        color: {
+                            normal: '#F4BA1B',
+                            active: '#fcd15b',
+                        },
+                    },
+                    {
+                        value: 1986204,
+                        color: {
+                            normal: '#90D41D',
+                            active: '#bdfc51',
+                        },
+                    },
+                    {
+                        value: 4050534,
+                        color: {
+                            normal: '#FF7E7E',
+                            active: '#ffadad',
+                        },
+                    },
+                    {
+                        value: 234562,
+                        color: {
+                            normal: '#80E6FF',
+                            active: '#abeeff',
+                        },
+                    },
+                    {
+                        value: 236042,
+                        color: {
+                            normal: '#C4C4C4',
+                            active: '#e3e3e3',
+                        },
+                    },
+                    {
+                        value: 454373,
+                        color: {
+                            normal: '#7EFFB9',
+                            active: '#a4fccd',
+                        },
+                    },
+                    {
+                        value: 106361,
+                        color: {
+                            normal: '#1FD43C',
+                            active: '#3afc59',
+                        },
+                    },
+                    {
+                        value: 269031,
+                        color: {
+                            normal: '#AF7EFF',
+                            active: '#b68aff',
+                        },
+                    },
+                ],
+                appearance: {
+                    type: 'donut',
+                    subType: 'path',
+                    baseColor: '#ddd',
+                    radius: 125 / (2 * Math.PI),
+                    gap: 0,
+                    baseStrokeWidth: 0,
+                    // animated: false
+
+                    title: {
+                        showSummary: false,
+                    }
+                },
+                callbacks: {
+                    onSegmentMouseover: function (did, segment) {
+                        // console.log(did);
+                        // console.log(segment);
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

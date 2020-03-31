@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mobile Legends</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Mobile Legends">
+                    </div>
+                    <h1 class="h1">
+                        Поздравляем!
+                        <span>Ты выйграл!</span>
+                    </h1>
+                    <div class="pretitle">
+                        <span class="text-24">Команда разработчиков</span>
+                        <span class="text-21">продолжает дарить подарки</span>
+                        <span class="text-18">в честь обновления!</span>
+                    </div>
+                    <button class="btn down-btn scroll-btn" data-href="#gift_first">
+                        <span>
+                            Перейти к подарку
+                        </span>
+                    </button>
+                    <img src="img/ico-down.png" alt="Down" class="down-ico">
+                    <img src="img/header-img-2.png" alt="Hero" class="header-hero header-hero_1">
+                    <img src="img/header-img.png" alt="Hero" class="header-hero header-hero_2">
+                </div>
+            </header>
+            
+            <div class="questions">
+                <div class="container">
+                    <div class="row">
+                        <div class="btn btn-answer ">
+                            <button>
+                                <span>
+                                    Почему выйграл именно я?
+                                </span>
+                            </button>
+                            <div class="answer">
+                                <img src="img/ico-arrow-up.png" alt="">
+                                <p>
+                                    За проектирование
+                                    пользовательского
+                                    интерфейса и его
+                                    художественное
+                                    оформление
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn btn-answer btn_center">
+                            <button>
+                                <span>
+                                    За что я плачу, если это подарок?
+                                </span>
+                                </button>
+                            <div class="answer">
+                                <img src="img/ico-arrow-up.png" alt="">
+                                <p>
+                                    За проектирование
+                                    пользовательского
+                                    интерфейса и его
+                                    художественное
+                                    оформление
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button class="scroll-btn" data-href="#review">
+                                <span>
+                                    Посмотреть отзывы
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <div class="gifts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="gift gift_first" id="gift_first">
+                                <img src="img/gift-1.png" alt="Img" class="bg-img">
+                                <div class="title">
+                                    Приз #1
+                                    <span>
+                                        Кристаллы
+                                    </span>
+                                </div>
+                                <div class="body">
+                                    <div class="image">
+                                        <img src="img/gift-shapes.png" alt="Gift">
+                                    </div>
+                                    <div class="tax">
+                                        комиссия 299 р
+                                    </div>
+                                    <a href="#" class="btn">
+                                        Забрать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="gift gift_second">
+                                <img src="img/gift-2.png" alt="Img" class="bg-img">
+                                <div class="title">
+                                    Приз #2
+                                    <span>
+                                        Аккаунт
+                                    </span>
+                                </div>
+                                <div class="body">
+                                    <div class="image-slider image-gallery owl-carousel">
+                                        <a href="img/gift-shapes.png">
+                                            <img src="img/gift-shapes.png" alt="Gift">
+                                        </a>
+                                        <a href="img/gift-shapes.png">
+                                            <img src="img/gift-shapes.png" alt="Gift">
+                                        </a>
+                                    </div>
+                                    <div class="tax">
+                                        комиссия 299 р
+                                    </div>
+                                    <a href="#" class="btn">
+                                        Забрать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review" id="review">
+                    <div class="container">
+                        <div class="title">
+                            Отзывы:
+                            <img src="img/review-img.png" alt="Img">
+                        </div>
+                        <form action="#">
+                            <div class="from-left">
+                                <textarea name=""></textarea>
+                            </div>
+                            <div class="form-right">
+                                <input type="text">
+                                <span class="rating">
+                                    <input type="radio" checked class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                                    <label for="rating-input-1-5" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                                    <label for="rating-input-1-4" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                                    <label for="rating-input-1-3" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                                    <label for="rating-input-1-2" class="rating-star"></label>
+                                    <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                                    <label for="rating-input-1-1" class="rating-star"></label>
+                                </span>
+                                <button class="open_popup form-btn" rel="popup-review">  
+                                    <span>
+                                        Оставить отзыв
+                                    </span>
+                                </button> 
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="review-item">
+                                <div class="top">
+                                    <div class="name">
+                                        Artemka228
+                                    </div>
+                                    <div class="rating">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>
+                                        Спасибо большое за
+                                        за подарок, пиццу
+                                        кристалы горчат
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-item review-item_center">
+                                <div class="top">
+                                    <div class="name">
+                                        Artemka228
+                                    </div>
+                                    <div class="rating">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>
+                                        Спасибо большое за
+                                        за подарок, пиццу
+                                        кристалы горчат
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="top">
+                                    <div class="name">
+                                        Artemka228
+                                    </div>
+                                    <div class="rating">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                        <img src="img/ico-star-min.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <p>
+                                        Спасибо большое за
+                                        за подарок, пиццу
+                                        кристалы горчат
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="popup popup-review" id="popup-review">
+                <button title="Close (Esc)" type="button" class="mfp-close close">×</button>
+                <div class="popup-body">
+                    Оставить отзыв возможно только после получения приза, таким образом мы защищаемся от спамеров и флудеров
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

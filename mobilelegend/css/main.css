@@ -418,7 +418,7 @@ textarea {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.8); }
 
 .popup {
   display: none;
@@ -448,7 +448,7 @@ textarea {
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
+  background: #000000;
   opacity: 0.8; }
 
 .mfp-wrap {
@@ -1414,7 +1414,9 @@ button {
   -ms-flex-pack: center;
   justify-content: center; }
   .image-slider .owl-item img {
-    width: auto; }
+    width: auto;
+    max-width: 90%;
+    margin: 0 auto; }
 
 .image-slider .owl-dots {
   display: none; }
@@ -1661,6 +1663,32 @@ button {
         font-size: 22px;
         padding: 15px; }
 
+.popup-take {
+  margin-top: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: auto; }
+  .popup-take .gift {
+    left: auto;
+    margin: 0; }
+    .popup-take .gift .title {
+      max-width: none;
+      text-align: center;
+      margin-bottom: 0; }
+    .popup-take .gift .body {
+      padding: 10px;
+      margin: 0;
+      background: none;
+      border: none;
+      box-shadow: none; }
+      .popup-take .gift .body .image {
+        margin-bottom: 20px; }
+    .popup-take .gift .tax {
+      position: static;
+      font-size: 14px;
+      line-height: 1.4em; }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .gift .body .btn {
     line-height: 70px; } }
@@ -1890,4 +1918,12 @@ button {
     margin-left: 0;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%); }
+  .popup-take .gift .title {
+    font-size: 32px; }
+  .popup-take .gift .body {
+    width: 100%; }
+  .popup-take .gift .btn {
+    font-size: 22px;
+    width: 100%;
+    bottom: -65px; } }

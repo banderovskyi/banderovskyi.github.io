@@ -1,0 +1,113 @@
+// =======================
+// Colors
+// =======================
+
+
+.block-4{
+   padding: 70px 0 85px 0;
+   font: 400 16px 'Roboto';
+   .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 64px;
+      h2{
+         font-weight: bold;
+         font-size: 30px;
+         line-height: 35px;
+         text-transform: uppercase;
+         max-width: 620px;
+      }
+   }
+   .main{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: -15px;
+      li{
+         box-sizing: border-box;
+         position: relative;
+         width: calc(100% / 4 - 10px);
+         color: #8B8B8B;
+         padding: 20px 20px 0px 73px;
+         height: 126px;
+         border: 1px dashed #D0D0D0;
+         border-radius: 10px;
+         margin-bottom: 15px;
+         img{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+         }
+      }
+   }
+}
+
+
+//=======================
+//MEDIA SCREEN MIN
+//=======================
+@media screen and (min-width: 1400px){
+   
+}
+@media screen and (min-width: 1600px){
+   
+}
+
+//=======================
+//MEDIA SCREEN MAX
+//=======================
+@media screen and (max-width: 1200px) {
+   .block-4 {
+      .main li{
+         height: auto;
+         padding-bottom: 20px;
+         padding-left: 48px;
+         img{
+            left: 5px;
+         }
+      }
+   }
+}
+@media screen and (max-width: 992px) {
+   .block-4 {
+      .main li{
+         width: calc(100% / 2 - 10px);
+         height: auto;
+         padding: 20px 20px 20px 83px;
+         img{
+            left: 20px;
+         }
+      }
+   }
+}
+@media screen and (max-width: 768px) {
+   .block-4{
+      position: relative;
+      padding: 40px 0;
+      .row{
+         padding-bottom: 75px;
+      }
+      .title{
+         margin-bottom: 20px;
+         h2{
+            font-size: 22px;
+            line-height: 26px;
+         }
+         .btn{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+      }
+      .main li{
+         width: 100%;
+         padding: 20px 20px 20px 83px;
+      }
+   }
+
+}
+@media screen and (max-width: 576px) {
+   
+}

@@ -1,0 +1,113 @@
+// =======================
+// Colors
+// =======================
+
+
+.block-10{
+   position: relative;
+   background-color: #ffffff;
+   overflow: hidden;
+   font: 400 16px Roboto;
+   color: #2a2a2a;
+   padding: 9px 0 16px 0;
+   a{
+      color: #2a2a2a;
+      text-decoration: none;
+   }
+   .row{
+      max-width: 1170px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .number{
+         margin-left: 250px;
+      }
+      .info{
+         display: flex;
+         align-items: center;
+         div{
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+            &:last-child{
+               margin-right: 0;
+            }
+            img{
+               align-self: stretch;
+               margin-right: 15px;
+            }
+         }
+      }
+   }
+}
+
+//=======================
+//MEDIA SCREEN MIN
+//=======================
+@media screen and (min-width: 1400px){
+   
+}
+@media screen and (min-width: 1600px){
+   
+}
+
+//=======================
+//MEDIA SCREEN MAX
+//=======================
+@media screen and (max-width: 1200px) {
+   .block-10{
+      .row{
+         max-width: calc(992px - 32px);
+         .number{
+            margin-left: 20px;
+         }
+      }
+   }
+}
+@media screen and (max-width: 992px) {
+   .block-10{
+      .row{
+        max-width: calc(768px - 32px);
+        .info{
+           div{
+              max-width: 230px;
+              margin-right: 20px;
+           }
+        }
+      }
+   }
+}
+@media screen and (max-width: 768px) {
+   .block-10{
+      padding-bottom: 30px;
+      .row{
+         margin: 0 16px;
+         flex-wrap: wrap;
+         .info{
+            margin-top: 20px;
+            flex-wrap: wrap;
+            div{
+               max-width: 100%;
+               margin-right: 0px;
+               margin-bottom: 15px;
+               &:last-child{
+                  margin-bottom: 0;
+               }
+            }
+            .mail{
+               img{
+                  margin-left: 3px;
+               }
+            }
+         }
+      }
+      
+   }
+
+}
+@media screen and (max-width: 576px) {
+   
+}

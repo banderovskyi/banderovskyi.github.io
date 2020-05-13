@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Some</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-menu">
+                    <div class="container">
+                        <div class="row header__row">
+                            <div class="col-12">
+                                <div class="header-top">
+                                    <div class="info header__info">
+                                        <div class="info-box">
+                                            <span class="info-box__ico">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                                                    <path fill="#FFF"
+                                                        d="M10 2.111c3.268 0 5.91 2.69 5.91 6 0 .184-.01.37-.026.558-.162 1.833-1.1 3.862-2.685 5.98-.572.764-1.204 1.506-1.871 2.205-.203.212-.375.385-.542.541l-.124.114-.693.624-.67-.647c-.196-.189-.403-.398-.618-.623-.668-.7-1.302-1.444-1.875-2.21-1.58-2.11-2.518-4.132-2.688-5.958-.018-.197-.027-.392-.027-.584 0-3.31 2.641-6 5.909-6zm0 3.519c-1.36 0-2.455 1.115-2.455 2.481 0 1.367 1.095 2.482 2.455 2.482s2.455-1.115 2.455-2.482c0-1.366-1.095-2.481-2.455-2.481z" />
+                                                </svg>
+                                            </span>
+                                            <span class="info-box__text">
+                                                ул. Кремлёвская, 2, Казань
+                                            </span>
+                                        </div>
+                                        <div class="info-box">
+                                            <span class="info-box__ico">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                                                    <path fill="#FFF"
+                                                        d="M13 2c1.105 0 2 .895 2 2v12c0 1.105-.895 2-2 2H7c-1.105 0-2-.895-2-2V4c0-1.105.895-2 2-2h6zm-3 13c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1zm3.5-11h-7c-.276 0-.5.224-.5.5v9c0 .276.224.5.5.5h7c.276 0 .5-.224.5-.5v-9c0-.276-.224-.5-.5-.5z" />
+                                                </svg>
+                                            </span>
+                                            <a href="#" class="info-box__text">
+                                                +7 (843) 292-89-84
+                                            </a>
+                                        </div>
+                                        <div class="info-box info-time">
+                                            <span class="info-box__ico">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                                                    <path fill="#FFF" d="M10 3c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm0 3H9v5h4v-1h-3V6z" />
+                                                </svg>
+                                            </span>
+                                            <span class="info-box__text">
+                                                сегодня работаем с 10:00 до 17:00, касса до 16:00
+                                            </span>
+                                            <button class="ico-btn ico-btn_down">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                                                    <path fill="#FFF" d="M13.646 7.646L14.354 8.354 10 12.707 5.646 8.354 6.354 7.646 10 11.293z" />
+                                                </svg>
+                                            </button>
+                                            <div class="info-more-box">
+                                                <div class="h3 info-more-box__title">
+                                                    Режим работы
+                                                </div>
+                                                <p class="text_yellow info-more-box__text">
+                                                    Касса закрывается за час до окончания работы музея. Последняя среда месяца — санитарный день.
+                                                </p>
+                                                <ul class="work-time">
+                                                    <li>
+                                                        <span>
+                                                            Пн
+                                                        </span>
+                                                        <span>
+                                                            Закрыто
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Вт, Ср, Сб, Вс
+                                                        </span>
+                                                        <span>
+                                                            10 – 18
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Чт
+                                                        </span>
+                                                        <span>
+                                                            13 – 21
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            Пт
+                                                        </span>
+                                                        <span>
+                                                            10 – 17
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__control">
+                                        <div class="lang header__lang">
+                                            <select name="land" class="lang__select">
+                                                <option value="Ru" selected>Ru</option>
+                                                <option value="En">En</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="ico-btn ico-btn_eye">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                                                <path fill="#FFF"
+                                                    d="M10 5c3.314 0 6.314 1.667 9 5-2.686 3.333-5.686 5-9 5s-6.314-1.667-9-5c2.686-3.333 5.686-5 9-5zm0 2c-.088 0-.175.004-.261.011.166.292.261.63.261.989 0 1.105-.895 2-2 2-.36 0-.697-.095-.988-.26C7.004 9.824 7 9.911 7 10c0 1.652 1.338 3 3 3s3-1.348 3-3-1.338-3-3-3z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row header__row">
+                            <div class="col-12">
+                                <div class="header-main">
+                                    <div class="logo header__logo">
+                                        <img src="img/icons/logo.svg" alt="Logo" class="logo__ico">
+                                        <div class="logo__title">
+                                            Национальный музей Республики Татарстан
+                                        </div>
+                                        <div class="logo__addition">
+                                            При поддержке Министерства культуры РТ
+                                        </div>
+                                    </div>
+                                    <nav class="nav header__nav">
+                                        <ul class="nav-list">
+                                            <li class="nav-item nav-item-drop">
+                                                <a href="#">
+                                                    Посетителям
+                                                </a>
+                                                <div class="nav-drop">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="nav-drop__title">
+                                                                    <div class="h1 title">
+                                                                        Посетителям
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3">
+                                                                <ul class="nav-drop__list">
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Выставки
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Экскурсии
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Мастер-классы
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3">
+                                                                <ul class="nav-drop__list">
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Туристические маршруты
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Занятия для детей
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Цены
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item nav-item-drop">
+                                                <a href="#">
+                                                    О музее
+                                                </a>
+                                                <div class="nav-drop">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="nav-drop__title">
+                                                                    <div class="h1 title">
+                                                                        О музее
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3">
+                                                                <ul class="nav-drop__list">
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Выставки
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Экскурсии
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Мастер-классы
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Туристические маршруты
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Занятия для детей
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Цены
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3">
+                                                                <ul class="nav-drop__list">
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Туристические маршруты
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Занятия для детей
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-drop__item">
+                                                                        <a href="#">
+                                                                            Цены
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">
+                                                    Контакты
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">
+                                                    Еще
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="search-line header__search-line">
+                                        <button type="submit" class="ico-btn search-line__open-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                                                <path fill="#fff" fill-rule="evenodd"
+                                                    d="M10.5 4c3.59 0 6.5 2.91 6.5 6.5 0 1.434-.464 2.76-1.251 3.835l4.08 4.08-1.415 1.413-4.08-4.08C13.26 16.537 11.935 17 10.5 17 6.91 17 4 14.09 4 10.5S6.91 4 10.5 4zm0 2C8.015 6 6 8.015 6 10.5S8.015 15 10.5 15s4.5-2.015 4.5-4.5S12.985 6 10.5 6z" />
+                                            </svg>
+                                        </button>
+                                        <form action="#" class="search-line__form">
+                                            <input style="font-weight: 500;" type="text" placeholder="Что будем искать?">
+                                            <button type="submit" class="ico-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+                                                    <path fill="#000" fill-rule="evenodd"
+                                                        d="M10.5 4c3.59 0 6.5 2.91 6.5 6.5 0 1.434-.464 2.76-1.251 3.835l4.08 4.08-1.415 1.413-4.08-4.08C13.26 16.537 11.935 17 10.5 17 6.91 17 4 14.09 4 10.5S6.91 4 10.5 4zm0 2C8.015 6 6 8.015 6 10.5S8.015 15 10.5 15s4.5-2.015 4.5-4.5S12.985 6 10.5 6z" />
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <!-- Mobile items -->
+                                    <div class="mobile-nav-item lang header__lang">
+                                        <select name="land" class="lang__select">
+                                            <option value="Ru" selected>Ru</option>
+                                            <option value="En">En</option>
+                                        </select>
+                                    </div>
+                                    <div class="mobile-nav-item info-box info-time">
+                                        <span class="info-box__ico">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                                                <path fill="#FFF" d="M10 3c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7zm0 3H9v5h4v-1h-3V6z" />
+                                            </svg>
+                                        </span>
+                                        <div class="info-more-box">
+                                            <div class="h3 info-more-box__title">
+                                                Режим работы
+                                            </div>
+                                            <p class="text_yellow info-more-box__text">
+                                                Касса закрывается за час до окончания работы музея. Последняя среда месяца — санитарный день.
+                                            </p>
+                                            <ul class="work-time">
+                                                <li>
+                                                    <span>
+                                                        Пн
+                                                    </span>
+                                                    <span>
+                                                        Закрыто
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        Вт, Ср, Сб, Вс
+                                                    </span>
+                                                    <span>
+                                                        10 – 18
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        Чт
+                                                    </span>
+                                                    <span>
+                                                        13 – 21
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span>
+                                                        Пт
+                                                    </span>
+                                                    <span>
+                                                        10 – 17
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="mobile-nav-item mob-menu-btn ico-btn ">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="breadcumbs">
+                                <li class="breadcumbs__item">
+                                    <a href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="section-header">
+                                <div class="section-header__title">
+                                    <h1 class="h1">
+                                        Экспозиция «Золотые руки мастеров. Народные промыслы татар» закроется 7 ноября
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_border">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 section-text">
+                                <img src="https://via.placeholder.com/730x411/" alt="">
+                                <span class="photo-desc">
+                                    Фотография с экспозиции «Золотые руки мастеров»
+                                </span>
+                                <p>
+                                    В Национальном музее Республики Татарстан полным ходом идут работы по подготовке новой стационарной экспозиции. В связи
+                                    с этим мы сообщаем о закрытии экспозиции «Унган халкымнын оста куллары: татар халык Һөнəрлəре» — «Золотые руки мастеров:
+                                    народные промыслы татар».
+                                </p>
+                                <h3 class="h3">
+                                    Выставка будет демонтирована 7 ноября 2019 года.
+                                </h3>
+                                <p>
+                                    Выставка «Золотые руки мастеров» была создана в 2013 году. В витринах и на стендах выставки — более 500 экспонатов —
+                                    поистине уникальных произведений народных промыслов, созданных искусными мастерами прошлого и настоящего. Экспозиция
+                                    знакомит с богатой культурой татарского народа: здесь книги и образцы письма на основе арабской графики, шамаили,
+                                    которые дают представление о мусульманских традициях на территории края.
+                                </p>
+                                <p>
+                                    Подлинные этнографические экспонаты: одежда, орудия труда, бытовая утварь, предметы убранства и т.д. — раскрывают
+                                    основные занятия, особенности ведения хозяйства и быта у татар в прошлом. Здесь можно увидеть ювелирные изделия,
+                                    тамбурную вышивку и золотое шитье, изделия в технике кожаной мозаики, войлочную обувь и ткачество, деревянные резные
+                                    наличники и изделия из лыка.
+                                </p>
+                                <p>
+                                    Экспозиция дополнена новыми комплексами городских и сельских костюмов, также заменена значительная часть экспонатов,
+                                    представляющих утварь и предметы убранства. Например, выделены витрины с предметами, связанными с ритуалом омовения и
+                                    обязательно присутствовавшими в быту татар-мусульман. Национальный музей владеет значительной коллекцией медных и
+                                    латунных кумганов конца 19 – начала 20 вв. Они демонстрируют разнообразие форм и размеров, многие имеют клейма (фабрика
+                                    братьев Володиных, «Мастер Лосъ в Казани, 1912 г.» и др.).
+                                </p>
+                                <p>
+                                    Витрина с коллекцией деревянной посуды представляет предметы из коллекции этнографа Н.И.Воробьева, собранные ученым в
+                                    деревне Верези Арского кантона Татарской Республики в 1923 г. специально для представления этнографии татар на
+                                    Всесоюзной сельскохозяйственной выставке в Москве. Большие и малые чаши, масленки, ложки, половник и ведерко, сделанные
+                                    из дерева и украшенные резьбой, были отреставрированы музейными специалистами.
+                                </p>
+                                <p>
+                                    Традиции народного искусства живут в творчестве современных мастеров. В экспозиции представлены авторские изделия
+                                    А.Замиловой, И.Гайнутдинова, А.Артемьевой, Л.Фасхутдиновой, Н.Кумысниковой, С.Гарбузовой, С.Кузьминых, в творчестве
+                                    которых преломляются и развиваются традиционные технические приемы и орнаментальный словарь татарского искусства.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <aside class="aside">
+                                     <div class="aside__item">
+                                         <div class="date-text">
+                                            1 ноября 2019
+                                         </div>
+                                     </div>
+                                     <div class="aside__item">
+                                        <div class="social-box">
+                                            <div class="social social-min">
+                                                <a href="#" class="social__item social__item-vk"></a>
+                                                <a href="#" class="social__item social__item-ok"></a>
+                                                <a href="#" class="social__item social__item-fb"></a>
+                                                <a href="#" class="social__item social__item-tw"></a>
+                                            </div>
+                                            <div class="social__text">
+                                                Расскажите о новости в соцсетях
+                                            </div>
+                                         </div>
+                                         
+                                         
+                                     </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-header">
+                                <div class="section-header__title">
+                                    <h2 class="h2">
+                                        Другие новости
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row news-row news-row-more news-row-more_gray">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <a href="#" class="news-card__thumb">
+                                    <img src="https://via.placeholder.com/350x200" alt="">
+                                </a>
+                                <div class="news-card__body">
+                                    <h3 class="news-card__title h3">
+                                        <a href="#">
+                                            Географический диктант
+                                        </a>
+                                    </h3>
+                                    <div class="news-card__date pre-h">
+                                        27 октября
+                                    </div>
+                                    <p class="news-card__text">
+                                        Что было построено во второй половине прошлого века неподалеку от города Зея, расположенного на реке
+                                        Зея? С каким
+                                        географическим объектам можно составить словосочетание с прилагательным "байрачный"? Какая языковая
+                                        семья является самой
+                                        многочисленной в России? На эти и другие вопросы отвечали участники Географического диктанта. В
+                                        воскресенье 27 октября
+                                        любой желающий смог прийти в Национальный музей
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <a href="#" class="news-card__thumb">
+                                    <img src="https://via.placeholder.com/350x200" alt="">
+                                </a>
+                                <div class="news-card__body">
+                                    <h3 class="news-card__title h3">
+                                        <a href="#">
+                                            Национальный музей Республики Татарстан на «Шаян тв»
+                                        </a>
+                                    </h3>
+                                    <div class="news-card__date pre-h">
+                                        25 октября
+                                    </div>
+                                    <p class="news-card__text">
+                                        В Национальном музее РТ работает детская площадка "Татарстан - наш общий дом". Здесь проходят
+                                        различные мастер-классы.
+                                        Научный сотрудник Национального музея РТ Талия…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="news-card">
+                                <a href="#" class="news-card__thumb">
+                                    <img src="https://via.placeholder.com/350x200" alt="">
+                                </a>
+                                <div class="news-card__body">
+                                    <h3 class="news-card__title h3">
+                                        <a href="#">
+                                            Участие в IV Всероссийской научно-практической конференции «Неформальный подход к формальному
+                                            образованию. Музей как
+                                            междисциплинарная образовательная среда»
+                                        </a>
+                                    </h3>
+                                    <div class="news-card__date pre-h">
+                                        25 октября
+                                    </div>
+                                    <p class="news-card__text">
+                                        В Национальном музее РТ работает детская площадка "Татарстан - наш общий дом". Здесь проходят
+                                        различные мастер-классы.
+                                        Научный сотрудник Национального музея РТ Талия…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="more-row">
+                                <button class="btn btn_more">
+                                    Показать еще
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="contact-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <div class="contact-item">
+                                <div class="contact-item__title h3">
+                                    <a href="#">+7 (843) 292-89-84</a>
+                                </div>
+                                <p class="contact-item__text desc">
+                                    Звоните по всем вопросам
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <div class="contact-item">
+                                <div class="contact-item__title h3">
+                                    <a href="#">tatar_museum@mail.ru</a>
+                                </div>
+                                <p class="contact-item__text desc">
+                                    Для связи по почте
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="social contact-row__social">
+                                <a href="#" class="social__item social__item-vk"></a>
+                                <a href="#" class="social__item social__item-in"></a>
+                                <a href="#" class="social__item social__item-fb"></a>
+                                <a href="#" class="social__item social__item-tw"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section_white branches">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-header">
+                                <div class="section-header__title">
+                                    <h2 class="h2">
+                                        Филиалы
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row branch-row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Литературный музей Габдуллы Тукая
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей Е.А. Боратынского
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей А.М. Горького
+                                    в селе Красновидово
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей Янки Купалы в селе Печищи
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Литературный музей Габдуллы Тукая
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей Е.А. Боратынского
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей А.М. Горького
+                                    в селе Красновидово
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей Янки Купалы в селе Печищи
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Литературный музей Габдуллы Тукая
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей Е.А. Боратынского
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="#" class="branch-item">
+                                <div class="branch-item__thumb">
+                                    <img src="https://via.placeholder.com/65x64/FFFF00/000000" alt="">
+                                </div>
+                                <h3 class="branch-item__title h3">
+                                    Музей А.М. Горького
+                                    в селе Красновидово
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="logo footer__logo">
+                            <img src="img/icons/gerb.svg" alt="Logo" class="logo__ico">
+                            <div class="logo__title">
+                                Министерство культуры
+                                Республики Татарстан
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <p class="desc footer__desc">
+                            Политика конфиденциальности и обработки персональных данных
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <p class="desc footer__desc">
+                            Результаты независимой оценки качества оказания услуг организациями
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-3 footer__copy">
+                        <p class="desc">
+                            Национальный музей
+                        </p>
+                        <p class="desc">
+                            Республики Татарстан © 2019
+                        </p>
+                    </div>
+                <button id="up-button">
+                    <img src="img/icons/arrow.svg" alt="Up">
+                </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

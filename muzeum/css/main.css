@@ -150,7 +150,7 @@ input {
   line-height: 1.4em; }
 
 .container-max {
-  max-width: 1280px; }
+  max-width: 1920px; }
 
 .mark-list li {
   margin-bottom: 10px;
@@ -263,6 +263,8 @@ input {
   align-items: center; }
   .info a {
     color: inherit; }
+  .info-time {
+    cursor: pointer; }
   .info-box {
     position: relative;
     display: -ms-flexbox;
@@ -532,7 +534,7 @@ input {
   margin: 40px 0; }
 
 .section_white {
-  padding: 40px 0;
+  padding: 40px 0 56px 0;
   background-color: #ffffff; }
 
 .section_mt {
@@ -695,12 +697,16 @@ input {
   transition: all 0.3s; }
   .holiday-item:hover {
     background-color: #ffffff; }
+    .holiday-item:hover .holiday-item__ico {
+      background-color: #f8f8f8; }
   .holiday-item__ico {
     width: 64px;
     height: 64px;
     border-radius: 4px;
     margin-right: 16px;
-    background-color: #f8f8f8; }
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: all 0.3s; }
   .holiday-item__title {
     margin-bottom: 6px; }
 
@@ -907,6 +913,42 @@ input {
   line-height: 1.4em;
   margin-bottom: 16px; }
 
+.article-slider {
+  position: relative;
+  z-index: 0; }
+  .article-slider .slick-arrow {
+    bottom: 72px;
+    font-size: 0px;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border: solid 1px rgba(255, 255, 255, 0.56);
+    transition: all 0.3s;
+    z-index: 1; }
+    .article-slider .slick-arrow::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 50%;
+      top: 50%;
+      margin-top: -15px;
+      margin-left: -15px;
+      background: url("../img/icons/ic-arrow-small.svg") no-repeat center/cover; }
+    .article-slider .slick-arrow:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+  .article-slider .slick-prev {
+    right: 71px; }
+    .article-slider .slick-prev::after {
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .article-slider .slick-next {
+    right: 16px; }
+    .article-slider .slick-next::after {
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
+
 .footer {
   padding: 32px 0; }
   .footer .container {
@@ -938,7 +980,7 @@ input {
   .header-main {
     padding: 12px 0; }
   .header_large {
-    padding-bottom: 0; }
+    padding-bottom: 0px; }
   .header__row-slider {
     padding-bottom: 40px; }
   .ico-work-time_active svg {
@@ -978,7 +1020,15 @@ input {
     width: 100%;
     padding: 12px 0px; }
     .nav-item a {
-      padding: 0 15px; }
+      padding: 0 15px;
+      display: inline-block;
+      width: 100%; }
+      .nav-item a:hover {
+        color: #ffffff; }
+    .nav-item:first-child {
+      padding-top: 24px; }
+    .nav-item:last-child {
+      padding-bottom: 24px; }
   .nav-list {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -993,6 +1043,26 @@ input {
       display: none; }
     .nav-drop .container {
       padding: 0; }
+  .nav-item-drop > a {
+    position: relative; }
+    .nav-item-drop > a::after {
+      content: "";
+      display: block;
+      transition: all 0.3s;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -12px;
+      width: 24px;
+      height: 24px;
+      background: url("../img/icons/ic-arrow-small.svg") no-repeat center/cover; }
+  .nav-item_active > a {
+    color: #ffce8e; }
+    .nav-item_active > a:hover {
+      color: #ffce8e; }
+    .nav-item_active > a::after {
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .nav-drop__list {
     padding: 0 0 16px 0;
     border-left: none;
@@ -1129,8 +1199,11 @@ input {
     padding-bottom: 16px; }
     .branch-item::before {
       display: none; }
+  .col-aside {
+    -ms-flex-order: -1;
+    order: -1; }
   .aside {
-    margin-top: 20px; }
+    margin-bottom: 30px; }
   .footer__logo .logo__title {
     display: block; }
   .footer__logo {

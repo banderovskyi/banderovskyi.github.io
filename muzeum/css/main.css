@@ -176,7 +176,8 @@ input {
     padding: 12px 0; }
   .header-menu {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    transition: none; }
     .header-menu_red {
       background-color: #7e2141; }
   .header-main {

@@ -15,6 +15,76 @@
 </head>
 
 <body>
+    <style>
+        .my-menu-all-pages{
+            background-color: #dedede;
+            -webkit-box-shadow: 0px 10px 39px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 39px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 39px 0px rgba(0,0,0,0.75);
+        }
+        .my-menu-all-pages__container{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1140px;
+            padding: 20px 0 20px 50px;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+        .my-menu-all-pages__container::after{
+            content: "!";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .my-menu-all-pages p{
+            margin-bottom: 10px;
+        }
+        .my-menu-all-pages ul li{
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-bottom: 10px;
+        }
+        .my-menu-all-pagesul li:last-child{
+            margin-bottom: 0px;
+        }
+        .my-menu-all-pages a{
+            color: rgb(95, 121, 238);
+        }
+        .my-menu-all-pages a:hover{
+            border-bottom: 1px solid rgb(95, 121, 238);
+        }
+    </style>
+    <div class="my-menu-all-pages">
+        <div class="my-menu-all-pages__container">
+            <p>
+                Так как это только часть работы над сайтом - Верстка. <br>
+                В этом меню вы можете посмотреть все шаблоны страниц:
+            </p>
+            <ul>
+                <li>
+                    <a href="index.html">main</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="article.html">article</a>
+                </li>
+                <li>
+                    <a href="event.html">event</a>
+                </li>
+                <li>
+                    <a href="excursions.html">excursions</a>
+                </li>
+                <li>
+                    <a href="news.html">news</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="content">
             <!-- Header -->

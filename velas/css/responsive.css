@@ -146,7 +146,8 @@
         -ms-flex-order: 2;
         order: 2;
         margin-bottom: 20px;
-        width: 256px; }
+        width: 256px;
+        min-height: 44px; }
       .header-menu__phone {
         font-size: 24px;
         -ms-flex-order: 1;

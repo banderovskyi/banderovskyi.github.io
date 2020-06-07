@@ -461,7 +461,7 @@ input {
       right: 12px;
       top: 50%;
       margin-top: -12px;
-      transition: all 0.3;
+      transition: all 0.3s;
       opacity: 0.4; }
 
 .event-slider {

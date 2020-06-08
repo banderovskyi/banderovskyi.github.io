@@ -1,0 +1,117 @@
+// =======================
+// Colors
+// =======================
+
+
+.block-6{
+   padding: 40px 0 80px 0;
+   font: 400 16px 'Roboto';
+   background-color: #f8f8f8;
+   .title{
+      text-align: center;
+      margin-bottom: 50px;
+      .pretitle{
+         font-size: 18px;
+         line-height: 21px;
+         text-transform: uppercase;
+         margin-bottom: 20px;
+      }
+      h2{
+         font-size: 30px;
+         line-height: 35px;
+         text-transform: uppercase;
+         font-weight: bold;
+      }
+   }
+   .silder{
+      li{
+         background: #FFFFFF;
+         border-radius: 10px; 
+         padding: 43px 30px 43px 43px;
+         &>p{
+            color: #787878;
+            margin-bottom: 25px;
+            text-align: justify;
+         }
+         .info{
+            display: flex;
+            align-items: center;
+            img{
+               width: 40px;
+               height: 40px;
+               margin-right: 32px;
+            }
+         }
+      }
+      .owl-dots.disabled, .owl-nav.disabled{
+         display: block;
+      }
+      .owl-nav{
+         margin: 45px auto 0 auto;
+         max-width: 883px;
+      }
+      .owl-dots{
+         margin: -18px auto 0 auto;
+         max-width: 700px;
+         height: 18px;
+      }
+   }
+}
+
+
+//=======================
+//MEDIA SCREEN MIN
+//=======================
+@media screen and (min-width: 1400px){
+   
+}
+@media screen and (min-width: 1600px){
+   
+}
+
+//=======================
+//MEDIA SCREEN MAX
+//=======================
+@media screen and (max-width: 1200px) {
+   .block-6{
+    
+   }
+}
+@media screen and (max-width: 992px) {
+   .block-6 {
+
+      
+   }
+}
+@media screen and (max-width: 768px) {
+   .block-6{
+      padding: 40px 0;
+      .title{
+         text-align: left;
+         margin-bottom: 40px;
+         .pretitle{
+            font-size: 16px;
+         }
+          h2{
+            font-size: 22px;
+            line-height: 26px;
+         }
+      }
+      .silder {
+         li{
+            padding: 20px 20px 30px 20px;
+         }
+         .owl-nav{
+            display: none;
+         }
+         .owl-dots{
+            margin-top: 30px;
+         }
+      }
+     
+   }
+
+}
+@media screen and (max-width: 576px) {
+   
+}

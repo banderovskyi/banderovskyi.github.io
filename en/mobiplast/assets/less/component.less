@@ -1,0 +1,144 @@
+:root {
+   /*** Color ***/
+   --color-primary:         #ffffff;
+   --color-primary-dark:    #000000;
+   --color-primary-light:   #A9A9A9;
+
+   --color-secondary:       #fafafa;
+   --color-secondary-dark:  #777777;
+
+   --color-facebook:        #4064b3;
+}
+::selection {
+   background: transparent;
+   color: black; 
+}
+
+// =======================
+// Fonts
+// =======================
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Thin'), local('Roboto-Thin'),
+      url('../fonts/Roboto-Thin.woff2') format('woff2'),
+      url('../fonts/Roboto-Thin.woff') format('woff'),
+      url('../fonts/Roboto-Thin.ttf') format('truetype');
+   font-weight: 100;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Light'), local('Roboto-Light'),
+      url('../fonts/Roboto-Light.woff2') format('woff2'),
+      url('../fonts/Roboto-Light.woff') format('woff'),
+      url('../fonts/Roboto-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Regular'), local('Roboto-Regular'),
+      url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype');
+   font-weight: 500;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Medium'), local('Roboto-Medium'),
+      url('../fonts/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto-Medium.woff') format('woff'),
+      url('../fonts/Roboto-Medium.ttf') format('truetype');
+   font-weight: 700;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Roboto';
+   src: local('Roboto Bold'), local('Roboto-Bold'),
+      url('../fonts/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto-Bold.woff') format('woff'),
+      url('../fonts/Roboto-Bold.ttf') format('truetype');
+   font-weight: 900;
+   font-display: swap;
+}
+
+// =======================
+// Plugins
+// =======================
+
+// viewportChecker
+.hidden {
+   opacity: 0;
+   visibility: hidden;
+}
+.visible {
+   opacity: 1;
+   visibility: visible;
+}
+// reCaptcha
+.grecaptcha-badge{
+   display: none;
+}
+// UpTolike
+.uptl_share_promo_block, .separator.last {
+   display: none !important;
+}
+#share_more___utl-buttons-1 {
+   left: 50% !important;
+   transform: translateX(-50%);
+}
+// Default style
+button, input{
+   border: 1px solid #A9A9A9;
+}
+section{
+   .row{
+      max-width: 1170px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      position: relative;
+   }
+}
+//=======================
+//MEDIA SCREEN MIN
+//=======================
+@media screen and (min-width: 1400px){
+  
+}
+@media screen and (min-width: 1600px){
+   
+}
+//=======================
+//MEDIA SCREEN MAX
+//=======================
+@media screen and (max-width: 1200px) {
+   section{
+      .row{
+         max-width: calc(992px - 32px);
+      }
+   }
+}
+@media screen and (max-width: 992px) {
+   section{
+      .row{
+         max-width: calc(768px - 32px);
+      }
+   }
+}
+@media screen and (max-width: 768px) {
+   section{
+      .row{
+         margin: 0 16px;
+      }
+   }
+}
+@media screen and (max-width: 576px) {
+   // UpTolike
+   .uptl_share_more_popup .uptl_share_more_popup__list {
+      width: 100% !important;
+   }
+}
+@media screen and (max-width: 350px){
+   
+}

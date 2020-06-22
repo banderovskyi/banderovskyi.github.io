@@ -805,8 +805,14 @@ header ul li a {
 }
 .thankssection .texts {
   padding-right: 30px;
+  width: 50%;
 }
-
+.thankssection.contact .texts {
+  width: 100%;
+}
+.thankssection .texts {
+  padding-right: 30px;
+}
 .thankssection .texts h2 {
   font-size: 64px;
 }

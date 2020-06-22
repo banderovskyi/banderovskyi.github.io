@@ -1586,9 +1586,6 @@ a.contact-button::after {
     text-align: left;
   
   }
-  .experts .experts-description .description {
-    text-align: left;
-  }
 
   .experts .experts-description .description {
     width: 100% !important;
@@ -1888,7 +1885,9 @@ a.contact-button::after {
     margin-bottom: 70px;
     text-align: center;
   }
-
+  .experts .experts-description .description {
+    text-align:  center;
+  }
   .more_text p {
     margin-bottom: 0;
   }

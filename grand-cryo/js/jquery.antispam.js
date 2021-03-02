@@ -1,0 +1,1 @@
+$("#contact").bind("click",function(){var t=$("#comments-area").val();""==t||$("input[type=submit]").attr("disabled","disabled")});

@@ -1,0 +1,1523 @@
+@media screen and (max-width: 1919px) {
+  .work-card__thumb {
+    height: 394px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  // Обо мне ==== Start ======================================================================
+  .header-page .header-main {
+    padding-top: 30px;
+  }
+  .page-title {
+    margin-bottom: 40px;
+  }
+  // Обо мне ==== End // =====================================================================
+}
+@media screen and (max-width: 1600px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  body {
+    font-size: 16px;
+  }
+  .section-mb {
+    margin-bottom: 80px;
+  }
+
+  .header-main__shadow-title {
+    font-size: 158px;
+    &::before {
+      width: 32px;
+      height: 32px;
+      top: 22px;
+      left: 6px;
+    }
+  }
+
+  .header-page-main {
+    .header-main__shadow-title {
+      top: 90px;
+    }
+  }
+
+  // .blue-section .container {
+  //   padding: 80px;
+  // }
+
+  .menu-popup__nav li {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .menu-popup__info {
+    font-size: 18px;
+  }
+
+  .section-title {
+    margin-left: 60px;
+  }
+
+  .about .container {
+    padding-bottom: 80px;
+  }
+  .about__content {
+    padding-left: 70px;
+    padding-top: 0px;
+  }
+  .about__img {
+    width: 712px;
+    margin-top: 40px;
+    transform: translateX(90px);
+  }
+
+  .stages-list {
+    max-width: 1024px;
+  }
+
+  .start-content {
+    margin-left: 60px;
+  }
+
+  .footer {
+    margin-bottom: 60px;
+  }
+  .dots-img_footer::after {
+    max-height: 180px;
+  }
+  .footer__shadow-title {
+    font-size: 90px;
+    &::before {
+      width: 22px;
+      height: 22px;
+      left: 2px;
+      top: -9px;
+    }
+  }
+  .footer__row {
+    height: 180px;
+  }
+  .footer__nav ul li {
+    font-size: 14px;
+  }
+  .footer__links {
+    font-size: 14px;
+    right: 60px;
+  }
+  .footer__social {
+    bottom: 24px;
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  .header-page .header-main {
+    padding-left: 90px;
+    padding-top: 0px;
+  }
+
+  .page-title {
+    font-size: 56px;
+  }
+  .page-title-text {
+    font-size: 20px;
+    line-height: 2;
+    max-width: 453px;
+  }
+  .header-image_person {
+    max-width: 575px;
+    transform: translate(0px, 190px);
+  }
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+
+  // Портфолио ==== End // =====================================================================
+
+  // Контакты ==== Start ======================================================================
+  .contact-section__title-text {
+    max-width: 738px;
+  }
+  // Контакты ==== End // =====================================================================
+  .search-result {
+    margin-top: -250px;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .work-card__thumb {
+    height: 325px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  body {
+    font-size: 16px;
+  }
+  .header-full-height {
+    max-height: 820px;
+  }
+  .main-title {
+    font-size: 36px;
+  }
+  .h1,
+  h1 {
+    font-size: 56px;
+  }
+  .h2,
+  h2 {
+    font-size: 32px;
+  }
+
+  .menu-popup__nav li {
+    font-size: 24px;
+  }
+  .menu-popup__info {
+    font-size: 16px;
+  }
+
+  .posts-list-card__text {
+    font-size: 15px;
+    max-width: 220px;
+  }
+  .posts-list-card__body {
+    padding: 15px 26px 52px 26px;
+  }
+
+  .posts-list-card__more {
+    font-size: 10px;
+  }
+
+  .header-main__shadow-title {
+    font-size: 126px;
+    right: 15%;
+    top: 18%;
+    &::before {
+      width: 26px;
+      height: 26px;
+      left: 5px;
+    }
+  }
+  .btn,
+  a.btn {
+    font-size: 12px;
+    max-height: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .btn-line,
+  a.btn-line {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+
+  .link_arrow,
+  a.link_arrow {
+    font-size: 18px;
+  }
+
+  .title-box {
+    max-width: 451px;
+  }
+  .title-box__pre-title {
+    font-size: 18px;
+  }
+  .about__img {
+    width: 524px;
+    transform: translate(50px, 0);
+  }
+
+  .work-card__thumb {
+    height: 325px;
+  }
+  .work-card__title {
+    font-size: 22px;
+  }
+
+  .footer {
+    &-main {
+      flex-wrap: wrap;
+      padding: 30px 0 30px 0;
+    }
+    &__nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    &__links {
+      position: static;
+    }
+    &__social {
+      position: static;
+      transform: none;
+      margin-left: 30px;
+    }
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  .section-padding {
+    .container {
+      padding: 0 60px;
+    }
+  }
+
+  .abilities-item__title {
+    font-size: 20px;
+  }
+
+  .abilities-item__text {
+    font-size: 14px;
+  }
+
+  .blue-section .container {
+    padding: 60px;
+  }
+  .header-page .header-main {
+    padding-left: 45px;
+  }
+  .page-title-text {
+    font-size: 18px;
+    max-width: 450px;
+  }
+  .header-image_person {
+    max-width: 525px;
+    transform: translate(0px, 140px);
+  }
+  // .header-page .header-main {
+  //   justify-content: flex-start;
+  // }
+
+  .work-stages-row {
+    margin-bottom: -88px;
+  }
+  .work-stages-item {
+    margin-bottom: 88px;
+  }
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+
+  // Портфолио ==== End // =====================================================================
+
+  // Контакты ==== Start ======================================================================
+  .contact-section {
+    padding-top: 160px;
+  }
+  .contact-section__title-text {
+    max-width: 525px;
+    font-size: 22px;
+  }
+  .contact-section__img {
+    position: absolute;
+    top: -105px;
+    right: 10px;
+    width: 377px;
+  }
+  // Контакты ==== End // =====================================================================
+
+  // Блог ==== Start // =====================================================================
+  .blog-card {
+    &__thumb {
+      img {
+        height: 221px;
+        max-height: 221px;
+      }
+    }
+  }
+  // Блог ==== End // =====================================================================
+
+  // Поиск + 404 ==== Start ======================================================================
+  .header-main__pre-title {
+    margin-bottom: 40px;
+  }
+  // Поиск + 404 ==== End // ======================================================================
+}
+@media screen and (max-width: 1439px) {
+  .work-card__thumb {
+    height: 285px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  body {
+    font-size: 14px;
+  }
+
+  .logo-large {
+    max-width: 303px;
+  }
+  .menu-popup__logo {
+    margin-bottom: 80px;
+  }
+  .menu-popup__nav {
+    margin-bottom: 60px;
+  }
+  .menu-popup__links,
+  .menu-popup__social {
+    margin-bottom: 20px;
+  }
+  .header-main__shadow-title {
+    right: 55px;
+    top: 110px;
+  }
+  .about__content {
+    padding-left: 0;
+  }
+  .section-title {
+    margin-left: 0;
+  }
+  .title-box {
+    max-width: 480px;
+  }
+
+  .stages-row .stages-list {
+    margin-right: 0;
+  }
+
+  .stages-item__list {
+    font-size: 16px;
+  }
+
+  .stages {
+    padding: 80px 0;
+  }
+
+  .start {
+    padding: 80px 0 160px;
+  }
+  a.start__more {
+    max-height: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer {
+    margin-top: -70px;
+    margin-bottom: 40px;
+  }
+  .footer__nav ul li {
+    margin-right: 60px;
+  }
+  .footer__row {
+    height: 160px;
+    max-width: 824px;
+    margin: 0 auto;
+  }
+  .footer__shadow-title {
+    left: 10%;
+  }
+
+  .dots-img_footer::after {
+    right: -120px;
+    max-height: 160px;
+  }
+
+  .menu {
+    width: 70px;
+  }
+  .wrapper {
+    margin-left: 70px;
+  }
+  .menu-popup {
+    left: 70px;
+    overflow-y: auto;
+  }
+  .popup {
+    left: 70px;
+  }
+
+  .menu-popup .container {
+    max-width: 900px;
+  }
+  .menu-popup-main {
+    padding: 20px 0;
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  .work-stages-item {
+    &__num {
+      font-size: 78px;
+      margin-right: 16px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+  .work-preview-devices {
+    padding-bottom: 120px;
+  }
+  // Портфолио ==== End // =====================================================================
+
+  // Контакты ==== Start ======================================================================
+  .contact-section__img {
+    right: -10px;
+    width: 387px;
+  }
+  // Контакты ==== End // =====================================================================
+
+  // Блог ==== Start ======================================================================
+  .blog-archive {
+    padding-bottom: 150px;
+  }
+
+  .blog-archive-col {
+    margin-bottom: 40px;
+  }
+  .blog-card {
+    &__title {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    &__body {
+      padding: 20px;
+    }
+    &__thumb {
+      img {
+        height: 173px;
+        max-height: 173px;
+      }
+    }
+  }
+
+  .header-article {
+    margin: 80px 0 50px;
+  }
+  .header-article-title {
+    font-size: 36px;
+  }
+  // Блог ==== End // =====================================================================
+
+  // Поиск + 404 ==== Start ======================================================================
+  .search-result {
+    padding-bottom: 150px;
+    margin-top: -300px;
+  }
+  .search-result-item {
+    font-size: 24px;
+  }
+  // Поиск + 404 ==== End // ======================================================================
+}
+@media screen and (max-width: 1199px) {
+  .work-col {
+    margin-bottom: 62px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .works-row .work-col:nth-child(2n) {
+    margin-top: 0;
+  }
+  .work-card {
+    max-width: 622px;
+    margin: 0 auto;
+  }
+  .work-card__thumb {
+    height: 399px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  .h3,
+  h3 {
+    font-size: 20px;
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  .abilities-row {
+    margin-bottom: -60px;
+  }
+  .abilities-item {
+    margin-bottom: 60px;
+  }
+  .abilities-item__text {
+    font-size: 14px;
+  }
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+  .quote {
+    &__text {
+      font-size: 24px;
+    }
+    &__author {
+      font-size: 22px;
+    }
+  }
+  // Портфолио ==== End // =====================================================================
+
+  // Контакты ==== Start ======================================================================
+  .contact-section {
+    padding-bottom: 160px;
+  }
+  .contact-section__title-text {
+    max-width: 525px;
+    font-size: 20px;
+  }
+  // Контакты ==== End // =====================================================================
+
+  // Блог ==== Start ======================================================================
+  .blog-archive-col {
+    margin-bottom: 40px;
+  }
+  .blog-card {
+    &__text {
+      font-size: 14px;
+    }
+  }
+  // Блог ==== End // =====================================================================
+}
+@media screen and (max-width: 991px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  .menu {
+    width: 60px;
+  }
+  .wrapper {
+    margin-left: 60px;
+  }
+  .menu-popup {
+    left: 60px;
+  }
+  .popup {
+    left: 60px;
+  }
+  .menu-popup .container {
+    max-width: 640px;
+  }
+  .logo-large {
+    max-width: 222px;
+  }
+  .menu-popup__logo {
+    margin-bottom: 30px;
+  }
+  .menu-popup-main {
+    padding: 80px 0;
+  }
+  .menu-popup__nav {
+    padding-left: 35px;
+    margin-bottom: 0;
+    li {
+      font-size: 20px;
+    }
+  }
+
+  .menu-popup__info {
+    font-size: 14px;
+  }
+
+  .dots-img {
+    &_left {
+      &::after {
+        left: -30px;
+        bottom: -30px;
+      }
+    }
+    &_right {
+      &::after {
+        right: -30px;
+        bottom: -30px;
+      }
+    }
+    &_footer {
+      &::after {
+        right: -30px;
+        top: 30px;
+        max-height: 250px;
+      }
+    }
+  }
+
+  .btn,
+  a.btn {
+    font-size: 11px;
+    max-height: 30px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .lang {
+    font-size: 11px;
+  }
+  .header-top__lang {
+    margin-left: 35px;
+  }
+  .header-top {
+    padding: 25px 0;
+    margin-right: 20px;
+  }
+
+  .header-full-height {
+    // max-height: 371px;
+    height: 371px;
+  }
+
+  .header-full-height .container {
+    height: calc(100% - 80px);
+  }
+  .header-full-height .container .header-main-row {
+    height: 100%;
+  }
+
+  .main-title {
+    font-size: 22px;
+    max-width: 500px;
+  }
+
+  .first-section {
+    margin-top: 0;
+  }
+
+  .header-main__shadow-title {
+    font-size: 84px;
+    right: 95px;
+    top: 50px;
+    &::before {
+      width: 16px;
+      height: 16px;
+      left: 3.5px;
+      top: 13px;
+    }
+  }
+
+  .works {
+    margin-top: 80px;
+  }
+
+  .title-box {
+    max-width: 370px;
+  }
+  .title-box::before {
+    max-width: 220px;
+  }
+  .title-box {
+    margin-bottom: 40px;
+  }
+  .title-box__pre-title {
+    font-size: 16px;
+  }
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+  .h2,
+  h2 {
+    font-size: 24px;
+  }
+
+  .link_arrow,
+  a.link_arrow {
+    font-size: 16px;
+  }
+
+  .about__img {
+    // display: none;
+    margin-top: 20px;
+    &::after {
+      right: -30px;
+      bottom: -60px;
+      left: auto;
+      top: auto;
+    }
+  }
+
+  .about .container {
+    padding-bottom: 30px;
+  }
+
+  .work-card {
+    width: 498px;
+    &__thumb {
+      height: 319px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .work-card__title {
+    font-size: 20px;
+  }
+
+  .section-mb {
+    margin-bottom: 60px;
+  }
+
+  .stages-item__list {
+    font-size: 14px;
+  }
+
+  .stages-item {
+    width: calc(100% / 3 - 20px);
+    max-width: 280px;
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  .h3,
+  h3 {
+    font-size: 16px;
+  }
+
+  .header-page {
+    height: auto;
+    max-height: none;
+  }
+  .header-page .header-main {
+    padding-top: 80px;
+  }
+  .header-page .header-main {
+    padding-left: 30px;
+  }
+
+  .page-title {
+    font-size: 36px;
+  }
+  .page-title-text {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 503px;
+  }
+
+  .header-image_person {
+    transform: translate(30px, 60px);
+    max-width: 481px;
+    img {
+      width: 481px;
+      height: 360px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .abilities {
+    .container {
+      padding-top: 140px;
+    }
+  }
+  .abilities-row {
+    margin-top: 0;
+    margin-bottom: -30px;
+  }
+  .abilities-item__title {
+    margin-bottom: 27px;
+  }
+  .abilities-item__ico img {
+    max-height: 60px;
+  }
+  .abilities-item__text {
+    max-width: 238px;
+  }
+
+  .work-stages-row {
+    margin-bottom: -30px;
+  }
+  .work-stages-item {
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
+
+  .work-stages-item__num {
+    font-size: 48px;
+  }
+
+  .work-stages-item__text {
+    font-size: 14px;
+  }
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+  .section-gray {
+    padding: 60px 0;
+  }
+
+  .works-list-page {
+    margin-top: -60px;
+  }
+  .header-text-only {
+    .header-main {
+      padding-bottom: 100px;
+    }
+  }
+  .works-list-page {
+    margin-bottom: 120px;
+    .work-card {
+      margin-bottom: 0;
+    }
+    .works-row {
+      margin-bottom: -64px;
+    }
+  }
+
+  .work-preview-main {
+    margin-top: -50px;
+  }
+  .work-preview-devices {
+    padding-bottom: 40px;
+  }
+  // Портфолио ==== End // =====================================================================
+
+  // Контакты ==== Start ======================================================================
+  .contact-section {
+    padding: 60px 0 110px 0;
+    .container {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+  .contact-section__title {
+    &::before {
+      display: none;
+    }
+  }
+  .contact-section__img {
+    right: -10px;
+    top: -290px;
+    width: 189px;
+  }
+  .contact-section__title-text {
+    font-size: 16px;
+  }
+  // Контакты ==== End // =====================================================================
+
+  // Блог ==== Start ======================================================================
+  .blog-card {
+    &__body {
+      padding: 30px;
+    }
+  }
+
+  .header-article {
+    margin: 80px 0 50px;
+  }
+  .header-article-title {
+    font-size: 24px;
+  }
+
+  .blog-article {
+    padding-bottom: 140px;
+  }
+  .blog-article__thumb {
+    margin-bottom: 30px;
+  }
+  .blog-article__content {
+    max-width: 407px;
+    font-size: 16px;
+  }
+  // Блог ==== End // =====================================================================
+
+  // Поиск + 404 ==== Start ======================================================================
+  .header-main__pre-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .header-main__search-box {
+    margin-top: 30px;
+  }
+  .search-box {
+    form {
+      height: 50px;
+    }
+    input {
+      font-size: 16px;
+    }
+  }
+
+  .search-result {
+    padding-bottom: 150px;
+    margin-top: 0px;
+  }
+  .search-result-item {
+    font-size: 18px;
+  }
+  // Поиск + 404 ==== End // ======================================================================
+}
+@media screen and (max-width: 767px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  .h4,
+  h4,
+  h3,
+  .h3 {
+    font-size: 16px;
+  }
+
+  .dots-img {
+    &_left {
+      &::after {
+        left: -24px;
+        bottom: -24px;
+      }
+    }
+    &_right {
+      &::after {
+        right: -24px;
+        bottom: -24px;
+      }
+    }
+    &_footer {
+      &::after {
+        right: -24px;
+        top: 24px;
+        max-height: 250px;
+      }
+    }
+  }
+
+  .btn-line,
+  a.btn-line {
+    font-size: 11px;
+    padding: 15px 10px;
+  }
+
+  .about__img::after {
+    right: -24px;
+    bottom: -24px;
+    left: auto;
+    top: auto;
+  }
+
+  .menu-popup {
+    top: 50px;
+    left: 0;
+  }
+
+  .menu-popup-main {
+    padding: 60px 20px;
+  }
+
+  .menu-popup__nav {
+    padding-left: 0;
+    max-width: 144px;
+    margin: 0 auto 50px auto;
+  }
+
+  .menu-popup__info {
+    font-size: 16px;
+  }
+
+  .menu-popup__social a {
+    width: 20px;
+    height: 20px;
+  }
+  .menu-popup__adress {
+    max-width: 161px;
+  }
+
+  .menu {
+    width: 100%;
+    height: 50px;
+    padding: 6px 10px;
+  }
+  .menu-wrap {
+    flex-direction: row;
+  }
+  .menu-wrap__item {
+    max-height: none;
+  }
+  .wrapper {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .menu-popup {
+    left: 0px;
+  }
+  .popup {
+    left: 0px;
+    top: 50px;
+    .header-main__shadow-title {
+      font-size: 51px;
+      right: 50%;
+      top: 40%;
+      transform: translateX(50%);
+    }
+  }
+  .popup-search .container-form {
+    height: calc(100vh - 50px);
+  }
+  .popup-search-result {
+    margin-top: -200px;
+  }
+
+  .menu-wrap__item {
+    max-width: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-wrap__item-search {
+    display: none;
+  }
+  .menu-wrap__item-lang {
+    display: none;
+    // max-width: 10px;
+    justify-content: end;
+    .lang__ico {
+      svg {
+        width: 9px;
+        height: 11px;
+      }
+    }
+  }
+
+  .btn-burger {
+    .btn-burger__hover {
+      display: none;
+    }
+    .btn-burger__just {
+      right: 0 !important;
+    }
+  }
+
+  button.btn-burger_active .btn-burger__just {
+    right: 100% !important;
+  }
+
+  .lang {
+    z-index: 1100;
+    font-size: 14px;
+  }
+  .lang__sub {
+    top: calc(100% + 20px);
+  }
+
+  .lang__sub .lang-item {
+    margin-bottom: 20px;
+  }
+
+  .menu_active {
+    .menu-wrap__item-lang {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 24px;
+    svg {
+      height: 36px;
+    }
+  }
+  .btn-burger {
+    width: 28px;
+    height: 21px;
+  }
+  .header-top-row {
+    display: none;
+  }
+  .main-title {
+    font-size: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .header {
+    padding-top: 104px;
+  }
+  .header-main {
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-full-height {
+    max-height: none;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .header-main__shadow-title,
+  .header-page-main .header-main__shadow-title {
+    font-size: 51px;
+    right: 50%;
+    top: -45px;
+    transform: translateX(50%);
+    &::before {
+      width: 11px;
+      height: 11px;
+      left: 1.5px;
+      top: 6px;
+    }
+  }
+
+  .header-full-height .container {
+    height: auto;
+  }
+
+  .title-box::before {
+    max-width: 120px;
+  }
+
+  .about {
+    margin-bottom: 250px;
+  }
+
+  .about__img {
+    margin-top: -110px;
+    width: 90%;
+    transform: translateY(150px);
+  }
+
+  .works {
+    margin-top: 0px;
+  }
+  .works-list-page {
+    margin-top: -70px;
+  }
+
+  .work-card__title {
+    font-size: 12px;
+  }
+
+  .work-card__thumb:hover .work-card__more,
+  .work-card__thumb:hover .work-card__more .btn__icon {
+    font-size: 12px;
+  }
+
+  .work-col {
+    margin-bottom: 32px;
+  }
+
+  .stages-list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -47px;
+  }
+  .stages-item {
+    width: 100%;
+    max-width: 210px;
+    margin: 0 auto 47px auto;
+  }
+
+  .stages-item__title {
+    font-weight: 600;
+  }
+
+  .start {
+    padding: 60px 0;
+  }
+  .start-content {
+    margin-left: 0;
+  }
+
+  .footer {
+    margin-top: 0;
+    margin-bottom: 0px;
+    .container {
+      max-width: none;
+      padding: 0;
+    }
+  }
+
+  .footer__row {
+    height: auto;
+  }
+
+  .footer__nav {
+    display: block;
+    max-width: 85px;
+    ul {
+      flex-direction: column;
+      li {
+        margin-right: 0;
+        font-size: 13px;
+        margin-bottom: 24px;
+        white-space: nowrap;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .footer-main {
+    display: block;
+    padding: 40px 0px;
+  }
+
+  .footer__social {
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+    left: auto;
+  }
+
+  .footer__links {
+    position: absolute;
+    right: 15px;
+    bottom: 73px;
+  }
+
+  .footer__shadow-title {
+    opacity: 0.1;
+    font-size: 44px;
+    left: 50%;
+    top: 64px;
+    transform: translateX(-50%);
+    &::before {
+      width: 11px;
+      height: 11px;
+      left: 0.5px;
+      top: -6px;
+    }
+  }
+
+  .footer__copy {
+    margin: 15px 0px;
+  }
+
+  .dots-img_footer::after {
+    max-height: none;
+    top: 0;
+    left: 0;
+  }
+
+  .to-top-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  a.start__more {
+    margin-top: 30px;
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  .header-page {
+    height: auto;
+    max-height: none;
+    padding-top: 70px;
+  }
+  .page-title {
+    margin-bottom: 30px;
+  }
+  .header-page .header-main {
+    padding: 0;
+  }
+
+  .header-image_person {
+    transform: translate(0px, 60px);
+    max-width: 481px;
+  }
+
+  .blue-section {
+    margin-bottom: 60px;
+  }
+
+  .blue-section .container,
+  .section-padding .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header-image_person {
+    max-width: 92%;
+  }
+
+  .abilities .container {
+    padding-top: 110px;
+  }
+
+  .abilities-item__text {
+    max-width: none;
+  }
+
+  .work-stages-item {
+    align-items: flex-start;
+  }
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+  .section-gray {
+    padding: 40px 0;
+  }
+
+  .header-text-only {
+    .header-main {
+      padding-bottom: 30px;
+    }
+  }
+  .quote {
+    display: block;
+    &__img {
+      width: 38px;
+      height: 32px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &__author {
+      margin-top: 14px;
+      position: static;
+      font-size: 14px;
+    }
+  }
+  // Портфолио ==== End // =====================================================================
+
+  // Контакты ==== Start ======================================================================
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'],
+  select,
+  .select,
+  textarea {
+    font-size: 14px;
+  }
+
+  .contact-section {
+    padding: 0px;
+    margin-top: -104px;
+    margin-bottom: 0;
+  }
+  .contact-section-header .header-main__shadow-title {
+    bottom: 20px;
+  }
+  .contact-section__title {
+    &::before {
+      display: none;
+    }
+  }
+  .contact-section__img {
+    display: none;
+  }
+  .contact-section__title-text {
+    font-size: 16px;
+  }
+  .form-row span {
+    width: 100%;
+  }
+
+  // Контакты ==== End // =====================================================================
+
+  // Блог ==== Start ======================================================================
+  .blog-archive {
+    padding-bottom: 60px;
+  }
+  .header-blog {
+    padding: 30px;
+  }
+  .blog-archive-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .blog-card {
+    max-width: 332px;
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+  .header-article {
+    margin: 30px 0 30px;
+  }
+  .blog-article {
+    padding-bottom: 100px;
+  }
+  .blog-article__thumb {
+    margin-bottom: 20px;
+  }
+  .blog-article__share {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  // Блог ==== End // =====================================================================
+
+  // Поиск + 404 ==== Start ======================================================================
+  .header-main__pre-title {
+    text-align: center;
+  }
+
+  .search-result {
+    padding: 50px 0;
+  }
+  .search-result-list {
+    list-style-position: inside;
+  }
+  .search-result-item {
+    margin-bottom: 25px;
+  }
+
+  .search-box button[type='submit'] {
+    width: 60px;
+  }
+  // Поиск + 404 ==== End // ======================================================================
+  .contact-page,
+  .page-template-page-contact {
+    .contact-section {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .work-card {
+    width: 380px;
+  }
+  .work-card__thumb {
+    height: 243px;
+  }
+}
+@media screen and (max-width: 420px) {
+  // Главная страница + стандартные стили ==== Start ===========================================================
+  .about {
+    margin-bottom: 190px;
+  }
+
+  .abilities {
+    margin-bottom: 60px;
+  }
+
+  .work-card {
+    width: 277px;
+  }
+  .work-card__thumb {
+    height: 177px;
+  }
+  // Главная страница + стандартные стили ==== End // ===========================================================
+
+  // Обо мне ==== Start ======================================================================
+  // Обо мне ==== End // =====================================================================
+
+  // Портфолио ==== Start ======================================================================
+  .quote {
+    &__text {
+      font-size: 18px;
+    }
+  }
+  // Портфолио ==== End // =====================================================================
+}
+@media screen and (max-width: 360px) {
+  // Блог ==== Start ======================================================================
+  .blog-card {
+    &__title {
+      font-size: 18px;
+    }
+    &__body {
+      padding: 20px;
+    }
+  }
+
+  .blog-article {
+    padding-bottom: 80px;
+  }
+  .header-article-title {
+    font-size: 20px;
+  }
+  .blog-article__content {
+    font-size: 14px;
+  }
+
+  .blog-article__share {
+    .addtoany_shortcode {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+  // Блог ==== End // =====================================================================
+}

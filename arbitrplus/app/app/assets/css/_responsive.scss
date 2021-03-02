@@ -1,0 +1,496 @@
+@media screen and (max-width: 1439px) {
+  .webp .consultation,
+  .no-webp .consultation {
+    background-size: contain;
+    background-position: center bottom;
+  }
+  .consultation {
+    padding-bottom: 460px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .team-slider .owl-nav,
+  .blog-card-slider .owl-nav {
+    max-width: 1120px;
+  }
+  .work-item {
+    max-width: 1024px;
+  }
+
+  .work-slider .owl-nav {
+    max-width: 95%;
+  }
+  .magazine__title {
+    max-width: 500px;
+  }
+  .work-item__right {
+    padding-right: 50px;
+  }
+
+  .service-box {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.26);
+    background-color: #fff;
+    &__img {
+      position: static;
+      img {
+        border-radius: 10px;
+      }
+    }
+    &__content {
+      max-width: none;
+      padding: 30px;
+    }
+    &__text {
+      max-width: none;
+      br {
+        display: none;
+      }
+    }
+  }
+  .magazine-banner__img {
+    left: -245px;
+  }
+
+  .consultation {
+    padding-top: 0;
+    padding-bottom: 390px;
+  }
+
+  .section-title,
+  .consultation .section-title {
+    font-size: 39px;
+  }
+  .footer-row-copy {
+    font-size: 12px;
+  }
+  .contacts-map {
+    margin-right: 0;
+  }
+  .owl-carousel .owl-nav button[type='button'] {
+    width: 40px;
+    height: 40px;
+  }
+  .owl-theme-arrow .owl-nav {
+    button[type='button'] {
+      left: -30px;
+    }
+    button.owl-next {
+      left: auto;
+      right: -30px;
+    }
+  }
+  .team-card {
+    max-width: 96%;
+  }
+
+  .contacts-card {
+    left: 50px;
+    top: 75%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .team-slider .owl-nav,
+  .blog-card-slider .owl-nav {
+    max-width: 1000px;
+  }
+  .work-item {
+    max-width: 850px;
+    &__left {
+      max-width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .benefits-item {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .benefits {
+    padding-bottom: 0;
+  }
+
+  .benefits-col {
+    .benefits-item:nth-child(odd),
+    .benefits-item:nth-child(even) {
+      margin: 0 auto;
+    }
+  }
+
+  .contacts .section-title,
+  .contacts .section-title__pre {
+    font-size: 29px;
+  }
+
+  // .webp .consultation,
+  // .no-webp .consultation {
+  // background-size: 100% 400px;
+  // }
+
+  .consultation {
+    padding-bottom: 400px;
+  }
+
+  .work-item {
+    max-width: 700px;
+    flex-wrap: wrap;
+    padding: 30px;
+    &__left {
+      margin-right: 0;
+      width: 100%;
+      max-height: 400px;
+      max-width: none;
+    }
+    &__right {
+      width: 100%;
+      padding: 0;
+      .btn-yellow {
+        display: block;
+        max-width: 325px;
+        margin: 0 auto;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  .magazine-banner__img {
+    top: -485px;
+    left: 455px;
+    width: 370px;
+  }
+  .magazine__pre-title,
+  .magazine__text,
+  .magazine__list {
+    margin-left: 0;
+  }
+
+  .magazine {
+    .row-form {
+      margin-top: 40px;
+    }
+  }
+
+  .blog-card-slider .owl-nav,
+  .team-slider .owl-nav {
+    max-width: 760px;
+  }
+
+  .contacts-card {
+    top: 50%;
+  }
+  .contacts-map {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .contacts__form {
+    margin: 0 auto;
+  }
+  .contacts__form-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-nav .nav {
+    display: none;
+  }
+  .footer {
+    &-row {
+      align-items: center;
+    }
+    &__info,
+    &__messagers,
+    &__call-back {
+      width: 100%;
+    }
+    &__logo {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    &__messagers {
+      justify-content: center;
+      margin: 38px 0 32px 0;
+    }
+    &__info {
+      justify-content: center;
+      align-items: center;
+      .info-email__link {
+        padding-left: 0;
+      }
+    }
+    .mob-btn-callback,
+    .mob-btn-menu_open {
+      margin-bottom: 120px;
+      margin-top: 30px;
+    }
+  }
+
+  .footer-row-copy {
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    p {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .owl-theme-arrow .owl-dots.disabled,
+  .owl-theme-arrow .owl-nav.disabled {
+    display: none;
+  }
+
+  .to-top {
+    right: 40px;
+  }
+
+  .contacts__rules {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 766px) {
+  .about-item {
+    &__text {
+      max-width: none;
+    }
+  }
+
+  .service-box {
+    &__img {
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+    }
+    &__content {
+      padding: 15px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .border-box__wrap {
+    padding: 15px;
+    p {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .consultation .section-title {
+    display: block;
+  }
+  .consultation .section-title,
+  .consultation .section-title__pre {
+    font-size: 22px;
+  }
+  .consultation {
+    padding-bottom: 220px;
+  }
+
+  .work-item {
+    max-width: 320px;
+    padding: 20px;
+  }
+
+  .work-item__center {
+    padding: 0;
+  }
+
+  .work-item__left {
+    margin-bottom: 60px;
+  }
+  .work-item__right {
+    .btn-yellow {
+      max-width: 225px;
+    }
+  }
+  .work-item__dowload {
+    max-width: 100%;
+    width: 270px;
+    right: 0;
+    bottom: -30px;
+  }
+  .work {
+    .owl-theme-arrow .owl-dots {
+      margin-top: -20px;
+      margin-bottom: 30px;
+    }
+  }
+  .owl-theme-arrow .owl-nav {
+    position: relative;
+    justify-content: space-around;
+    left: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .magazine__title {
+    text-align: center;
+  }
+  .magazine__pre-title {
+    margin-bottom: 20px;
+  }
+  .magazine__list li {
+    font-size: 16px;
+  }
+  .magazine-banner {
+    margin-top: 30px;
+    &__img {
+      position: static;
+    }
+  }
+
+  .team-card {
+    width: 100%;
+    &__text {
+      ul,
+      ol {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+    &__btn {
+      margin-top: 0;
+    }
+  }
+
+  .team-card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .team-card__btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .blog-card-slider {
+    .blog-card {
+      // box-shadow: none;
+      margin: 0 auto;
+    }
+  }
+
+  .info-blog {
+    .owl-carousel .owl-stage-outer {
+      padding: 20px 0;
+    }
+  }
+
+  .contacts .section-title,
+  .contacts .section-title__pre {
+    font-size: 22px;
+    display: block;
+  }
+
+  .contacts-map {
+    height: auto;
+    max-height: none;
+    .frame {
+      position: static;
+      border-radius: 10px;
+      border: 6px solid #ffffff;
+    }
+    .contacts-card {
+      position: static;
+      transform: none;
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  .accordion-row__title {
+    padding: 5px;
+  }
+
+  .accordion-row__content {
+    padding: 20px 5px 5px 5px;
+  }
+
+  .info-box {
+    padding: 25px;
+  }
+
+  .form-box {
+    padding: 25px;
+    [type='submit'] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .review {
+    flex-direction: column;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column-reverse;
+    &__text {
+      margin-bottom: 0;
+    }
+    &__persone {
+      margin-bottom: 20px;
+    }
+  }
+  .to-top {
+    right: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .team-card__btn {
+    .btn {
+      box-shadow: none;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .consultation .section-title,
+  .consultation .section-title__pre,
+  .contacts .section-title,
+  .contacts .section-title__pre {
+    font-size: 18px;
+  }
+
+  .work-item {
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .no-webp .consultation,
+  .webp .consultation {
+    background-size: 100% 190px;
+  }
+
+  .consultation {
+    padding-bottom: 190px;
+  }
+
+  .team-card__btn {
+    .btn,
+    a.btn {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  .team-card__name {
+    padding: 12px 20px;
+  }
+}

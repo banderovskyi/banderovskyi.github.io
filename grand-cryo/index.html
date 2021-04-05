@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Grand-Cryo Resort - Курорт премиум-класса в Белокурихе</title>
@@ -230,7 +231,11 @@
               </div>
             </div>
           </div>
-          <div class="section-bg__img"></div>
+          <div
+            class="section-bg__img"
+            data-aos="fade-in"
+            data-aos-once="true"
+          ></div>
         </header>
 
         <section class="section section-about" id="section-about">
@@ -2657,8 +2662,8 @@
     </div>
     <script src="js/all.js"></script>
     <script>
-      $(document).ready(function () {
-        // $('.preloader__content').fadeOut(1000);
+      document.addEventListener('DOMContentLoaded', function (event) {
+        $('.preloader__content').fadeOut(1000);
         setTimeout(function () {
           // $('.preloader').fadeOut(1000);
           $('body').addClass('loaded');

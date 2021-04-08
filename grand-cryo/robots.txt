@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /*.js
+
+User-agent: *
+Disallow: /*.js
+
+Host: http://grand-cryo-resort.ru/

@@ -90,14 +90,20 @@
     <meta name="theme-color" content="#4398EA" />
   </head>
   <body>
-    <!-- <div class="preloader">
+    <div class="preloader">
       <div class="preloader__content">
-        <div class="logo">
-          <img src="img/logo-white.svg" alt="Logo" class="logo__img" />
-          <span class="logo__text"> Grand-Cryo Resort </span>
+        <div id="cube-loader">
+          <div class="caption">
+            <div class="cube-loader">
+              <div class="cube loader-1"></div>
+              <div class="cube loader-2"></div>
+              <div class="cube loader-4"></div>
+              <div class="cube loader-3"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="wrapper">
       <div class="content">
         <!-- Header -->
@@ -233,9 +239,14 @@
           </div>
           <div
             class="section-bg__img"
+            id="main-bg"
             data-aos="fade-in"
             data-aos-once="true"
-          ></div>
+          >
+            <source srcset="img/pictures/1sec-bg.webp" type="image/webp" />
+            <source srcset="img/pictures/1sec-bg.jpg" type="image/jpg" />
+            <img src="img/pictures/1sec-bg.jpg" alt="photo" />
+          </div>
         </header>
 
         <section class="section section-about" id="section-about">
@@ -2680,10 +2691,15 @@
     </div>
     <script src="js/all.js"></script>
     <script>
+      var img = new Image();
+      img.src = 'img/pictures/1sec-bg.jpg';
+
+      img.onload = function () {
+        $('.preloader').fadeOut(1000);
+      };
+      // --
       document.addEventListener('DOMContentLoaded', function (event) {
-        $('.preloader__content').fadeOut(1000);
         setTimeout(function () {
-          // $('.preloader').fadeOut(1000);
           $('body').addClass('loaded');
           AOS.init({
             duration: 1200,

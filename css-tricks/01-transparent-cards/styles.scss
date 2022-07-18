@@ -28,6 +28,9 @@ img {
 
 .card {
   position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.3s;
   &__body {
     padding: 20px 20px 0 20px;
   }
@@ -75,22 +78,9 @@ img {
     bottom: -40px;
     animation-name: move-down;
   }
-  //   &:nth-child(even) {
-  //     &::before {
-  //       background: radial-gradient(#1fa6f5, #0343f3);
-  //     }
-  //     &::after {
-  //       background: radial-gradient(#1fa6f5, #0343f3);
-  //     }
-  //   }
-  //   &:nth-child(3n) {
-  //     &::before {
-  //       background: radial-gradient(#1ff578, #03af11);
-  //     }
-  //     &::after {
-  //       background: radial-gradient(#1ff578, #03af11);
-  //     }
-  //   }
+  &:hover {
+    transform: translateZ(5px) rotateX(10deg) rotateY(15deg);
+  }
 }
 
 @keyframes move-up {

@@ -33,6 +33,13 @@ img {
 
 .card {
   position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .card__body {
@@ -88,6 +95,11 @@ img {
   bottom: -40px;
   -webkit-animation-name: move-down;
           animation-name: move-down;
+}
+
+.card:hover {
+  -webkit-transform: translateZ(5px) rotateX(10deg) rotateY(15deg);
+          transform: translateZ(5px) rotateX(10deg) rotateY(15deg);
 }
 
 @-webkit-keyframes move-up {

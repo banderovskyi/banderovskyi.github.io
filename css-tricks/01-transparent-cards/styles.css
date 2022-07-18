@@ -1,0 +1,120 @@
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #181818;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards {
+  padding: 80px 0;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.card {
+  position: relative;
+}
+
+.card__body {
+  padding: 20px 20px 0 20px;
+}
+
+.card__thumb img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card__inner {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.card a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+.card::after, .card::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(#f0ce10, #f35b03);
+  animation: move-up 2s ease-in infinite alternate-reverse;
+}
+
+.card::before {
+  top: -40px;
+  left: -40px;
+}
+
+.card::after {
+  right: -40px;
+  bottom: -40px;
+  -webkit-animation-name: move-down;
+          animation-name: move-down;
+}
+
+@-webkit-keyframes move-up {
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes move-up {
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes move-down {
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down {
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

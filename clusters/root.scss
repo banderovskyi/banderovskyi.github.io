@@ -1,0 +1,247 @@
+$default-primary-color: #ff0000;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+:root {
+  --color-primary: #{$default-primary-color};
+  --wrapper-width: 1280px;
+
+  --black-local: #000000;
+  --color-font: #5a5a5a;
+  --color-footer: #{darken($default-primary-color, 20%)};
+  --color-map-primary: #{$default-primary-color};
+  --desktop-control-height: 70px;
+  --desktop-header-height: 45px;
+  --font-large: 20px;
+  --font-map: 14px;
+  --font-medium: 16px;
+  --font-small: 14px;
+  --font-very-small: 12px;
+  --mobile-control-height: 112px;
+  --mobile-header-height: 45px;
+  --white-local: #ffffff;
+
+  /* Variations */
+  --color-font-lighter: #a6a6a6;
+
+  --color-map-primary-text: #000000;
+
+  --color-map-primary-light20: #{scale-color($default-primary-color, $lightness: 20%)};
+  --color-map-primary-light20-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: 20%),
+      black,
+      white
+    )};
+  --color-map-primary-light40: #{scale-color($default-primary-color, $lightness: 40%)};
+  --color-map-primary-light40-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: 40%),
+      black,
+      white
+    )};
+  --color-map-primary-light60: #{scale-color($default-primary-color, $lightness: 60%)};
+  --color-map-primary-light60-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: 60%),
+      black,
+      white
+    )};
+  --color-map-primary-light80: #{scale-color($default-primary-color, $lightness: 80%)};
+  --color-map-primary-light80-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: 80%),
+      black,
+      white
+    )};
+
+  --color-map-primary-dark20: #{scale-color($default-primary-color, $lightness: -20%)};
+  --color-map-primary-dark20-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: -20%),
+      black,
+      white
+    )};
+  --color-map-primary-dark40: #{scale-color($default-primary-color, $lightness: -40%)};
+  --color-map-primary-dark40-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: -40%),
+      black,
+      white
+    )};
+  --color-map-primary-dark60: #{scale-color($default-primary-color, $lightness: -60%)};
+  --color-map-primary-dark60-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: -60%),
+      black,
+      white
+    )};
+  --color-map-primary-dark80: #{scale-color($default-primary-color, $lightness: -80%)};
+  --color-map-primary-dark80-text: #{dynamic-text-colorMapLocal(
+      scale-color($default-primary-color, $lightness: -80%),
+      black,
+      white
+    )};
+
+  --white-local-darker05: #{darken(#ffffff, 5%)};
+
+  --color-map-primary-alpha05: #{rgba($default-primary-color, 0.05)};
+  --color-map-primary-alpha10: #{rgba($default-primary-color, 0.1)};
+  --color-map-primary-alpha20: #{rgba($default-primary-color, 0.2)};
+  --color-map-primary-alpha30: #{rgba($default-primary-color, 0.3)};
+  --color-map-primary-alpha40: #{rgba($default-primary-color, 0.4)};
+
+  --background-color-error-alert: #{rgba(red, 0.15)};
+}
+
+/*================================================\
+!Global Styles
+\================================================*/
+
+/* Force fb logo */
+.fa.fa-facebook-official {
+  font-family: 'Font Awesome 5 Brands' !important;
+  font-weight: 400;
+}
+
+html.root-map-v2-listings,
+body.map-v2-listings {
+  height: 100%;
+  min-height: 0; /* Remove any min-height */
+}
+
+body.mobile.map-v2-listings {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  main {
+    height: 100%;
+  }
+}
+
+/* react select dropdown --is-selected */
+.css-9gakcf-option {
+  background-color: var(--color-map-primary-light40) !important;
+  color: var(--color-map-primary-light40-text) !important;
+}
+
+/* react select dropdown --is-focused */
+.css-1n7v3ny-option {
+  background-color: var(--color-map-primary-light80) !important;
+  color: var(--color-map-primary-light80-text) !important;
+}
+
+#usm-recaptcha-container {
+  transform: scale(0);
+  .grecaptcha-badge {
+    display: block !important;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+/*================================================\
+!Map Wrappers
+\================================================*/
+
+#page-wrapper {
+  height: 100%;
+}
+
+#header-panel {
+  background: white;
+  height: 45px;
+  position: fixed;
+  z-index: 3;
+  font-family: var(--font-map);
+  width: 100%;
+  display: flex;
+}
+#map-view-panel {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  float: left;
+  font-family: var(--font-map);
+  width: 100%;
+}
+
+/*================================================\
+!Animation
+\================================================*/
+
+@keyframes loading-gradient-animation {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.listing-marker {
+  background-color: var(--color-map-primary);
+  border-radius: 50px;
+  border: 2px solid transparent;
+  box-shadow: -5px 7px 4px rgba(0, 0, 0, 0.23);
+  display: inline-block;
+  padding: 5px 14px;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 0.3s;
+  transition: border-color 0.3s;
+  &.listing-marker--hovered {
+    border: 2px solid var(--white-local);
+    z-index: 2;
+  }
+  &.listing-marker--selected {
+    background-color: var(--color-map-primary-light80);
+    border: 2px solid var(--white-local);
+    z-index: 5;
+    span {
+      color: var(--color-map-primary-light80-text);
+    }
+  }
+  &.listing-marker--blured {
+    user-select: none;
+    span {
+      filter: blur(4.5px);
+    }
+  }
+  .listing-marker__broker-logo {
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.3s;
+  }
+  &:hover {
+    border: 2px solid var(--white-local);
+    cursor: pointer;
+    z-index: 6;
+  }
+  span {
+    color: var(--color-map-primary-text);
+    float: left;
+    font-size: var(--font-very-small);
+    font-weight: 700;
+    line-height: var(--font-very-small);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

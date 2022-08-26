@@ -1,0 +1,246 @@
+:root {
+  --color-primary: #ff0000;
+  --wrapper-width: 1280px;
+  --black-local: #000000;
+  --color-font: #5a5a5a;
+  --color-footer: #990000;
+  --color-map-primary: #ff0000;
+  --desktop-control-height: 70px;
+  --desktop-header-height: 45px;
+  --font-large: 20px;
+  --font-map: 14px;
+  --font-medium: 16px;
+  --font-small: 14px;
+  --font-very-small: 12px;
+  --mobile-control-height: 112px;
+  --mobile-header-height: 45px;
+  --white-local: #ffffff;
+  /* Variations */
+  --color-font-lighter: #a6a6a6;
+  --color-map-primary-text: #000000;
+  --color-map-primary-light20: #ff3333;
+  --color-map-primary-light20-text: dynamic-text-colorMapLocal(#ff3333, black, white);
+  --color-map-primary-light40: #ff6666;
+  --color-map-primary-light40-text: dynamic-text-colorMapLocal(#ff6666, black, white);
+  --color-map-primary-light60: #ff9999;
+  --color-map-primary-light60-text: dynamic-text-colorMapLocal(#ff9999, black, white);
+  --color-map-primary-light80: #ffcccc;
+  --color-map-primary-light80-text: dynamic-text-colorMapLocal(#ffcccc, black, white);
+  --color-map-primary-dark20: #cc0000;
+  --color-map-primary-dark20-text: dynamic-text-colorMapLocal(#cc0000, black, white);
+  --color-map-primary-dark40: #990000;
+  --color-map-primary-dark40-text: dynamic-text-colorMapLocal(#990000, black, white);
+  --color-map-primary-dark60: #660000;
+  --color-map-primary-dark60-text: dynamic-text-colorMapLocal(#660000, black, white);
+  --color-map-primary-dark80: #330000;
+  --color-map-primary-dark80-text: dynamic-text-colorMapLocal(#330000, black, white);
+  --white-local-darker05: #f2f2f2;
+  --color-map-primary-alpha05: rgba(255, 0, 0, 0.05);
+  --color-map-primary-alpha10: rgba(255, 0, 0, 0.1);
+  --color-map-primary-alpha20: rgba(255, 0, 0, 0.2);
+  --color-map-primary-alpha30: rgba(255, 0, 0, 0.3);
+  --color-map-primary-alpha40: rgba(255, 0, 0, 0.4);
+  --background-color-error-alert: rgba(255, 0, 0, 0.15);
+}
+
+/*================================================\
+!Global Styles
+\================================================*/
+/* Force fb logo */
+.fa.fa-facebook-official {
+  font-family: 'Font Awesome 5 Brands' !important;
+  font-weight: 400;
+}
+
+html.root-map-v2-listings,
+body.map-v2-listings {
+  height: 100%;
+  min-height: 0;
+  /* Remove any min-height */
+}
+
+body.mobile.map-v2-listings {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+body.mobile.map-v2-listings main {
+  height: 100%;
+}
+
+/* react select dropdown --is-selected */
+.css-9gakcf-option {
+  background-color: var(--color-map-primary-light40) !important;
+  color: var(--color-map-primary-light40-text) !important;
+}
+
+/* react select dropdown --is-focused */
+.css-1n7v3ny-option {
+  background-color: var(--color-map-primary-light80) !important;
+  color: var(--color-map-primary-light80-text) !important;
+}
+
+#usm-recaptcha-container {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#usm-recaptcha-container .grecaptcha-badge {
+  display: block !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/*================================================\
+!Map Wrappers
+\================================================*/
+#page-wrapper {
+  height: 100%;
+}
+
+#header-panel {
+  background: white;
+  height: 45px;
+  position: fixed;
+  z-index: 3;
+  font-family: var(--font-map);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#map-view-panel {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  float: left;
+  font-family: var(--font-map);
+  width: 100%;
+}
+
+/*================================================\
+!Animation
+\================================================*/
+@-webkit-keyframes loading-gradient-animation {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes loading-gradient-animation {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.listing-marker {
+  background-color: var(--color-map-primary);
+  border-radius: 50px;
+  border: 2px solid transparent;
+  -webkit-box-shadow: -5px 7px 4px rgba(0, 0, 0, 0.23);
+          box-shadow: -5px 7px 4px rgba(0, 0, 0, 0.23);
+  display: inline-block;
+  padding: 5px 14px;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: fadeIn 0.3s;
+          animation: fadeIn 0.3s;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+
+.listing-marker.listing-marker--hovered {
+  border: 2px solid var(--white-local);
+  z-index: 2;
+}
+
+.listing-marker.listing-marker--selected {
+  background-color: var(--color-map-primary-light80);
+  border: 2px solid var(--white-local);
+  z-index: 5;
+}
+
+.listing-marker.listing-marker--selected span {
+  color: var(--color-map-primary-light80-text);
+}
+
+.listing-marker.listing-marker--blured {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.listing-marker.listing-marker--blured span {
+  -webkit-filter: blur(4.5px);
+          filter: blur(4.5px);
+}
+
+.listing-marker .listing-marker__broker-logo {
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.listing-marker:hover {
+  border: 2px solid var(--white-local);
+  cursor: pointer;
+  z-index: 6;
+}
+
+.listing-marker span {
+  color: var(--color-map-primary-text);
+  float: left;
+  font-size: var(--font-very-small);
+  font-weight: 700;
+  line-height: var(--font-very-small);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+/*# sourceMappingURL=root.css.map */

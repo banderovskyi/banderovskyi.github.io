@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор недоплати ГЗ ЗСУ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/mil-calculator/assets/index-BV9II3Du.js"></script>
+    <link rel="stylesheet" crossorigin href="/mil-calculator/assets/index-B8DdIf2n.css">
+  </head>
+  <body>
+    <div class="page">
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero__watermark">₴248 000</div>
+        <div class="hero__corner hero__corner--tl"></div>
+        <div class="hero__corner hero__corner--tr"></div>
+        <div class="hero__corner hero__corner--bl"></div>
+        <div class="hero__corner hero__corner--br"></div>
+
+        <nav class="hero__nav">
+          <div class="hero__logo">
+            <div class="hero__logo-icon">₴</div>
+            <span class="hero__logo-name">ГЗ Калькулятор</span>
+          </div>
+          <div class="hero__nav-links">
+            <a href="#" class="hero__nav-link">Головна</a>
+            <a href="#calculator" class="hero__nav-link">Калькулятор</a>
+            <a href="#footer" class="hero__nav-link">Контакти</a>
+            <a href="tel:+380671112233" class="hero__nav-link hero__nav-link--phone">+38 (067) 111-22-33</a>
+          </div>
+        </nav>
+
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            <span class="hero__badge-text">Розрахунок недоплати · для ЗСУ</span>
+          </div>
+          <h1 class="hero__heading">
+            Дізнайся, скільки<br />тобі <em>не виплатили</em>
+          </h1>
+          <p class="hero__subtitle">
+            Розрахуй суму недоплати грошового забезпечення — за званням, тарифним розрядом і терміном служби. Безкоштовно.
+          </p>
+          <div class="hero__cta">
+            <button class="hero__btn hero__btn--primary" id="js-cta-calculate">Розрахувати зараз →</button>
+            <button class="hero__btn hero__btn--secondary">Як це працює</button>
+          </div>
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <span class="hero__trust-check">✓</span> Безкоштовний розрахунок
+            </div>
+            <div class="hero__trust-item">
+              <span class="hero__trust-check">✓</span> Перевірено юристами
+            </div>
+            <div class="hero__trust-item">
+              <span class="hero__trust-check">✓</span> Понад 500 розрахунків
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALCULATOR -->
+      <section class="wizard-section" id="calculator">
+        <div class="wizard-section__eyebrow">
+          <span class="wizard-section__eyebrow-dot"></span>
+          <span class="wizard-section__eyebrow-text">5 кроків · менше 2 хвилин</span>
+        </div>
+        <h2 class="wizard-section__title">Розрахуй свою недоплату</h2>
+        <p class="wizard-section__subtitle">Займе менше 2 хвилин. Нічого зайвого.</p>
+        <div id="js-wizard"></div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer" id="footer">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <div class="footer__logo-icon">₴</div>
+              <span class="footer__logo-name">ГЗ Калькулятор</span>
+            </div>
+            <p class="footer__description">
+              Розрахунок недоплати грошового забезпечення військовослужбовців ЗСУ.
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-link">Головна</a>
+            <a href="#calculator" class="footer__nav-link">Калькулятор</a>
+            <a href="#footer" class="footer__nav-link">Контакти</a>
+          </nav>
+          <div class="footer__contact">
+            <div class="footer__contact-label">Телефон</div>
+            <a href="tel:+380671112233" class="footer__phone">+38 (067) 111-22-33</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copyright">© 2026. Всі права захищені.</span>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -8,60 +8,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/mil-calculator/assets/index-CRQBzD64.js"></script>
-    <link rel="stylesheet" crossorigin href="/mil-calculator/assets/index-CMqVXDAO.css">
+    <script type="module" crossorigin src="/mil-calculator/assets/index-DsyOolmk.js"></script>
+    <link rel="stylesheet" crossorigin href="/mil-calculator/assets/index-Bi1HV_1O.css">
   </head>
   <body>
     <div class="page">
 
       <!-- HERO -->
       <div class="hero">
-        <div class="hero__watermark">₴248 000</div>
-        <div class="hero__corner hero__corner--tl"></div>
-        <div class="hero__corner hero__corner--tr"></div>
-        <div class="hero__corner hero__corner--bl"></div>
-        <div class="hero__corner hero__corner--br"></div>
+        <div class="hero__photo">
+          <img class="hero__photo-img" id="js-hero-photo" alt="" />
+        </div>
 
-        <nav class="hero__nav">
-          <div class="hero__logo">
-            <div class="hero__logo-icon">₴</div>
-            <span class="hero__logo-name">ГЗ Калькулятор</span>
-          </div>
-          <div class="hero__nav-links">
-            <a href="#" class="hero__nav-link">Головна</a>
-            <a href="#calculator" class="hero__nav-link">Калькулятор</a>
-            <a href="#footer" class="hero__nav-link">Контакти</a>
-            <a href="tel:+380671112233" class="hero__nav-link hero__nav-link--phone">+38 (067) 111-22-33</a>
-          </div>
-        </nav>
+        <div class="hero__inner">
+          <nav class="hero__nav">
+            <div class="hero__logo">
+              <div class="hero__logo-badge">₴</div>
+              <div>
+                <div class="hero__logo-name">MIL-CALCULATOR</div>
+                <div class="hero__logo-tagline">Калькулятор грошового забезпечення<br />військовослужбовців та звільнених з військової служби осіб</div>
+              </div>
+            </div>
+            <div class="hero__actions">
+              <a href="tel:+380671112233" class="hero__phone">+38 (067) 111-22-33</a>
+              <button class="hero__btn hero__btn--outline" id="js-login-btn">Вхід</button>
+              <button class="hero__btn hero__btn--solid" id="js-register-btn">Реєстрація</button>
+            </div>
+          </nav>
 
-        <div class="hero__content">
-          <div class="hero__badge">
-            <span class="hero__badge-dot"></span>
-            <span class="hero__badge-text">Розрахунок недоплати · для ЗСУ</span>
+          <div class="hero__content">
+            <h1 class="hero__heading">Дізнайся, скільки тобі <em>не виплатили</em></h1>
+            <p class="hero__subtitle">
+              Практичний інструмент для самостійної перевірки розрахунку грошового забезпечення за званням, тарифним розрядом і терміном служби — відповідно до чинного законодавства та практики Верховного Суду.
+            </p>
           </div>
-          <h1 class="hero__heading">
-            Дізнайся, скільки<br />тобі <em>не виплатили</em>
-          </h1>
-          <p class="hero__subtitle">
-            Розрахуй суму недоплати грошового забезпечення — за званням, тарифним розрядом і терміном служби. Безкоштовно.
-          </p>
-          <div class="hero__cta">
-            <button class="hero__btn hero__btn--primary" id="js-cta-calculate">Розрахувати зараз →</button>
-            <button class="hero__btn hero__btn--secondary">Як це працює</button>
+
+          <div class="hero__features">
+            <div class="hero__feature">
+              <div class="hero__feature-icon" data-icon="bar-chart-3"></div>
+              <span class="hero__feature-text">Актуальні коефіцієнти</span>
+            </div>
+            <div class="hero__feature">
+              <div class="hero__feature-icon" data-icon="calendar-days"></div>
+              <span class="hero__feature-text">Підтримка різних періодів</span>
+            </div>
+            <div class="hero__feature">
+              <div class="hero__feature-icon" data-icon="scale"></div>
+              <span class="hero__feature-text">Законодавча основа та практика судів</span>
+            </div>
+            <div class="hero__feature">
+              <div class="hero__feature-icon" data-icon="lock"></div>
+              <span class="hero__feature-text">Дані зберігаються у Вашому персональному кабінеті</span>
+            </div>
           </div>
-          <div class="hero__trust">
-            <div class="hero__trust-item">
-              <span class="hero__trust-check">✓</span> Безкоштовний розрахунок
-            </div>
-            <div class="hero__trust-item">
-              <span class="hero__trust-check">✓</span> Перевірено юристами
-            </div>
-            <div class="hero__trust-item">
-              <span class="hero__trust-check">✓</span> Понад 500 розрахунків
+
+          <div class="hero__stat">
+            <div class="hero__stat-icon" data-icon="users"></div>
+            <div>
+              <div class="hero__stat-title">Понад 10 000 користувачів</div>
+              <div class="hero__stat-subtitle">скористались калькулятором</div>
             </div>
           </div>
         </div>
@@ -69,39 +77,38 @@
 
       <!-- CALCULATOR -->
       <section class="wizard-section" id="calculator">
-        <div class="wizard-section__eyebrow">
-          <span class="wizard-section__eyebrow-dot"></span>
-          <span class="wizard-section__eyebrow-text">5 кроків · менше 2 хвилин</span>
+        <div class="wizard-section__header">
+          <h2 class="wizard-section__title">Розрахунок грошового забезпечення</h2>
+          <p class="wizard-section__subtitle">Заповніть крок за кроком — займе менше 2 хвилин</p>
         </div>
-        <h2 class="wizard-section__title">Розрахуй свою недоплату</h2>
-        <p class="wizard-section__subtitle">Займе менше 2 хвилин. Нічого зайвого.</p>
         <div id="js-wizard"></div>
       </section>
 
-      <!-- FOOTER -->
-      <footer class="footer" id="footer">
-        <div class="footer__top">
-          <div class="footer__brand">
-            <div class="footer__logo">
-              <div class="footer__logo-icon">₴</div>
-              <span class="footer__logo-name">ГЗ Калькулятор</span>
-            </div>
-            <p class="footer__description">
-              Розрахунок недоплати грошового забезпечення військовослужбовців ЗСУ.
+      <!-- НОРМАТИВНА ОСНОВА -->
+      <div class="normative">
+        <div class="normative__content">
+          <div class="normative__icon" data-icon="book-open"></div>
+          <div>
+            <div class="normative__title">Нормативна основа</div>
+            <p class="normative__text">
+              Розрахунки виконуються на підставі чинних постанов Кабінету Міністрів України, наказів Міністерства оборони України та інших нормативно-правових актів, з урахуванням висновків Верховного Суду.
             </p>
           </div>
-          <nav class="footer__nav">
-            <a href="#" class="footer__nav-link">Головна</a>
-            <a href="#calculator" class="footer__nav-link">Калькулятор</a>
-            <a href="#footer" class="footer__nav-link">Контакти</a>
-          </nav>
-          <div class="footer__contact">
-            <div class="footer__contact-label">Телефон</div>
-            <a href="tel:+380671112233" class="footer__phone">+38 (067) 111-22-33</a>
-          </div>
         </div>
-        <div class="footer__bottom">
-          <span class="footer__copyright">© 2026. Всі права захищені.</span>
+        <button class="normative__btn"><span data-icon="file-text"></span> Ознайомитись з документами</button>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer" id="footer">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <div class="footer__logo-badge" data-icon="scale"></div>
+            <div>
+              <div class="footer__logo-name">MIL-CALCULATOR</div>
+              <div class="footer__logo-tagline">Калькулятор грошового забезпечення<br />військовослужбовців та звільнених з військової служби осіб</div>
+            </div>
+          </div>
+          <a href="tel:+380671112233" class="footer__phone">+38 (067) 111-22-33</a>
         </div>
       </footer>
 
